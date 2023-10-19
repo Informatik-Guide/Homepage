@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TestTutorialComponent } from './test-tutorial/test-tutorial.component';
 import { TestTutorial2Component } from './test-tutorial2/test-tutorial2.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TestTutorial2Component } from './test-tutorial2/test-tutorial2.componen
     LandingComponent,
     NavigationComponent,
     TestTutorialComponent,
-    TestTutorial2Component
+    TestTutorial2Component,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
