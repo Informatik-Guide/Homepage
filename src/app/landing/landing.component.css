@@ -1,0 +1,26 @@
+
+
+[Animation] {
+    margin-bottom: 50px;
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    background: rgba(85, 8, 156, 0.61);
+    animation: mymove 5s both;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+a {
+    color:chartreuse;
+    text-decoration: none;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
