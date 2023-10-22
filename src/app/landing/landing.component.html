@@ -1,19 +1,36 @@
-<div style="background-image: url('assets/Background.jpg'); background-repeat: no-repeat; background-size: cover; color: white; width: 100vw; height: 100vh;">
+<div style="background-color: black;width: 100vw; height: 100vh;color: white;">
+    <div header>
+        <h1>Informatik lernen leichtgemacht</h1>
+        <p>Hier lernst du die Inhalte der Informatik von der 5-13 Klasse</p>
+    </div>
 
-    <p Animation routerLink="/tutorial1">
-        Das erstes Tutorial
-    </p>
-    
+    <div Hyperlinks>
+        <!--Hyperlinks-->
+        <a href="#">Beispiel Video</a>
+        <a href="#">Was wir machen?</a>
+        <a href="/start#Impressum">Impressum</a>
+    </div>
 
+    <div row>
+        <div Inhalte>
+            <div card>
+                <h2>HEADING</h2>
+                <h5>Irgend einen Text</h5>
+            </div>
+            <video src="assets/Test_Video.mp4" type="video/mp4" width="320" height="240" autoplay muted>
+                Your browser does not support the video tag.
+            </video>
+            <p>In unsere ineraktiven Tutorials, wirst du alles über Informatik lernen</p>
 
-    <h1>Informatik lernen leichtgemacht</h1>
-    <h3>Hier lernst du die Inhalte der Informatik von der 5-13 Klasse</h3>
-    <p> Wir erklären dir durch einfache Tutorials Informatik</p>
-
-
-    <!-- <img src="assets/Background.jpg" widht="2000" height="1600"> -->
-    <video src="assets/Test_Video.mp4" type="video/mp4" width="320" height="240" autoplay muted>
-        Your browser does not support the video tag.
-    </video>
+        </div>
+    </div>
+    <div Navigationszeile>
+        <div Links active routerLink="/start">Home</div>
+        <div (click)="a=!a">
+            <p Links>Klassenstuffe</p>
+            <div *ngIf="a==true">
+                <p Links routerLink="/tutorial1">5 Klasse</p>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Felix Jonas Manuel #allow list-->
