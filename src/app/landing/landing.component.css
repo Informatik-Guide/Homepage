@@ -1,26 +1,59 @@
-
-
-[Animation] {
-    margin-bottom: 50px;
-    left: 0px;
-    top: 0px;
-    width: 700px;
-    background: rgba(85, 8, 156, 0.61);
-    animation: mymove 5s both;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  @keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-  }
-a {
-    color:chartreuse;
-    text-decoration: none;
+[header] {
+  padding: 30px;
+  text-align: center;
 }
-* {
-    padding: 0px;
-    margin: 0px;
+[header] h1 {
+  font-size: 50px;
+}
+[Hyperlinks] {
+  overflow: hidden;
+  background-color:orange;
+}
+[Hyperlinks] a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+[Inhalte] {   
+  float: left;
+  width: 85%;
+  text-align: center;
+
+}
+
+[row]::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+[Impressum] {
+  color: black;
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+  margin-top: 20px;
+}
+
+/* Navigationsbar */
+[Navigationszeile] {
+  width: 200px;
+  background-color: orange;
+  position: absolute;
+  left: 75%;
+  top: 266px;
+  padding-left: 20px;
+}
+
+[Links]{
+  color: black;
+  padding: 8px 16px;
+}
+
+[Links]:hover {
+  background-color: #555;
 }
