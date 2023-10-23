@@ -1,0 +1,51 @@
+[header] {
+  padding: 30px;
+  text-align: center;
+}
+[header] h1 {
+  font-size: 50px;
+}
+[Hyperlinks] {
+  overflow: hidden;
+  background-color:orange;
+}
+[Hyperlinks] a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+[Inhalte] {   
+  float: left;
+  width: 85%;
+  text-align: center;
+  max-width: 70%;
+}
+
+[row]::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Navigationsbar */
+[Navigationszeile] {
+  width: 200px;
+  background-color: orange;
+  position: absolute;
+  left: 75%;
+  top: 266px;
+  padding-left: 20px;
+}
+
+[Links]{
+  color: black;
+  padding: 8px 16px;
+}
+
+[Links]:hover {
+  background-color: #555;
+}
