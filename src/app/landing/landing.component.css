@@ -22,21 +22,13 @@
   float: left;
   width: 85%;
   text-align: center;
-
+  max-width: 70%;
 }
 
 [row]::after {
   display: table;
   clear: both;
   content: "";
-}
-
-[Impressum] {
-  color: black;
-  padding: 20px;
-  text-align: center;
-  background-color: orange;
-  margin-top: 20px;
 }
 
 /* Navigationsbar */

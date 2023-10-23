@@ -1,8 +1,10 @@
 [Impressum] {
+    top: 100vw;
     color: black;
     padding: 20px;
     text-align: center;
     background-color: orange;
-
+    position: absolute;
+    padding-right: 10vw;
   }
   
