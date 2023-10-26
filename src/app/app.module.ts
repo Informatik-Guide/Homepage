@@ -8,6 +8,7 @@ import { TestTutorialComponent } from './test-tutorial/test-tutorial.component';
 import { TestTutorial2Component } from './test-tutorial2/test-tutorial2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { FirstTutorialComponent } from './first-tutorial/first-tutorial.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
     TestTutorialComponent,
     TestTutorial2Component,
     PageNotFoundComponent,
-    UeberUnsComponent
+    UeberUnsComponent,
+    FirstTutorialComponent
   ],
   imports: [
     BrowserModule,
