@@ -4,6 +4,7 @@
     padding: 20px;
     text-align: center;
     background-color: orange;
+    border-radius: 10px;
     position: absolute;
     padding-right: 10vw;
   }
@@ -11,6 +12,7 @@
 [Navigationszeile] {
   width: 140px;
   background-color: orange;
+  border-radius: 2px;
   position: absolute;
   left: 84%;
   top: 266px;
