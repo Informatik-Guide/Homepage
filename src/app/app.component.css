@@ -9,9 +9,6 @@
   }
   /* Navigationsbar */
 [Navigationszeile] {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
-  border-radius: 1vw;
   width: 140px;
   background-color: orange;
   position: absolute;
@@ -23,7 +20,7 @@
   padding-right: 100%;
 }
 [Links]{
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 8px 16px;
 }
 
