@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
+import { LandingComponent } from './pages/landing/landing.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { TestTutorialComponent } from './test-tutorial/test-tutorial.component';
-import { TestTutorial2Component } from './test-tutorial2/test-tutorial2.component';
+import { TestTutorialComponent } from './pages/test-tutorial/test-tutorial.component';
+import { TestTutorial2Component } from './pages/test-tutorial2/test-tutorial2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { UeberUnsComponent } from './pages/ueber-uns/ueber-uns.component';
+import { GraphenComponent } from './pages/graphen/graphen.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
     TestTutorialComponent,
     TestTutorial2Component,
     PageNotFoundComponent,
-    UeberUnsComponent
+    UeberUnsComponent,
+    GraphenComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
