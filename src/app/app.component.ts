@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  Klassenstuffen: boolean = false;
+  Klasse_9: boolean = false;
 }

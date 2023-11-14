@@ -4,7 +4,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { TestTutorialComponent } from './pages/test-tutorial/test-tutorial.component';
 import { TestTutorial2Component } from './pages/test-tutorial2/test-tutorial2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { UeberUnsComponent } from './pages/ueber-uns/ueber-uns.component';
 import { FirstTutorialComponent } from './first-tutorial/first-tutorial.component';
 
 const routes: Routes = [

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./first-tutorial.component.css']
 })
 export class FirstTutorialComponent {
-  Start: boolean = false;
+  Start: boolean = true
+  Question: boolean = true
+
 }
+
+
+
