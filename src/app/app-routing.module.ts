@@ -5,7 +5,7 @@ import { TestTutorialComponent } from './pages/test-tutorial/test-tutorial.compo
 import { TestTutorial2Component } from './pages/test-tutorial2/test-tutorial2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UeberUnsComponent } from './pages/ueber-uns/ueber-uns.component';
-import { GraphenComponent } from './pages/graphen/graphen.component';
+import { FirstTutorialComponent } from './first-tutorial/first-tutorial.component';
 
 const routes: Routes = [
   {path: 'start', component: LandingComponent},
@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'tutorial1', component: TestTutorialComponent},
   {path: 'tutorial2', component: TestTutorial2Component},
   {path: 'ueber_uns', component: UeberUnsComponent},
-  {path: 'graph', component: GraphenComponent},
+  {path: 'first-tutorial', component: FirstTutorialComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
