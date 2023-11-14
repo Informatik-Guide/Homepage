@@ -1,0 +1,14 @@
+*{
+    background-color: orange;
+}
+[Impressum] {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    margin-right: 25px;
+    left: 25px;
+    margin-left: 25px;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
