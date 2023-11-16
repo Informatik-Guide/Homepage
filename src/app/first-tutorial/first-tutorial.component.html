@@ -1,0 +1,33 @@
+<body style="background-color: #000000; height:200vh; color: white;">
+    <div header>
+        <h1 header>Bit and Bite</h1>
+        <p style="position: absolute; left: 10vw; top: 15vw;">Das ist ein Test Turorial:</p>
+    </div>
+
+    <!-- RESET BUTTON -->
+    <div 
+    (click)="Start=false; Question=false"
+    style="position: absolute; left: 10px; top: 10px; padding: 10px; background-color: rgb(70, 70, 73);"
+    >RESET</div>
+
+
+    <div (click)="Start=true" circle style="top: 30vw;">Start</div>
+    <div *ngIf="Start == true" (click)="Question=true" circle_spawn style="top: 50vw;">Question 1</div>
+    <div *ngIf="Start == true" line style="top: 40vw;"></div>
+    <div *ngIf="Question == true" line style="top: 60vw;"></div>
+    <table *ngIf="Question == true" style="top: 70vw;">
+        <tr>
+            <th>Wählen sie eine Antwortmöglichkeit:</th>
+        </tr>
+        <tr>
+            <td>1. hhhhhhhhh</td>
+        </tr>
+        <tr>
+            <td>2. ggggggggg</td>
+        </tr>
+        <tr>
+            <td>3.uuuuuuuuuuuuuu</td>
+        </tr>
+    </table>
+    
+</body>
