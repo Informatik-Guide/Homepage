@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './Sidebar/navigation.component';
 import { TestTutorialComponent } from './pages/test-tutorial/test-tutorial.component';
 import { TestTutorial2Component } from './pages/test-tutorial2/test-tutorial2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
