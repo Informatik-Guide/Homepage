@@ -2,41 +2,42 @@
   padding: 30px;
   text-align: center;
   padding-top: 20px;
-  
 }
+
 [header] p {
   font-size: 15px;
 }
 
 [header] h1 {
   font-size: 50px;
+  text-shadow: 2px 2px 1px white;
+
 }
 
 [Hyperlinks] {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   overflow: hidden;
   font-size: large;
   background-color:orange;
+  margin: 3px 6px 5px;
   
 }
 [Hyperlinks] a {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   float: left;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  background-color: orange;
 }
 
-[Inhalte] { 
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+[Inhalte] {   
   float: left;
   width: 85%;
   text-align: center;
   max-width: 80%;
   padding-bottom: 10vw;
+  padding: 8px 16px;
 }
 
 [row]::after {
@@ -45,18 +46,9 @@
   content: "";
 }
 
-
-
-[Links]{
-  font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  padding: 6px 6px;
-  background-color: orange;
-}
-
-[Links]:hover {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #555;
+  
+[Hyperlinks] :hover { 
+    background-color: #555;
+    border-radius: 10px;
 
 }
