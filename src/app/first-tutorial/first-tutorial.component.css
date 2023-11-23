@@ -97,6 +97,7 @@
   100% {color:white}
 }
 table {
+  background-color: black;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
