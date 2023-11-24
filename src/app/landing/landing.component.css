@@ -42,3 +42,14 @@
 [Links]:hover {
   background-color: #555;
 }
+
+[Impressum] {
+  position: sticky;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+  position: absolute;
+  padding-right: 10vw;
+
+}

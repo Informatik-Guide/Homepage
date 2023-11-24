@@ -1,11 +1,13 @@
 [Impressum] {
-    top: 100vw;
+    top: 200vh;
+    position: sticky;
     color: black;
     padding: 20px;
     text-align: center;
     background-color: orange;
     position: absolute;
     padding-right: 10vw;
+
   }
   /* Navigationsbar */
 [Navigationszeile] {
