@@ -1,58 +1,10 @@
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DO NOT EDIT !!!!!!!!!!!!!!!!!!!!!!!!-->
-
+<app-navigation></app-navigation>
 <router-outlet></router-outlet>
+<app-impressum></app-impressum>
 
 <!-- ng build --output-path docs --base-href /git/ -->
 <!-- create 404.html from a copy of index.html -->
 <!-- git add --all -->
 <!-- git commit -m "final test" -->
 <!-- git push -u origin gh-pages -->
-<div Navigationszeile>
-    <div Links active routerLink="/start">Home</div>
-    <p (click)="Klassenstuffen=!Klassenstuffen" Links>Klassenstuffe</p>
-    <div *ngIf="Klassenstuffen==true">
-        <p (click)="Klasse_9=!Klasse_9" Links>9 Klasse</p>
-        <div *ngIf="Klasse_9==true">
-            <p Links routerLink="/tutorial1">Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
-            <p Links routerLink="/tutorial1">Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
-            <p Links routerLink="/tutorial1">Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
-            <p Links routerLink="/tutorial1">Lernbereich 4: <br>Datenschutz</p>
-        </div>
-    </div>
-    <div Links active routerLink="/ueber_uns">Über uns</div>
-</div>
-
-
-
-
-<!-- <div id="Impressum" Impressum>
-    <h2>Impressum</h2>
-    <p>
-        Angaben gem. § 5 TMG:
-
-        Vorname, Name
-
-        Adresse
-
-        PLZ
-
-        Kontaktaufnahme:
-
-        Telefon:
-
-        Fax:
-
-        E-Mail:
-
-        Umsatzsteuer-ID
-
-
-
-        Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:
-
-        DE XXX XXX XXX
-
-
-
-    </p>-->
-<div>

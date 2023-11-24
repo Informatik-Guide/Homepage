@@ -1,0 +1,16 @@
+<div Navigationszeile>
+    
+    <div Links active routerLink="/start">Home</div>
+    <p (click)="Klassenstuffen=!Klassenstuffen" Links>Klassenstuffe</p>
+    
+    <div *ngIf="Klassenstuffen==true">
+        <p (click)="Klasse_9=!Klasse_9" Links>9 Klasse</p>
+        <div *ngIf="Klasse_9==true">
+            <p Links routerLink="/tutorial1">Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
+            <p Links routerLink="/tutorial1">Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
+            <p Links routerLink="/tutorial1">Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
+            <p Links routerLink="/tutorial1">Lernbereich 4: <br>Datenschutz</p>
+        </div>
+    </div>
+    <div Links active routerLink="/ueber_uns">Über uns</div>
+</div>

@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+*
+{
+    background-color: rgb(32, 29, 29);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 body
 {
     padding: 0vw;
