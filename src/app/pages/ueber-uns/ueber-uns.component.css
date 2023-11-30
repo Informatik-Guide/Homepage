@@ -7,7 +7,7 @@
   }
   [Hyperlinks] {
     overflow: hidden;
-    background-color:orange;
+    background-color:var(--Secondarycolor);
   }
   [Hyperlinks] a {
     float: left;
