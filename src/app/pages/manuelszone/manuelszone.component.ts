@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, numberAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-manuelszone',
@@ -9,5 +9,4 @@ export class ManuelszoneComponent {
   Start: boolean = false;
   Question: boolean = false;
   steps: boolean[] = [];
-  
 }

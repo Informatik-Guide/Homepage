@@ -1,11 +1,23 @@
 [header] {
-    background-color: black;
+    
     padding: 1vw;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   [header] h1 {
     font-size: 50px;
+  }
+
+  /* animation black box */
+  @keyframes bb {
+    from{height: 0vw;}
+    to{height: 10vw}
+  }
+  [bb]{
+    position: absolute;
+    background-color: rgb(70, 70, 73);
+    left: 50%;
+    transform: translate(-50%);
   }
   
   /* Normal circle
@@ -22,7 +34,7 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%);
-    background-color: black;
+    
   }
   [circle]:hover {
     position: absolute;
@@ -40,8 +52,8 @@
     -> centered 
   */
   @keyframes circle_spawn {
-    0% {color:black}
-    50% {color:black}
+    0% {color:rgb(32, 29, 29)}
+    50% {color:rgb(32, 29, 29)}
     100% {color:white}
   }
   [circle_spawn] {
@@ -54,7 +66,7 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%);
-    background-color: black;
+    
     animation-name: circle_spawn;
     animation-duration: 2s;
   }
@@ -66,6 +78,16 @@
     text-align: center;
     background-color: rgb(70, 70, 73);
     border-color: white;
+  }
+
+  /* Goto Funktion:
+    -> input of the step  
+  */
+  [input] {
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    background-color: rgb(70, 70, 73);
   }
   
   /* Line:
@@ -92,12 +114,12 @@
   /*Table design*/
   
   @keyframes table_spawn {
-    0% {color:black}
-    50% {color:black}
+    0% {color:rgb(32, 29, 29)}
+    50% {color:rgb(32, 29, 29)}
     100% {color:white}
   }
   table {
-    background-color: black;
+    
     position: absolute;
     left: 50%;
     transform: translate(-50%);

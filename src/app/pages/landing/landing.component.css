@@ -10,15 +10,16 @@
 
 [header] h1 {
   font-size: 50px;
-  text-shadow: 2px 2px 1px white;
+  text-shadow: 2px 2px 1px var(--shadowcolor);
 
 }
 
 [Hyperlinks] {
   overflow: hidden;
   font-size: large;
-  background-color:orange;
+  background-color:var(--seccolor);
   margin: 3px 6px 5px;
+  font-weight: 500;
   
 }
 [Hyperlinks] a {
@@ -28,7 +29,6 @@
   padding: 14px 16px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  background-color: orange;
 }
 
 [Inhalte] {   
@@ -48,7 +48,7 @@
 
   
 [Hyperlinks] :hover { 
-    background-color: #555;
+    background-color: var(--hovercolor);
     border-radius: 10px;
 
 }
