@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *
 {
-    background-color: rgb(32, 29, 29);
+    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 body
@@ -9,4 +9,12 @@ body
     padding: 0vw;
     margin: 0vw;
     overflow-x: hidden;
+    background-color: var(--pricolor);
+}
+
+:root{
+    --pricolor: rgb(34, 34, 34);
+    --seccolor: rgb(246, 111, 246);
+    --shadowcolor: rgb(135, 135, 135);
+    --hovercolor: rgb(106, 106, 106);
 }

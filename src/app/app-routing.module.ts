@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'start', component: LandingComponent},
   {path: '', redirectTo: '/start', pathMatch: 'full'},
   {path: 'ueber_uns', component: UeberUnsComponent},
-  {path: 'manuelistdick', component: ManuelszoneComponent},
+  {path: 'manuelszone', component: ManuelszoneComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
