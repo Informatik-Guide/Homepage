@@ -3,18 +3,20 @@
 </div> -->
 
 <div Sidebar>
-    
-    <div Links style="padding: 8px 16px;" routerLink="/start">Home</div>
-    <p style="padding: 8px 16px;" (click)="Klassenstuffen=!Klassenstuffen" Links>Klassenstuffe</p>
-    
-    <div Links style="padding: 8px 16px;" *ngIf="Klassenstuffen==true">
-        <p (click)="Klasse_9=!Klasse_9" Klassen>9 Klasse</p>
+    <img src="\assets\Logo-nobackground.png" width="220">
+    <br>
+    <br>
+    <p routerLink="/start">Home</p>
+    <p (click)="Klassenstuffen=!Klassenstuffen">Klassenstuffe</p>
+    <div  *ngIf="Klassenstuffen==true">
+
+        <p (click)="Klasse_9=!Klasse_9" >9 Klasse</p>
         <div *ngIf="Klasse_9==true">
-            <p Themen routerLink="/tutorial1">Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
-            <p Themen routerLink="/tutorial1">Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
-            <p Themen routerLink="/tutorial1">Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
-            <p Themen routerLink="/tutorial1">Lernbereich 4: <br>Datenschutz</p>
+            <p routerLink="/tutorial1" >Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
+            <p routerLink="/tutorial1" >Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
+            <p routerLink="/tutorial1" >Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
+            <p routerLink="/tutorial1" >Lernbereich 4: <br>Datenschutz</p>
         </div>
     </div>
-    <div Links active routerLink="/ueber_uns">Über uns</div>
+    <p active routerLink="/ueber_uns">Über uns</p>
 </div>

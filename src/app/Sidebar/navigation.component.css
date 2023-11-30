@@ -2,25 +2,22 @@
   [Sidebar] {
     width: 140px;
     background-color: var(--seccolor);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fantfamily);
     font-size: large;
     position: absolute;
     left: 84%;
-    top: 266px;
-    padding-left: 20px;
-    padding-bottom: 3vw;
-    padding-top: 1vw;
-    padding-right: 100%;
+    padding-bottom: 50vw;
+    padding-right: 15vw;
+    padding-left: 1vw;
     border-radius: 5px;
+    position: fixed;
+    color: black
   }
-[Links]{
-    color: black;
-    background-color: var(--Secondarycolor);
+[Sidebar] p{
+    background-color: var(--seccolor);
 }
 
-[Links]:hover {
+[Sidebar] p :hover {
     background-color: var(--hovercolor);
     border-radius: 10px;
-    
-
 }

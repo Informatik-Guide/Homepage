@@ -1,6 +1,4 @@
-*{
-    background-color: var(--Secondarycolor);
-}
+
 [Impressum] {
     color: black;
     padding: 20px;
@@ -10,4 +8,6 @@
     left: 25px;
     margin-left: 25px;
     border-radius: 7px;
+    max-width: 85%;
+    background-color: var(--Secondarycolor);
 }
