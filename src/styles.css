@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *
 {
-    background-color: var(--Premiercolor);
+    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 body
@@ -9,13 +9,12 @@ body
     padding: 0vw;
     margin: 0vw;
     overflow-x: hidden;
-}
-:root {
-    --Premiercolor: rgb(32, 29, 29);
-    --Secondarycolor: rgb(127, 0, 255);
+    background-color: var(--pricolor);
 }
 
-/* Um Variabelen zu verwenen: var() 
-Zu Beispiel: var(--Secondarycolor)
-
-bitte wenn möglich diese Variabene nehmen, da man dadurch einfach das Farbdesigne umstellen kann*/
+:root{
+    --pricolor: rgb(34, 34, 34);
+    --seccolor: rgb(246, 111, 246);
+    --shadowcolor: rgb(135, 135, 135);
+    --hovercolor: rgb(106, 106, 106);
+}
