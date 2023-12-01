@@ -11,7 +11,7 @@ body
     overflow-x: hidden;
     background-color: var(--pricolor);
 }
-
+/* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
 :root{
     --pricolor: rgb(34, 34, 34);
     --pritextcolor: rgb(250, 250, 250);
