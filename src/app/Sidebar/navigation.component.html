@@ -1,16 +1,32 @@
-<div Navigationszeile>
-    
-    <div Links active routerLink="/start">Home</div>
-    <p (click)="Klassenstuffen=!Klassenstuffen" Links>Klassenstuffe</p>
-    
+
+
+<div Sidebar>
+    <img style="float: left; margin: 0px 0px;" src="\assets\Logo-nobackground.png" width="250">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p Text routerLink="/start">Home</p>
+    <p Text (click)="Klassenstuffen=!Klassenstuffen">Klassenstuffe</p>
     <div *ngIf="Klassenstuffen==true">
-        <p (click)="Klasse_9=!Klasse_9" Links>9 Klasse</p>
+
+        <p Text (click)="Klasse_9=!Klasse_9" >9 Klasse</p>
+        <p Text (click)="Klasse_10=!Klasse_10" >10 Klasse</p>
         <div *ngIf="Klasse_9==true">
-            <p Links routerLink="/tutorial1">Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
-            <p Links routerLink="/tutorial1">Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
-            <p Links routerLink="/tutorial1">Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
-            <p Links routerLink="/tutorial1">Lernbereich 4: <br>Datenschutz</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>Datenschutz</p>
+        </div>
+        <div *ngIf="Klasse_10==true" >
+        <p Text routerLink="/tutorial1" >Lernbereich 1: <br>sdgadbcvbaergdfbcvbfdgbfhrhfvbcvbfdg</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>cccccccccccccccccccccccccccccccccccccccccccccccccccccccc</p>
         </div>
     </div>
-    <div Links active routerLink="/ueber_uns">Über uns</div>
+    <p Text active routerLink="/ueber_uns">Über uns</p>
+
 </div>

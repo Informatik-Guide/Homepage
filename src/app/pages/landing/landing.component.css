@@ -28,14 +28,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--sectextcolor);
 }
 
 [Inhalte] {   
   float: left;
-  width: 85%;
   text-align: center;
-  max-width: 80%;
   padding-bottom: 10vw;
   padding: 8px 16px;
 }
@@ -50,5 +48,4 @@
 [Hyperlinks] :hover { 
     background-color: var(--hovercolor);
     border-radius: 10px;
-
 }

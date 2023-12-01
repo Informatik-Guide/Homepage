@@ -1,26 +1,24 @@
-  [Navigationszeile] {
-    width: 140px;
+  
+  [Sidebar] {
     background-color: var(--seccolor);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    position: absolute;
     left: 84%;
-    top: 266px;
-    padding-left: 20px;
-    padding-bottom: 3vw;
-    padding-top: 1vw;
-    padding-right: 100%;
+    padding-bottom: 50vw;
+    padding-right: 15vw;
+    padding-left: 1vw;
     border-radius: 5px;
+    position: fixed;
   }
-[Links]{
-    color: black;
-    padding: 8px 16px;
-    background-color: transparent;
-}
 
-[Links]:hover {
-    background-color: var(--hovercolor);
-    border-radius: 10px;
-    
+[Text]{
+  border-radius: 10px;
+  font-size: large;
+  font-family: var(--fantfamily);
+  color: var(--sectextcolor);
+  margin: 20px 10px;
+  padding: 4px 4px;
+  overflow: visible;
+}
+[Text]:hover {
+  background-color: var(--hovercolor);
 
 }
