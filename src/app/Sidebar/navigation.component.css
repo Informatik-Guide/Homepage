@@ -1,23 +1,24 @@
   
   [Sidebar] {
-    width: 140px;
     background-color: var(--seccolor);
-    font-family: var(--fantfamily);
-    font-size: large;
-    position: absolute;
     left: 84%;
     padding-bottom: 50vw;
     padding-right: 15vw;
     padding-left: 1vw;
     border-radius: 5px;
     position: fixed;
-    color: black
   }
-[Sidebar] p{
-    background-color: var(--seccolor);
-}
 
-[Sidebar] p :hover {
-    background-color: var(--hovercolor);
-    border-radius: 10px;
+[Text]{
+  border-radius: 10px;
+  font-size: large;
+  font-family: var(--fantfamily);
+  color: var(--sectextcolor);
+  margin: 20px 10px;
+  padding: 4px 4px;
+  overflow: visible;
+}
+[Text]:hover {
+  background-color: var(--hovercolor);
+
 }
