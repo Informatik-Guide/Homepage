@@ -35,4 +35,7 @@
 }
 [Inhalte] {   
   text-align: center;
+  word-wrap: break-word;
+  max-width: 97%;
+  padding-left: 10px;
 }
