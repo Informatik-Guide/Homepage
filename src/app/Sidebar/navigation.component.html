@@ -1,6 +1,9 @@
 
-
-<div Sidebar>
+<div>
+<div *ngIf="Sidebar==false" style="height: 50vh; width: 95vw;">
+    <i class="arrow right"></i>
+</div>
+<div *ngIf="Sidebar==true" Sidebar>
     <img style="float: left;" src="\assets\Logo-nobackground.png" width="250">
     <br>
     <br>
@@ -32,4 +35,7 @@
 
     </div>
     <p Text active routerLink="/ueber_uns">Über uns</p>
+    <i class="arrow right" style="top: 50vh;left: 95vw;"></i>
+</div>
+
 </div>

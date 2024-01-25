@@ -13,4 +13,5 @@ export class NavigationComponent {
   Klasse_11: boolean = false
   Klasse_12: boolean = false
   Klasse_13: boolean = false
+  Sidebar: boolean = true
 }
