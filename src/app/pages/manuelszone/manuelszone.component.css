@@ -52,8 +52,8 @@
     -> centered 
   */
   @keyframes circle_spawn {
-    0% {color:rgb(32, 29, 29)}
-    50% {color:rgb(32, 29, 29)}
+    0% {color: var(--pricolor)}
+    50% {color:var(--pricolor)}
     100% {color:white}
   }
   [circle_spawn] {
@@ -114,9 +114,9 @@
   /*Table design*/
   
   @keyframes table_spawn {
-    0% {color:rgb(32, 29, 29)}
-    50% {color:rgb(32, 29, 29)}
-    100% {color:white}
+    0% {color:var(--pricolor)}
+    50% {color:var(--pricolor)}
+    100% {color:rgb(white)}
   }
   table {
     
@@ -144,15 +144,9 @@
     background-color: rgb(70, 70, 73);
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  [rightanswer] {
+    background-color: green;
+  }
   
   [standard] {
     position: absolute;
@@ -182,12 +176,12 @@
     padding-bottom: 10vw;
   }
   
-  [row]::after {
+  /* [row]::after {
     display: table;
     clear: both;
     content: "";
   }
-  
+   */
   
   
   [Links] {
