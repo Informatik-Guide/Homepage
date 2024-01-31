@@ -1,16 +1,16 @@
-    [Sidebar] {
-    background-color: rgb(34, 34, 34);
-    left: 84%;
-    padding-bottom: 100%;
-    padding-right: 100%;
-    padding-left: 1vw;
-    border-radius: 5px;
-    position: fixed;
-    border-color: aqua;
-    border: 5px solid var(--seccolor);
-    font-family: var(--fantfamily);
-    word-wrap: break-word;
-  }
+[Sidebar] {
+  background-color: rgb(34, 38, 38);
+  left: 84%;
+  padding-bottom: 100%;
+  padding-right: 100%;
+  padding-left: 1vw;
+  border-radius: 5px;
+  position: fixed;
+  border-color: aqua;
+  border: 5px solid var(--seccolor);
+  font-family: var(--fantfamily);
+  word-wrap: break-word;
+}
 [Text]{
   border-radius: 10px;
   font-size: large;
