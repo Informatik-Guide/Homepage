@@ -1,0 +1,152 @@
+[header] {
+    
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  [header] h1 {
+    font-size: 50px;
+  }
+
+
+  [bb]{
+    position: absolute;
+    background-color: rgb(70, 70, 73);
+    left: 50%;
+    transform: scale(height);
+  }
+  
+  /* Normal circle
+    -> no animation
+    -> centered
+  */
+  [circle] {
+    position: absolute;
+    width: 10vw;
+    line-height: 10vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+  [circle]:hover {
+    position: absolute;
+    width: 10vw;
+    line-height: 10vw;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(70, 70, 73);
+    border-color: white;
+  }
+  
+  
+  /* Spawn circle:
+    -> circle with spawn animation after 1 sec
+    -> centered 
+  */
+  @keyframes circle_spawn {
+    0% {color:var(--pricolor)}
+    50% {color:var(--pricolor)}
+    100% {color:white}
+  }
+  [circle_spawn] {
+    position: absolute;
+    width: 10vw;
+    line-height: 10vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    
+    animation-name: circle_spawn;
+    animation-duration: 2s;
+  }
+  [circle_spawn]:hover {
+    position: absolute;
+    width: 10vw;
+    line-height: 10vw;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(70, 70, 73);
+    border-color: white;
+  }
+
+  /* Goto Funktion:
+    -> input of the step  
+  */
+  [input] {
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    background-color: rgb(70, 70, 73);
+  }
+  
+  /* Line:
+    -> vertical line 
+    -> animation - line grows from the top in 1 sec
+    -> centered
+  */
+  @keyframes line {
+    from{height: 0vw;}
+    to{height: 10vw}
+  }
+  [line] {
+    position: absolute;
+    width: 2px;
+    height: 10vw;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, 2px);
+    animation-name: line;
+    animation-duration: 1s;
+  }
+  
+  
+  /*Table design*/
+  
+  @keyframes table_spawn {
+    0% {color:var(--pricolor)}
+    50% {color:var(--pricolor)}
+    100% {color:white}
+  }
+  table {
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid;
+    width: 50%;
+    color: white;
+    height: 20vw;
+    animation-name: table_spawn;
+    animation-duration: 2s;
+  }
+
+  
+  th, td{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  th{
+    font-size: 20px;
+  }
+  
+  td:hover {
+    background-color: rgb(70, 70, 73);
+  }
+
+  @keyframes img_spawn {
+    0% {color:var(--pricolor)}
+    50% {color:var(--pricolor)}
+    100% {color:white}
+  }
+  [Bild]{
+    animation-name: img_spawn;
+    animation-delay: 2s;
+  }
