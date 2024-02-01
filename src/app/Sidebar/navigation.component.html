@@ -1,16 +1,35 @@
-<div Navigationszeile>
-    
-    <div Links active routerLink="/start">Home</div>
-    <p (click)="Klassenstuffen=!Klassenstuffen" Links>Klassenstuffe</p>
-    
+
+
+<div Sidebar>
+    <img style="float: left;" src="\assets\Logo-nobackground.png" width="250">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p Text routerLink="/start">Home</p>
+    <p Text (click)="Klassenstuffen=!Klassenstuffen"><i *ngIf="Klassenstuffen==false"class="arrow right"></i><i *ngIf="Klassenstuffen==true"class="arrow down"></i> Klassenstuffe</p>
     <div *ngIf="Klassenstuffen==true">
-        <p (click)="Klasse_9=!Klasse_9" Links>9 Klasse</p>
+
+<!-- Preile werden so eingefügt <i *ngIf="Variable==false"class="arrow right"></i><i *ngIf="Variable==true"class="arrow down"></i> -->
+
+        <p Text (click)="Klasse_9=!Klasse_9"><i *ngIf="Klasse_9==false"class="arrow right"></i><i *ngIf="Klasse_9==true"class="arrow down"></i> 9 Klasse</p>
         <div *ngIf="Klasse_9==true">
-            <p Links routerLink="/tutorial1">Lernbereich 1: <br>Funktionen und Datenflüsse, Tabellenkal- kulationsprogramm</p>
-            <p Links routerLink="/tutorial1">Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
-            <p Links routerLink="/tutorial1">Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
-            <p Links routerLink="/tutorial1">Lernbereich 4: <br>Datenschutz</p>
+            <p Text routerLink="/manuelszone">Lernbereich 1: <br>Manuel sein erstes Tutorial/p>
+            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>Datenschutz</p>
         </div>
+
+        <p Text (click)="Klasse_10=!Klasse_10"><i *ngIf="Klasse_10==false"class="arrow right"></i><i *ngIf="Klasse_10==true"class="arrow down"></i> 10 Klasse</p>
+        <div *ngIf="Klasse_10==true" >
+        <p Text routerLink="/tutorial1" >Lernbereich 1: <br>sdgadbcvbaergdfbcvbfdgbfhrhfvbcvbfdg</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>cccccccccccccccccccccccccccccccccccccccccccccccccccccccc</p>
+        </div>
+
     </div>
-    <div Links active routerLink="/ueber_uns">Über uns</div>
+    <p Text active routerLink="/ueber_uns">Über uns</p>
 </div>

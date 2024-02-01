@@ -10,6 +10,7 @@ import { GraphenComponent } from './pages/graphen/graphen.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ManuelszoneComponent } from './pages/manuelszone/manuelszone.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ManuelszoneComponent } from './pages/manuelszone/manuelszone.component'
     UeberUnsComponent,
     GraphenComponent,
     ImpressumComponent,
-    ManuelszoneComponent
+    ManuelszoneComponent,
+    GraphenComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,6 @@
 [header] {
   padding: 30px;
   text-align: center;
-  padding-top: 20px;
 }
 
 [header] p {
@@ -19,36 +18,24 @@
   font-size: large;
   background-color:var(--seccolor);
   margin: 3px 6px 5px;
-  font-weight: 500;
+  font-weight: 600;
+  padding-left: 20px;
   
 }
 [Hyperlinks] a {
   float: left;
-  display: block;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--sectextcolor);
 }
-
-[Inhalte] {   
-  float: left;
-  width: 85%;
-  text-align: center;
-  max-width: 80%;
-  padding-bottom: 10vw;
-  padding: 8px 16px;
-}
-
-[row]::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
   
 [Hyperlinks] :hover { 
-    background-color: var(--hovercolor);
-    border-radius: 10px;
-
+  background-color: var(--hovercolor);
+  border-radius: 10px;
+}
+[Inhalte] {   
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 97%;
+  padding-left: 10px;
 }

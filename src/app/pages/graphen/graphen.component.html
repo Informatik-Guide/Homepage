@@ -1,1 +1,51 @@
-<p></p>
+
+<body style=" height:200vh; color: white; max-width: 85%;">
+    <div bb></div>
+    <div header>
+        <h1 header>Bit and Bite</h1>
+        <p style="position: absolute; left: 10vw; top: 15vw;">Das ist ein Test Turorial:</p>
+    </div>
+
+
+    <div  circle style="top: 30vw;" (click)="Start=true">Start</div>
+    <div *ngIf="Start==true"  circle_spawn style="top: 50vw;"(click)="Question1=true">Question 1</div>
+    <div *ngIf="Start==true" line style="top: 40vw;"></div>
+    <div *ngIf="Question1 == true" line style="top: 60vw;"  ></div>
+    <table *ngIf="Question1 == true" style="top: 70vw;">
+        <tr>
+            <th>Wählen sie eine Antwortmöglichkeit:</th>
+        </tr>
+        <tr>
+            <td (click)="Answer1=1">1. hhhhhhhhh</td>
+        </tr>
+        <tr>
+            <td (click)="Answer1=2">2. ggggggggg</td>
+        </tr>
+        <tr>
+            <td (click)="Answer1=3">3.uuuuuuuuuuuuuu</td>
+        </tr>
+    </table>
+    <div *ngIf="Answer1==Solution1" line style="top:90vw"></div>
+    <div *ngIf="Answer1==Solution1" circle_spawn style="top: 100vw;"(click)="steps[1]=true"> Richtige Antwort</div>
+    <div *ngIf="steps[1]==true"line style="top:110vw"></div>
+    <table *ngIf="steps[1]==true" style="top: 120vw"(click)="steps[2]=true">
+        <tr><th>Thema</th></tr>	
+        <tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+    </table>
+    <div *ngIf="steps[2]==true"line style="top:140vw"></div>
+    <table *ngIf="steps[2]==true" style="top: 150vw" (click)="steps[3]=true">
+        <tr><th>Thema2 </th></tr>	
+        <tr><td>Die Lucke (alemannisch für Lücke) ist ein 366 m ü. NHN kkttk hoher Passübergang zwischen Lörrach und Rümmingen in Baden-Württem­berg, der sowohl von einer Kreis- und diversen Nebenstraßen als auch der Autobahn verwendet wird. Der verkehrs­technisch wichtige Pass überwindet eine Erhebung, die sich zwischen den Ausläufern des Tüllinger Berges und dem zum Schwarzwald gehörenden Teil des Röttler Waldes bildet. Als einer von zwei Pässen verbindet die Lucke neben der Wittlinger Höhe das hügelige Markgräfler­land und das untere Kandertal mit dem Wiesental, welche von diesen beiden Höhenzügen getrennt sind und an ihren ineinander greifenden Ausläufern niedriger ausfallen. Aufgrund seiner strategisch günstigen Lage war der Pass immer wieder Ort von Truppen­bewegungen und auch kriegerischen Auseinander­setzungen. Sein Ausbau zu einer Fernverkehrs­verbindung erfolgte Anfang der 1830er Jahre. Am 21. Juli 2000 führte die 87. Tour de France vom Waidhof kommend durch die Lörracher Innenstadt hinauf zur Lucke (bei Renn­kilometer 187) und im weiteren Verlauf über Kandern und Bad Krozingen zum Etappenziel Freiburg. – Zum Artikel …</td></tr>
+    </table>
+    <div *ngIf="steps[3]==true"line style="top:170vw"></div>
+    <table *ngIf="steps[3]==true" style="top: 180vw" (click)="steps[4]=true">
+        <img Bild src="\assets\graph2.png" style="height: 18vw; ">
+    </table>
+    <div *ngIf="steps[4]==true"line style="top:200vw"></div>
+    <table *ngIf="steps[4]==true" style="top: 210vw" (click)="steps[5]=true">
+        <tr><th>Du willst noch mehr lernen?</th></tr>
+        <tr><a>https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></tr>	
+        <tr><a>https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/graphentheorie/#:~:text=Ein%20Graph%20in%20der%20Informatik,Beziehungen%20zwischen%20ihnen%20als%20Kanten.</a></tr>
+    </table>
+</body>
+
