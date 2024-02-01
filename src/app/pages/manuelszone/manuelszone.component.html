@@ -13,6 +13,11 @@
         <input input style="top: 100px; left: 1vw;" type="text" id="gotostep" name="gotostep" size="1">
     </form>
 
+    <div>
+        <div  circle style="top: 30vw;" (click)="Start=true">Start</div>
+        <div bb></div>
+    </div>
+
     <div  circle style="top: 30vw;" (click)="Start=true">Start</div>
     <div *ngIf="Start==true"  circle_spawn style="top: 50vw;"(click)="Question=true">Question 1</div>
     <div *ngIf="Start==true" line style="top: 40vw;"></div>

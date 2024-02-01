@@ -14,7 +14,8 @@
     to{height: 10vw}
   }
   [bb]{
-    position: absolute;
+    position: relative;
+    
     background-color: rgb(70, 70, 73);
     left: 50%;
     transform: translate(-50%);
