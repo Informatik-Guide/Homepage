@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *
 {
-    
+
    font-family: var(--fontfamliy)
 } 
 body
@@ -13,6 +13,11 @@ body
 }
 /* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
 :root{
+    --background-color: #314453;
+    --darker-background-color: #243848;
+    --accent-color: #41DCE1;
+    --text-color: #FFFFFF;
+    --navbar-height: 80px;
     --pricolor: rgb(34, 34, 34);
     --pritextcolor: rgb(250, 250, 250);
     --seccolor: rgb(246, 111, 246);
@@ -20,4 +25,31 @@ body
     --shadowcolor: rgb(135, 135, 135);
     --hovercolor: rgb(106, 106, 106);
     --fontfamliy: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+[container]{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes blackbox {
+    from {height: 100%; top: 0%; background-color: var(--pricolor);}
+    to {height: 0%; top: 100%; background-color: var(--pricolor);}
+}
+[blackbox]{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: blackbox 2s;
+}
+[pagecontainer]{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70vh;
+    padding-top: 30vh;
 }
