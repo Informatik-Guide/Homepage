@@ -15,3 +15,8 @@
     </nav>
 </body>
 
+--background-color: #314453;
+    --darker-background-color: #243848;
+    --accent-color: #41DCE1;
+    --text-color: #FFFFFF;
+    --navbar-height: 80px;

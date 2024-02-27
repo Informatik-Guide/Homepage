@@ -1,8 +1,8 @@
-You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 
- {
+*{
+    font-family:  'Courier New', monospace;
 
-   font-family: var(--fontfamliy)
 } 
 body
 {
@@ -12,19 +12,18 @@ body
     background-color: var(--pricolor);
 }
 /* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
+
+/* Auf dieser Seite kann man Farbcodes finden. Sehr praktisch!!! --> https://volkmarmeyd.de/infos/edv/farbtabelle.html */
+
 :root{
-    --background-color: #314453;
-    --darker-background-color: #243848;
-    --accent-color: #41DCE1;
-    --text-color: #FFFFFF;
-    --navbar-height: 80px;
-    --pricolor: rgb(34, 34, 34);
-    --pritextcolor: rgb(250, 250, 250);
-    --seccolor: rgb(246, 111, 246);
-    --sectextcolor: rgb(0 ,0 , 0);
+    --pricolor: aliceblue;
+    --pritextcolor: slategray;
+    --seccolor: slategray;
+    --sectextcolor: aliceblue;
+    --thirdcolor: #14181f;
     --shadowcolor: rgb(135, 135, 135);
     --hovercolor: rgb(106, 106, 106);
-    --fontfamliy: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fontfamliy:  "'Courier New', monospace";
 }
 [container]{
     position: relative;
