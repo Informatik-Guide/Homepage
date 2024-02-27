@@ -20,10 +20,8 @@ body
     --pritextcolor: slategray;
     --seccolor: slategray;
     --sectextcolor: aliceblue;
-    --thirdcolor: #14181f;
-    --shadowcolor: rgb(135, 135, 135);
-    --hovercolor: rgb(106, 106, 106);
-    --fontfamliy:  "'Courier New', monospace";
+    --thirdcolor: lightslategray;
+    --hovercolor: rgb(83, 95, 106);
 }
 [container]{
     position: relative;
