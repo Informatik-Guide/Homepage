@@ -1,0 +1,17 @@
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Learn</a>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</body>
+

@@ -1,62 +1,54 @@
-
-
-<!-- <div Sidebar>
-    <img style="float: left;" src="\assets\Logo-nobackground.png" width="250">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p Text routerLink="/start">Home</p>
-    <p Text (click)="Klassenstuffen=!Klassenstuffen"><i *ngIf="Klassenstuffen==false"class="arrow right"></i><i *ngIf="Klassenstuffen==true"class="arrow down"></i> Klassenstuffe</p>
-    <div *ngIf="Klassenstuffen==true"> -->
-
-<!-- Preile werden so eingefügt <i *ngIf="Variable==false"class="arrow right"></i><i *ngIf="Variable==true"class="arrow down"></i> -->
-<!-- 
-        <p Text (click)="Klasse_9=!Klasse_9"><i *ngIf="Klasse_9==false"class="arrow right"></i><i *ngIf="Klasse_9==true"class="arrow down"></i> 9 Klasse</p>
-        <div *ngIf="Klasse_9==true">
-            <p Text routerLink="/manuelszone">Lernbereich 1: <br>Manuel sein erstes Tutorial/p>
-            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>Grundlagen der Datenmodellierung und relationaler Datenbanksysteme</p>
-            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>Grundlagen der objektorientierten Modellierung und Programmierung</p>
-            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>Datenschutz</p>
-        </div>
-
-        <p Text (click)="Klasse_10=!Klasse_10"><i *ngIf="Klasse_10==false"class="arrow right"></i><i *ngIf="Klasse_10==true"class="arrow down"></i> 10 Klasse</p>
-        <div *ngIf="Klasse_10==true" >
-        <p Text routerLink="/tutorial1" >Lernbereich 1: <br>sdgadbcvbaergdfbcvbfdgbfhrhfvbcvbfdg</p>
-            <p Text routerLink="/tutorial1" >Lernbereich 2: <br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <p Text routerLink="/tutorial1" >Lernbereich 3: <br>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
-            <p Text routerLink="/tutorial1" >Lernbereich 4: <br>cccccccccccccccccccccccccccccccccccccccccccccccccccccccc</p>
-        </div>
-
-    </div>
-    <p Text active routerLink="/ueber_uns">Über uns</p>
-</div> -->
-<html>
-    <body>
-        <nav>
-            <a class="logo" href="#">mycompany</a>
-            <input type="checkbox" id="toggle_button">
-            <label for="toggle_button" class="toggle_button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </label>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">CodingNepal</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="expandable_li">
-                    <input type="checkbox" id="products_checkbox">
-                    <label for="products_checkbox">Products</label>
-                    <ul class="dropdown">
-                        <li><a href="#">Ebooks</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Apps</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
             </ul>
-        </nav>
-    </body>
-</html>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+</body>

@@ -1,6 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-*
-{
+You can add global styles to this file, and also import other style files */
+
+ {
 
    font-family: var(--fontfamliy)
 } 
@@ -8,7 +8,7 @@ body
 {
     padding: 0vw;
     margin: 0vw;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     background-color: var(--pricolor);
 }
 /* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
