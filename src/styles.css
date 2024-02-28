@@ -5,7 +5,9 @@
 
 *{
     font-family:  'Courier New', monospace;
-
+    text-align: center;
+    color: var(--pritextcolor);
+    
 } 
 body
 {
@@ -14,19 +16,27 @@ body
     overflow-x: hidden; 
     background-color: var(--pricolor);
 }
+[p]{
+    font-size: 30px;
+    font-weight: 500;
+    margin: auto;
+    width: auto;
+  }
+[flex-column-container]{
+    display: flex;
+    flex-direction: column;
+  }
 /* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
 
 /* Auf dieser Seite kann man Farbcodes finden. Sehr praktisch!!! --> https://volkmarmeyd.de/infos/edv/farbtabelle.html */
 
 :root{
     --pricolor: aliceblue;
-    --pritextcolor: slategray;
-    --seccolor: slategray;
+    --pritextcolor: rgb(76, 86, 97);
+    --seccolor: rgb(76, 86, 97);
     --sectextcolor: aliceblue;
-    --thirdcolor: #14181f;
-    --shadowcolor: rgb(135, 135, 135);
-    --hovercolor: rgb(106, 106, 106);
-    --fontfamliy:  "'Courier New', monospace";
+    --thirdcolor: lightslategray;
+    --hovercolor: rgb(96, 110, 123);
 }
 [container]{
     position: relative;

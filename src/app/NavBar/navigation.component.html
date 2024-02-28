@@ -9,14 +9,14 @@
       <div class="logo"><a href="#">PSeminar</a></div>
         <ul class="links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="\kurzgesagt">KurzGesagt</a></li>
           <li>
             <a href="#" class="desktop-link">Tutorials</a>
             <input type="checkbox" id="show-Tutorials">
             <label for="show-Tutorials">Tutorials</label>
             <ul>
-              <li><a href="#">Codierung</a></li>
-              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="\codierung">Codierung</a></li>
+              <li><a href="\if-bedingung">If-Bedingung</a></li>
               <li><a href="#">Drop Menu 3</a></li>
               <li><a href="#">Drop Menu 4</a></li>
             </ul>
@@ -26,8 +26,8 @@
             <input type="checkbox" id="show-Tests">
             <label for="show-Tests">Tests</label>
             <ul>
-              <li><a href="#">Drop Menu 1</a></li>
-              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="\codierungtest">Codierung</a></li>
+              <li><a href="\ifbedingungtest">If-Bedingung</a></li>
               <li><a href="#">Drop Menu 3</a></li>
               <li>
                 <a href="#" class="desktop-link">More Items</a>
@@ -41,28 +41,14 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Feedback</a></li>
-          
+          <li><a href="\feedback">Feedback</a></li>
         </ul>
-      </div>
-      
-      <div class="theme-switcher">
-      
-        <label class="swtich">
-          <input
-            type="checkbox"
-            [checked]="isLightTheme"
-            (change)="onThemeSwitchChange()"
-          />
-          <span class="slider round"></span>
-        </label>
       </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form action="#" class="search-box">
         <input type="text" placeholder="Type Something to Search..." required>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
-      
     </nav>
   </div>
 </body>
