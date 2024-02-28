@@ -1,0 +1,24 @@
+[flex-column-container]{
+    padding-right: 40vw;
+    padding-left: 40vw;
+    padding: 10vw;
+    gap: 2vw;
+}
+[i]{
+    border-radius: 50px;
+    height: 30px;
+    
+}
+[ib]{
+    border-radius: 50px;
+    height: 70px;
+    
+}
+[b]{
+    background-color: greenyellow;
+    border-color: greenyellow;
+    border-radius: 10px;
+    text-align: left;
+    height: 30px;
+    width: fit-content;
+}

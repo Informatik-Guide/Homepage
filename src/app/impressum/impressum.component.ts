@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./impressum.component.css']
 })
 export class ImpressumComponent {
-
+  
 }
