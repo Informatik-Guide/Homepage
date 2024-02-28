@@ -44,22 +44,22 @@
           <li><a href="\feedback">Feedback</a></li>
         </ul>
       </div>
-      <div class="theme-switcher">
       
-        <label class="swtich">
-          <input
-            type="checkbox"
-            [checked]="isLightTheme"
-            (change)="onThemeSwitchChange()"
-          />
-          <span class="slider round"></span>
-        </label>
-      </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form action="#" class="search-box">
         <input type="text" placeholder="Type Something to Search..." required>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
+      <div class="theme-switcher">
+        <label class="switch">
+            <input type="checkbox" id="theme-switcher-checkbox" 
+            [checked]="isLightTheme"
+            (change)="onThemeSwitchChange()"
+>
+            <span class="slider"></span>
+        </label>
+    </div>
     </nav>
+    
   </div>
 </body>

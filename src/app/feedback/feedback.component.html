@@ -1,11 +1,16 @@
-<div [formGroup]="form" action="javascript:void(0);" (submit)="send()">
-    <form flex-column-container action="https://formbold.com/s/FORM_ID" method="post">
-        <input i formControlName="from_name" type="text" placeholder="Full Name">
-        <input i formControlName="from_email" type="text" placeholder="Enter your Email">
-        <input i formControlName="subject" type="text" placeholder="Enter your Subject">
-        <input ib formControlName="message" type="text" placeholder="Enter your Message">
-        <button b type="submit">submit</button>
-    </form>
+<div style="height: 30px;"></div>
+<form [formGroup]="form" action="https://formbold.com/s/FORM_ID" method="post" class="custom-form">
+    <label for="from_name">Full Name:</label>
+    <input id="from_name" formControlName="from_name" type="text" placeholder="Enter your full name">
 
-</div>
+    <label for="from_email">Email:</label>
+    <input id="from_email" formControlName="from_email" type="email" placeholder="Enter your email">
 
+    <label for="subject">Subject:</label>
+    <input id="subject" formControlName="subject" type="text" placeholder="Enter your subject">
+
+    <label for="message">Message:</label>
+    <textarea id="message"  style="height: 100px;" formControlName="message" placeholder="Enter your message"></textarea>
+
+    <button type="submit" class="submit-button">Submit</button>
+</form>

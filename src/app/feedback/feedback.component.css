@@ -1,24 +1,36 @@
-[flex-column-container]{
-    padding-right: 40vw;
-    padding-left: 40vw;
-    padding: 10vw;
-    gap: 2vw;
-}
-[i]{
-    border-radius: 50px;
-    height: 30px;
-    
-}
-[ib]{
-    border-radius: 50px;
-    height: 70px;
-    
-}
-[b]{
-    background-color: greenyellow;
-    border-color: greenyellow;
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    text-align: left;
-    height: 30px;
-    width: fit-content;
+}
+
+.custom-form label {
+    font-weight: bold;
+}
+
+.custom-form input,
+.custom-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-form .submit-button {
+    background-color: greenyellow;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.custom-form .submit-button:hover {
+    background-color: #8dc63f;
 }
