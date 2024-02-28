@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  color: var(--sectextcolor);
   /* font-family: 'Poppins', sans-serif; */
 }
 .wrapper{
@@ -77,6 +78,7 @@ nav .content .links{
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  color: var(--sectextcolor);
 }
 .wrapper #show-search:checked ~ .search-box{
   opacity: 1;
