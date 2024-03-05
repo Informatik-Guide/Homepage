@@ -1,22 +1,19 @@
-/* Auf dieser Seite kann man Farbcodes finden. Sehr praktisch!!! --> https://volkmarmeyd.de/infos/edv/farbtabelle.html */
-
 [data-theme="light"] {
   --pricolor: aliceblue;
   --pritextcolor: slategray;
   --seccolor: slategray;
   --sectextcolor: aliceblue;
-  --thirdcolor: gainsboro;
+  --thirdcolor: #14181f;
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
 }
 
 [data-theme="dark"] {
-  --pricolor: #333333;
+  --pricolor: rgb(8, 14, 19);
   --pritextcolor: rgb(255, 255, 255);
-  --seccolor: #FFA500;
+  --seccolor: rgb(245, 17, 192);
   --sectextcolor: rgb(7, 26, 42);
-  --thirdcolor: #1a1a2e;
+  --thirdcolor: #14181f;
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
 }
-
