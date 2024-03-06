@@ -1,5 +1,5 @@
 <div style="height: 30px;"></div>
-<form [formGroup]="form" action="https://formbold.com/s/FORM_ID" method="post" class="custom-form">
+<form [formGroup]="form" action="https://formbold.com/s/FORM_ID" action="javascript:void(0);" (submit)="send()" method="post" class="custom-form">
     <label for="from_name">Full Name:</label>
     <input id="from_name" formControlName="from_name" type="text" placeholder="Enter your full name">
 
