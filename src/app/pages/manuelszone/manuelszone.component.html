@@ -1,0 +1,47 @@
+
+
+
+<!-- RESET BUTTON -->
+<!-- <div (click)="Start=false; Question = false" style="position: absolute; left: 1vw; top: 15px; padding: 10px; background-color: rgb(70, 70, 73);">RESET</div> -->
+<!-- goto step -->
+<!-- <p style="position:absolute; top: 60px; left: 1vw;">Insert Step:</p>
+<form>
+    <input input style="top: 100px; left: 1vw;" type="text" id="gotostep" name="gotostep" size="1">
+</form> -->
+<div pagecontainer style="color: aliceblue;">
+    <div container>
+        <div circle (click)="Start=true">Start</div>
+        <div blackbox></div>
+    </div> 
+    <div container *ngIf="Start==true">
+        <div line></div>
+        <div circle (click)="Question=true">Question</div>
+        <div blackbox></div>
+    </div> 
+    <div container *ngIf="Question == true">
+        <div line></div>
+        <table>
+            <tr>
+                <th>Wählen sie eine Antwortmöglichkeit:</th>
+            </tr>
+            <tr>
+                <td>1.falsch</td>
+            </tr>
+            <tr>
+                <td>2.falsch</td>
+            </tr>
+            <tr>
+                <td (click)="Antwort=true">3.richtig>
+            </tr>
+        </table>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="Antwort==true">
+        <div line></div>
+        <div circle>Good Job!</div>
+        <div blackbox></div>
+    </div>
+</div>
+
+    
+

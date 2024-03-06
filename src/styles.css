@@ -1,7 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "themes.scss";
+
+
+*{
+    font-family:  'Courier New', monospace;
+    text-align: center;
+    color: var(--pritextcolor);
+    
+} 
 body
 {
     padding: 0vw;
     margin: 0vw;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    background-color: var(--pricolor);
 }
+[p]{
+    font-size: 30px;
+    font-weight: 500;
+    margin: auto;
+    width: auto;
+  }
+[flex-column-container]{
+    display: flex;
+    flex-direction: column;
+  }
+/* Hier könnt ihr Variabeln definieren. Um diese zu verwenden einfach var(--Variable) benutzen */
+
+/* Auf dieser Seite kann man Farbcodes finden. Sehr praktisch!!! --> https://volkmarmeyd.de/infos/edv/farbtabelle.html */
+
+:root{
+    --pricolor: aliceblue;
+    --pritextcolor: rgb(76, 86, 97);
+    --seccolor: rgb(76, 86, 97);
+    --sectextcolor: aliceblue;
+    --thirdcolor: lightslategray;
+    --hovercolor: rgb(96, 110, 123);
+}
+[container]{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+ @keyframes blackbox {
+    from {height: 100%; top: 0%; background-color: var(--pricolor);}
+    to {height: 0%; top: 100%; background-color: var(--pricolor);}
+}
+[blackbox]{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: blackbox 2s;
+}
+[pagecontainer]{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70vh;
+    padding-top: 30vh;
+}
+
+/* Dark/whitmode butten */
+
+.theme-switcher {
+    position: relative;
+  }
+  
+  .theme-switcher .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .theme-switcher .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .theme-switcher .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--pricolor);
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .theme-switcher .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--seccolor);
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .theme-switcher input:checked + .slider {
+    background-color: var(--pricolor);
+  }
+  
+  .theme-switcher input:focus + .slider {
+    box-shadow: 0 0 1px purple;
+  }
+  
+  .theme-switcher input:checked + .slider:before {
+    transform: translateX(26px);
+  }

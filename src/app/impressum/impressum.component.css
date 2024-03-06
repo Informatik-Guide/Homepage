@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+    color: var(--sectextcolor);
+  }
+
+[p]{
+  font-size: 30px;
+  font-weight: 500;
+  margin: auto;
+  width: auto;
+}
+[flex-row-container]{
+  background-color: var(--seccolor);
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  }
