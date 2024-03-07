@@ -1,11 +1,19 @@
-/* 
-[Impressum] {
-    color: var(--sectextcolor);
-    padding: 20px;
+*{
     text-align: center;
-    margin-right: 25px;
-    margin-left: 25px;
-    max-width: 79%;
-    background-color: var(--seccolor);
-    border-radius: 30px;
-} */
+    color: var(--sectextcolor);
+  }
+
+[p]{
+  font-size: 30px;
+  font-weight: 500;
+  margin: auto;
+  width: auto;
+}
+[flex-row-container]{
+  background-color: var(--seccolor);
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  }
