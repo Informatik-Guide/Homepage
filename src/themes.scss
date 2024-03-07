@@ -3,19 +3,17 @@
   --pritextcolor: slategray;
   --seccolor: slategray;
   --sectextcolor: aliceblue;
-  --thirdcolor: #14181f;
+  --thirdcolor: gainsboro;
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
-
 }
 
 [data-theme="dark"] {
-  --pricolor: rgb(8, 14, 19);
+  --pricolor: #333333;
   --pritextcolor: rgb(255, 255, 255);
-  --seccolor: rgb(245, 17, 192);
+  --seccolor: #FFA500;
   --sectextcolor: rgb(7, 26, 42);
-  --thirdcolor: #14181f;
+  --thirdcolor: #1a1a2e;
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
-  
 }
