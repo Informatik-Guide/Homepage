@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "themes.scss";
+
+
 *{
     font-family:  'Courier New', monospace;
 
@@ -32,8 +35,8 @@ body
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-}
-@keyframes blackbox {
+} 
+ @keyframes blackbox {
     from {height: 100%; top: 0%; background-color: var(--pricolor);}
     to {height: 0%; top: 100%; background-color: var(--pricolor);}
 }
