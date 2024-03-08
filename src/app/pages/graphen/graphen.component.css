@@ -125,6 +125,7 @@
     height: 20vw;
     animation-name: table_spawn;
     animation-duration: 2s;
+    height: 20vw;
   }
 
   
@@ -150,3 +151,13 @@
     animation-name: img_spawn;
     animation-delay: 2s;
   }
+  @keyframes spawn {
+    0% {color:var(--pricolor)}
+    50% {color:var(--pricolor)}
+    100% {color:white}
+  }
+a {
+    animation: spawn;
+    animation-duration: 2s;
+    color: white;
+}
