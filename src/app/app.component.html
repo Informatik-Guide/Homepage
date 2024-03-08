@@ -1,7 +1,15 @@
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DO NOT EDIT !!!!!!!!!!!!!!!!!!!!!!!!-->
-<app-navigation></app-navigation>
-<router-outlet></router-outlet>
+<div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; height: auto; position: absolute; width: 100%;">
+    <div>
+        <app-navigation></app-navigation>
+        <div style="height: 70px;"></div>
+        <router-outlet style="color: var(--pricolor);"></router-outlet>
+    </div>
+
 <app-impressum></app-impressum>
+</div>
+
+
 
 <!-- ng build --output-path docs --base-href /git/ -->
 <!-- create 404.html from a copy of index.html -->

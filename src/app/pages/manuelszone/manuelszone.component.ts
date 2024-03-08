@@ -9,7 +9,6 @@ export class ManuelszoneComponent {
   Start: boolean = false;
   Question: boolean = false;
   steps: boolean[] = [];
-
-  Question1 = 0
+  Antwort: boolean = false;
 }
 
