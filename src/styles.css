@@ -37,6 +37,7 @@ body
     --sectextcolor: aliceblue;
     --thirdcolor: lightslategray;
     --hovercolor: rgb(96, 110, 123);
+    --hovertextcolor: rgb(255,255,255);
 }
 [container]{
     position: relative;
@@ -66,6 +67,56 @@ body
     padding-top: 30vh;
 }
 
+
+/* Normal circle */
+[circle] {
+  position: relative;
+  width: 10vw;
+  line-height: 10vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  align-self: center;
+}
+[circle]:hover {
+  position: relative;
+
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--hovercolor);
+
+}
+[line] {
+  position: relative;
+  width: 2px;
+  height: 10vw;
+  left: 50%;
+  background-color: var(--pritextcolor);
+  transform: translate(-50%, 2px);
+}
+/*Table design*/
+table {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border: 3px solid;
+  width: 50%;
+  color: var(--seccolor);
+  height: 20vw;
+  border-color: var(--pritextcolor);
+}
+th, td{
+  text-align: center;
+  padding: 10px;
+}
+th{
+  font-size: 20px;
+}
+td:hover {
+  background-color: var(--hovercolor);
+  color: var(--hovertextcolor);
+}
 /* Dark/whitmode butten */
 
 .theme-switcher {

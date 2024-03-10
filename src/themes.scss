@@ -5,7 +5,8 @@
   --sectextcolor: aliceblue;
   --thirdcolor: gainsboro;
   --shadowcolor: rgb(135, 135, 135);
-  --hovercolor: rgb(106, 106, 106);
+  --hovercolor: rgb(164, 164, 164);
+  --hovertextcolor: rgb(255,255,255);
 }
 
 [data-theme="dark"] {
@@ -16,4 +17,5 @@
   --thirdcolor: #1a1a2e;
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
+  --hovertextcolor: rgb(255,255,255);
 }
