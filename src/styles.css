@@ -87,6 +87,71 @@ body
   background-color: var(--hovercolor);
 
 }
+/* Main Container -  this controls the size of the circle */
+.circle_container
+{
+	width : 300px;
+	height : 300px;
+	margin : 0;
+	padding : 0;
+/*	border : 1px solid red; */
+}
+.circle_main:hover
+{
+	background-color: var(--hovercolor);
+}
+
+
+/* Circle Main draws the actual circle */
+.circle_main
+{
+	width : 100%;
+	height : 100%;
+	border-radius : 50%;
+	border : 2px solid var(--pritextcolor);	/* can alter thickness and colour of circle on this line */
+	margin : 0;
+	padding : 0;
+}
+
+/* Circle Text Container - constrains text area to within the circle */
+.circle_text_container
+{
+	/* area constraints */
+	width : 70%;
+	height : 70%;
+	max-width : 70%;
+	max-height : 70%;
+	margin : 0;
+	padding : 0;
+
+
+	/* some position nudging to center the text area */
+	position : relative;
+	left : 15%;
+	top : 15%;
+	
+	/* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+	transform-style : preserve-3d;
+	
+	/*border : 1px solid green;*/
+}
+
+/* Circle Text - the appearance of the text within the circle plus vertical centering */
+.circle_text
+{
+	/* change font/size/etc here */
+	text-align : center;
+	
+	/* vertical centering technique */
+	position : relative;
+	top : 50%;
+	transform : translateY(-50%);
+}
+.circle_main:hover .circle_text
+{
+	color: var(--hovertextcolor);
+}
+
 [line] {
   position: relative;
   width: 2px;
