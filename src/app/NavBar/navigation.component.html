@@ -47,22 +47,19 @@
       
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form class="search-box">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type Something to Search..." required>
+        <input type="text" id="myInput" (keyup)="filterItems($event)" placeholder="Type Something to Search..." required>
         <ul id="myUL">
           <!-- Your list items here -->
-
-        <li><a routerLink="/graphen">Graphen</a></li>
-        <li><a href="#">Agnes</a></li>
-        <li><a href="#">Billy</a></li>
-        <li><a href="#">Bob</a></li>
-        <li><a href="#">Calvin</a></li>
-        <li><a href="#">Christina</a></li>
-        <li><a href="#">Cindy</a></li>
+          <li><a routerLink="/graphen">Graphen</a></li>
+          <li><a href="#">Agnes</a></li>
+          <li><a href="#">Billy</a></li>
+          <li><a href="#">Bob</a></li>
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Christina</a></li>
+          <li><a href="#">Cindy</a></li>
         </ul>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
-
-
 
       <div class="theme-switcher">
         <label class="switch">
@@ -78,22 +75,3 @@
 </body>
 
 
-<script>
-  function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
-</script>
