@@ -6,7 +6,7 @@
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
-      <div class="logo"><a routerLink="#">PSeminar</a></div>
+      <div class="logo"><a routerLink="">PSeminar</a></div>
         <ul class="links">
           <li><a routerLink="">Home</a></li>
           <li><a  routerLink="/kurzgesagt">KurzGesagt</a></li>
@@ -17,8 +17,8 @@
             <ul>
               <li><a routerLink="/codierung">Codierung</a></li>
               <li><a routerLink="/if-bedingung">If-Bedingung</a></li>
-              <li><a routerLink="#">Drop Menu 3</a></li>
-              <li><a routerLink="#">Drop Menu 4</a></li>
+              <li><a routerLink="">Drop Menu 3</a></li>
+              <li><a routerLink="">Drop Menu 4</a></li>
             </ul>
           </li>
           <li>
@@ -28,15 +28,15 @@
             <ul>
               <li><a routerLink="/codierungtest">Codierung</a></li>
               <li><a routerLink="/ifbedingungtest">If-Bedingung</a></li>
-              <li><a routerLink="#">Drop Menu 3</a></li>
+              <li><a routerLink="/graphen">Graphen</a></li>
               <li>
-                <a routerLink="#" class="desktop-link">More Items</a>
+                <a routerLink="" class="desktop-link">More Items</a>
                 <input type="checkbox" id="show-items">
                 <label for="show-items">More Items</label>
                 <ul>
-                  <li><a routerLink="#">Sub Menu 1</a></li>
-                  <li><a routerLink="#">Sub Menu 2</a></li>
-                  <li><a routerLink="#">Sub Menu 3</a></li>
+                  <li><a routerLink="">Sub Menu 1</a></li>
+                  <li><a routerLink="">Sub Menu 2</a></li>
+                  <li><a routerLink="">Sub Menu 3</a></li>
                 </ul>
               </li>
             </ul>
@@ -46,10 +46,24 @@
       </div>
       
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="#" class="search-box">
-        <input type="text" placeholder="Type Something to Search..." required>
+      <form class="search-box">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type Something to Search..." required>
+        <ul id="myUL">
+          <!-- Your list items here -->
+
+        <li><a routerLink="/graphen">Graphen</a></li>
+        <li><a href="#">Agnes</a></li>
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+        </ul>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
+
+
+
       <div class="theme-switcher">
         <label class="switch">
             <input type="checkbox" id="theme-switcher-checkbox" 
@@ -62,3 +76,24 @@
     </nav>
   </div>
 </body>
+
+
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>

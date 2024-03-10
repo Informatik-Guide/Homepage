@@ -17,4 +17,5 @@ export class NavigationComponent {
       this.isLightTheme ? 'light' : 'dark'
     );
   }
+
 }
