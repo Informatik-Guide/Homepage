@@ -19,7 +19,7 @@
 }
 
 [flex-row-container1]{
-  background-color: gainsboro;
+  background-color: var(--thirdcolor);
   display: flex;
   flex-direction: row;
   padding: 8vw;

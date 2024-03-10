@@ -11,3 +11,4 @@ export class ManuelszoneComponent {
   steps: boolean[] = [];
   Antwort: boolean = false;
 }
+
