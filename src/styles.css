@@ -70,14 +70,19 @@ body
 
 /* Normal circle */
 [circle] {
-  position: relative;
-  width: 10vw;
-  line-height: 10vw;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border-style: solid;
-  border-width: 2px;
+  background-color: var(--pricolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--seccolor);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
   text-align: center;
-  align-self: center;
+  border-color: var(--seccolor);
 }
 [circle]:hover {
   position: relative;

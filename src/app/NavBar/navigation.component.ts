@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -17,18 +17,34 @@ export class NavigationComponent {
       this.isLightTheme ? 'light' : 'dark'
     );
   }
+
+  constructor(private router: Router) {}
+
   filterItems(event: Event) {
-    const searchTerm = (event.target as HTMLInputElement)?.value || ''; // Type assertion and null check
-    const filter = searchTerm.toUpperCase();
+    const searchTerm = (event.target as HTMLInputElement)?.value.trim().toUpperCase();
     const listItems = document.querySelectorAll("#myUL li");
 
     listItems.forEach((item: Element) => {
       const text = item.textContent?.toUpperCase() || '';
-      if (text.indexOf(filter) > -1) {
-        item.classList.remove('hidden'); // Show the item
+      if (text.includes(searchTerm) || searchTerm === '') {
+        (item as HTMLElement).style.display = 'block';
+        const link = item.querySelector('a'); // Find the anchor element
+        if (link) {
+          link.addEventListener('click', () => {
+            this.router.navigateByUrl(link.getAttribute('routerLink') || ''); // Navigate to the link's routerLink
+            // Hide the search list
+            const searchBox = document.querySelector('.search-box') as HTMLElement;
+            searchBox.style.display = 'none';
+          });
+        }
       } else {
-        item.classList.add('hidden'); // Hide the item
+        (item as HTMLElement).style.display = 'none';
       }
     });
   }
+
+toggleSearchMenu() {
+  const searchBox = document.querySelector('.search-box') as HTMLElement;
+  searchBox.style.display = searchBox.style.display === 'block' ? 'none' : 'block';
+}
 }
