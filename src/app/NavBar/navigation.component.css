@@ -173,6 +173,7 @@ nav .content .links{
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){
+
   .wrapper nav{
     max-width: 100%;
     padding: 0 20px;
@@ -202,6 +203,7 @@ nav .content .links{
     display: block;
     position: fixed;
     background: var(--thirdcolor);
+    color: var(--thirdtxtcolor);
     height: 100%;
     width: 100%;
     top: 70px;
@@ -225,6 +227,7 @@ nav .content .links{
     display: block;
     padding: 8px 18px;
     cursor: pointer;
+    color: var(--thirdtxtcolor);
   }
   .content .links li a.desktop-link{
     display: none;
@@ -239,6 +242,7 @@ nav .content .links{
     background: none;
     max-height: 0px;
     overflow: hidden;
+    color: var(--thirdtxtcolor);
   }
   .content .links #show-features:checked ~ ul,
   .content .links #show-services:checked ~ ul,
@@ -273,4 +277,3 @@ nav .content .links{
     padding-right: 30px;
   }
 }
-
