@@ -10,6 +10,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { CodierungtestComponent } from './Tests/codierungtest/codierungtest.component';
 import { KurzgesagtComponent } from './kurzgesagt/kurzgesagt.component';
 import { IfBedingungtestComponent } from './Tests/if-bedingungtest/if-bedingungtest.component';
+import { GraphenComponent } from './pages/graphen/graphen.component';
 
 const routes: Routes = [
   {path: 'start', component: LandingComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   // Tests
   {path: 'codierungtest', component: CodierungtestComponent},
   {path: 'ifbedingungtest', component: IfBedingungtestComponent},
+  {path: 'graphen', component: GraphenComponent},
   // NotFound
   {path: '**', component: PageNotFoundComponent}
 ];

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./codierung.component.css']
 })
 export class CodierungComponent {
-
+  steps: boolean[] = [];
 }
