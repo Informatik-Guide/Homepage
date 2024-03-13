@@ -179,7 +179,7 @@ nav .content .links{
 }
 
 /* Responsive code start */
-@media screen and (max-width: 1250px){
+/* @media screen and (max-width: 1250px){
 
   .wrapper nav{
     max-width: 100%;
@@ -197,9 +197,9 @@ nav .content .links{
   .wrapper .search-box input{
     padding: 0 100px 0 15px;
   }
-}
+} */
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1400px){
   .wrapper .menu-icon{
     display: block;
   }
