@@ -162,7 +162,14 @@ nav .content .links{
 .content .links ul ul{
   position: absolute;
   top: 0;
-  right: calc(-100% + 8px);
+  right: calc(-100% + 13px);
+  max-width: 150px;
+}
+.content .links ul ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% - 51px);
+  max-width: 200px;
 }
 .content .links ul li{
   position: relative;
