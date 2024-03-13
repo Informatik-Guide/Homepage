@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent {
   public isLightTheme = true;
+  public Search = false;
 
   onThemeSwitchChange() {
     this.isLightTheme = !this.isLightTheme;
@@ -17,7 +18,7 @@ export class NavigationComponent {
       this.isLightTheme ? 'light' : 'dark'
     );
   }
-
+  
   constructor(private router: Router) {}
 
   filterItems(event: Event) {
@@ -43,8 +44,5 @@ export class NavigationComponent {
     });
   }
 
-toggleSearchMenu() {
-  const searchBox = document.querySelector('.search-box') as HTMLElement;
-  searchBox.style.display = searchBox.style.display === 'block' ? 'none' : 'block';
-}
+
 }
