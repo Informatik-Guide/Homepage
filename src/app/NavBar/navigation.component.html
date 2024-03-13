@@ -47,18 +47,24 @@
       
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form class="search-box">
-        <input type="text" id="myInput" (keyup)="filterItems($event)" placeholder="Type Something to Search..." required>
+        <input type="text" id="myInput" (input)="filterItems($event)" placeholder="Type Something to Search..." required>
         <ul id="myUL">
           <!-- Your list items here -->
-          <li><a routerLink="/graphen">Graphen</a></li>
-          <li><a href="#">Agnes</a></li>
-          <li><a href="#">Billy</a></li>
+          <li><a href="\graphen">Graphen</a></li>
+          <li><a href="\manuelszone">Manuelszone</a></li>
           <li><a href="#">Bob</a></li>
           <li><a href="#">Calvin</a></li>
           <li><a href="#">Christina</a></li>
           <li><a href="#">Cindy</a></li>
+          <li><a href="#">Bob</a></li>
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Bob</a></li>
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Christina</a></li>
+          <li><a href="#">Cindy</a></li>
+          
         </ul>
-        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        <button type="menu" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
 
       <div class="theme-switcher">

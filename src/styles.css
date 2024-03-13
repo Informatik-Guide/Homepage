@@ -128,6 +128,7 @@ body
 }
 
 
+<<<<<<< HEAD
 /*
    _____   ______   _   _   ______   _____               _      
   / ____| |  ____| | \ | | |  ____| |  __ \      /\     | |     
@@ -136,6 +137,26 @@ body
  | |__| | | |____  | |\  | | |____  | | \ \   / ____ \  | |____ 
   \_____| |______| |_| \_| |______| |_|  \_\ /_/    \_\ |______|
 */
+=======
+/* Normal circle */
+[circle] {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  background-color: var(--pricolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--seccolor);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-color: var(--seccolor);
+}
+[circle]:hover {
+  position: relative;
+>>>>>>> e7316478c96a1d53094bdbc5480fd482b899c4eb
 
 
 /* 
