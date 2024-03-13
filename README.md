@@ -9,9 +9,9 @@ Zum updaten der Seite wollen wir auf die Dokumentation von Github verweisen.
 
 ## Credits
 Dieses Projekt wurde im Rahmen des P-Seminars Informatik des Intall Gymnasiums Raubling im Jahr 2023/2024 erstellt.
-Teilnehmer dieses P-Seminars waren:
-    [Felix Seeland](https://github.com/Alzfahrer) - Projektleitung, Angular Entwicklung
-    [Manuel Kotschenreuter](https://github.com/MonkeyManuel) - Projektleitung, Angular Entwicklung
-    [Samuel Leber](https://github.com/Servant-of-Scietia) - Projektleitung
-    [Jonas Degenhardt](https://github.com/Grymann) - Angular Entwicklung
+Teilnehmer dieses P-Seminars waren:\
+    [Felix Seeland](https://github.com/Alzfahrer) - Projektleitung, Angular Entwicklung\
+    [Manuel Kotschenreuter](https://github.com/MonkeyManuel) - Projektleitung, Angular Entwicklung\
+    [Samuel Leber](https://github.com/Servant-of-Scietia) - Projektleitung\
+    [Jonas Degenhardt](https://github.com/Grymann) - Angular Entwicklung\
     [Christoph John](https://github.com/christophjohn) - Tutorial Design
