@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ManuelszoneComponent } from './pages/manuelszone/manuelszone.component';
-import { CodierungComponent } from './Tutorials/codierung/codierung.component';
+import { CodierungComponent } from './Tutorials/11.Klasse/2Codierung/Codierung/codierung.component';
 import { IfBedingungComponent } from './Tutorials/if-bedingung/if-bedingung.component';
 import { KontaktComponent } from './Kontakt/kontakt.component';
 import { FeedbackComponent } from './feedback/feedback.component';
