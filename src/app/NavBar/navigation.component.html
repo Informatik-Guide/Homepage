@@ -12,21 +12,35 @@
           <li><a routerLink="/kurzgesagt">KurzGesagt</a></li>
           <li>
             <a routerLink="" class="desktop-link">Tutorials</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features">Tutorials</label>
+            <input type="checkbox" id="show-tutorials">
+            <label for="show-tutorials">Tutorials</label>
             <ul>
+            
+
+              <!-- 9 Klasse -->
               <li><a routerLink="">9.Klasse</a></li>
+
+
+
+
+              <!-- 10 Klasse -->
               <li><a routerLink="">10.Klasse</a></li>
-              <li>
+                
+            
+              
+              
+              
+              <!-- 11 Klasse -->
+               <li> 
                 <a routerLink="" class="desktop-link">11.Klasse</a>
-                <input type="checkbox" id="show-items">
-                <label for="show-items">11.Klasse</label>
-                <ul style="right: calc(-100% - 20px); max-width: 150px;">
+                <input type="checkbox" id="show-11klasse">
+                <label for="show-11klasse">11.Klasse</label>
+                <ul>
                   <li>
                     <a routerLink="" class="desktop-link">1.Graphen</a>
-                    <input type="checkbox" id="show-items">
-                    <label for="show-items">Codierung</label>
-                    <ul style="right: calc(-100% - 51px);">
+                    <input type="checkbox" id="show-graphen">
+                    <label for="show-graphen">1.Graphen</label>
+                    <ul>
                       <li><a routerLink="/graphen">1.1 Graphen</a></li>
                       <li><a routerLink="">1.2 Die Adjazenzmatrix</a></li>
                       <li><a routerLink="">1.3 Breitensuche</a></li>
@@ -36,9 +50,9 @@
                   </li>
                   <li>
                     <a routerLink="" class="desktop-link">2.Codierung</a>
-                    <input type="checkbox" id="show-items">
-                    <label for="show-items">Codierung</label>
-                    <ul style="right: calc(-100% - 51px);">
+                    <input type="checkbox" id="show-codierung">
+                    <label for="show-codierung">2.Codierung</label> 
+                    <ul>
                       <li><a routerLink="/codierung">2.1 Codierung</a></li>
                       <li><a routerLink="">2.2 Zahlensysteme</a></li>
                       <li><a routerLink="">2.3 Symmetrische Verschlüsselung</a></li>
@@ -48,9 +62,9 @@
                   </li>
                   <li>
                     <a routerLink="" class="desktop-link">3.Kommuni- kation</a>
-                    <input type="checkbox" id="show-items">
-                    <label for="show-items">Codierung</label>
-                    <ul style="right: calc(-100% - 51px);">
+                    <input type="checkbox" id="show-kummunikation">
+                     <label for="show-kummunikation">Kommunikation</label> 
+                    <ul>
                       <li><a routerLink="">3.1 Das Internet</a></li>
                       <li><a routerLink="">3.2 Das Schichtenmodell</a></li>
                       <li><a routerLink="">3.3 Adressierung</a></li>
@@ -60,9 +74,9 @@
                   </li>
                   <li>
                     <a routerLink="" class="desktop-link">4.KI</a>
-                    <input type="checkbox" id="show-items">
-                    <label for="show-items">Codierung</label>
-                    <ul style="right: calc(-100% - 51px); top: -250px;">
+                    <input type="checkbox" id="show-ki">
+                    <label for="show-ki">Codierung</label>
+                    <ul style="top: -250px;">
                       <li><a routerLink="">4.1 Künstliche Inteligenz</a></li>
                       <li><a routerLink="">4.2 Ansätze</a></li>
                       <li><a routerLink="">4.3 Alternative 1</a></li>
@@ -71,15 +85,15 @@
                       <li><a routerLink="">4.6 Das neuronale Netz</a></li>
                       <li><a routerLink="">4.7 KI im Einsatz</a></li> 
                     </ul>
-                  </li>
+                  </li> 
                 </ul>
-              </li>
+              </li> 
             </ul>
           </li>
           <li>
             <a routerLink="" class="desktop-link">Test</a>
-            <input type="checkbox" id="show-services">
-            <label for="show-services">Test</label>
+            <input type="checkbox" id="show-test">
+            <label for="show-test">Test</label>
             <ul>
               <li><a routerLink="/codierungtest">Codierung</a></li>
               <li><a routerLink="/ifbedingungtest">If-Bedingung</a></li>
@@ -97,6 +111,8 @@
             </ul>
           </li>
           <li><a routerLink="/feedback">Feedback</a></li>
+          <!-- Damit im small Modus das Feedback nicht ganz unten ist -->
+          <li><a style="background-color: transparent;height: 30px;"></a></li>
         </ul>
       </div>
       
