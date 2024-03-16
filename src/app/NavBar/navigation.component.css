@@ -151,7 +151,6 @@ nav .content .links{
 }
 
 .content .links ul ul ul{
-  background-color: blue;
   right: calc(-100% - 51px);
 }
 .content .links li:hover > ul{
@@ -169,16 +168,14 @@ nav .content .links{
 .content .links ul ul{
   position: absolute;
   top: 0;
-  right: calc(-100% + 13px);
-  max-width: 150px;
-  background-color: black;
-  right: calc(-100% - 20px);
+  right: calc(-100% - 120px);
+  width: 250px;
 }
 .content .links ul ul ul{
   position: absolute;
   top: 0;
-  right: calc(-100% - 51px);
-  max-width: 200px;
+  right: calc(-100% - 1px);
+  width: 250px;
 }
 .content .links ul li{
   position: relative;
@@ -292,18 +289,25 @@ nav .content .links{
 
 
 
-
-
+ 
   .content .links #show-features:checked ~ ul,
   .content .links #show-services:checked ~ ul,
   .content .links #show-items:checked ~ ul,
   .content .links #show-tutorials:checked ~ ul,
+  .content .links #show-10klasse:checked ~ ul,
+  .content .links #show-9klasse:checked ~ ul,
   .content .links #show-11klasse:checked ~ ul,
   .content .links #show-graphen:checked ~ ul,
   .content .links #show-codierung:checked ~ ul,
   .content .links #show-kummunikation:checked ~ ul,
   .content .links #show-ki:checked ~ ul,
-  .content .links #show-test:checked ~ ul
+  .content .links #show-test:checked ~ ul,
+  .content .links #show-tabellenkalkulationsprogramm:checked ~ ul,
+  .content .links #show-datenbanksysteme:checked ~ ul,
+  .content .links #show-objektorientiertenmodellierungundprogrammierung:checked ~ ul,
+  .content .links #show-objektorientiertenmodellierungundprogrammierung2:checked ~ ul,
+  .content .links #show-datenbanksysteme2:checked ~ ul
+
   {
     max-height: 100vh;
   }
