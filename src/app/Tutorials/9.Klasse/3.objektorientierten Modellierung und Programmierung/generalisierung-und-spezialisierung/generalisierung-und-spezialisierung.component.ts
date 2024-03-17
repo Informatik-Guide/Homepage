@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./generalisierung-und-spezialisierung.component.css']
 })
 export class GeneralisierungUndSpezialisierungComponent {
-
+  steps: boolean[] = [];
 }

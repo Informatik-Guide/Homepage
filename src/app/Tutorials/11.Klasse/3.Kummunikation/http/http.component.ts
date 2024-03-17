@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./http.component.css']
 })
 export class HTTPComponent {
-
+  steps: boolean[] = [];
 }

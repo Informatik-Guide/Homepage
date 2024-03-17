@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./relationales-modell10.component.css']
 })
 export class RelationalesModell10Component {
-
+  steps: boolean[] = [];
 }

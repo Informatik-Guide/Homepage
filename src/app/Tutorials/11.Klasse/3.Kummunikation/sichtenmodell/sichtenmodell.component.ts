@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sichtenmodell.component.css']
 })
 export class SichtenmodellComponent {
-
+  steps: boolean[] = [];
 }

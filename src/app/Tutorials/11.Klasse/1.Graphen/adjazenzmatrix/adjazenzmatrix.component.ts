@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./adjazenzmatrix.component.css']
 })
 export class AdjazenzmatrixComponent {
-
+  steps: boolean[] = [];
 }

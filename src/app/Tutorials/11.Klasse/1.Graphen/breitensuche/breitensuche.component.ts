@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./breitensuche.component.css']
 })
 export class BreitensucheComponent {
-
+  steps: boolean[] = [];
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./referenzen.component.css']
 })
 export class ReferenzenComponent {
-
+  steps: boolean[] = [];
 }

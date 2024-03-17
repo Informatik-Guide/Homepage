@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./zahlensysteme.component.css']
 })
 export class ZahlensystemeComponent {
-
+  steps: boolean[] = [];
 }

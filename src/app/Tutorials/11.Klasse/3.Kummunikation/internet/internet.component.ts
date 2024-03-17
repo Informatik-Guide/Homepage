@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./internet.component.css']
 })
 export class InternetComponent {
-
+  steps: boolean[] = [];
 }

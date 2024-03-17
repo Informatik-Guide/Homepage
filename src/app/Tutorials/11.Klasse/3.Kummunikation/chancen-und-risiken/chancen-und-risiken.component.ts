@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./chancen-und-risiken.component.css']
 })
 export class ChancenUndRisikenComponent {
-
+  steps: boolean[] = [];
 }

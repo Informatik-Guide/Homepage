@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./asymmetrische-verschluesselung.component.css']
 })
 export class AsymmetrischeVerschluesselungComponent {
-
+  steps: boolean[] = [];
 }

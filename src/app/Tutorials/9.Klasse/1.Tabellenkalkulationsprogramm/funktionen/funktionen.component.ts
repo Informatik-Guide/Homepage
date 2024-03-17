@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./funktionen.component.css']
 })
 export class FunktionenComponent {
-
+  steps: boolean[] = [];
 }

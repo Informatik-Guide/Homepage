@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./datenmodell.component.css']
 })
 export class DatenmodellComponent {
-
+  steps: boolean[] = [];
 }

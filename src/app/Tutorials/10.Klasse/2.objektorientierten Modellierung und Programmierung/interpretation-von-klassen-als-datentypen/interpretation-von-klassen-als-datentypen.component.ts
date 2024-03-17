@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./interpretation-von-klassen-als-datentypen.component.css']
 })
 export class InterpretationVonKlassenAlsDatentypenComponent {
-
+  steps: boolean[] = [];
 }

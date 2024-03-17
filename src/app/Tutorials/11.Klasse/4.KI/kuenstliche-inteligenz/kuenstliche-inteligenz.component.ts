@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./kuenstliche-inteligenz.component.css']
 })
 export class KuenstlicheInteligenzComponent {
-
+  steps: boolean[] = [];
 }

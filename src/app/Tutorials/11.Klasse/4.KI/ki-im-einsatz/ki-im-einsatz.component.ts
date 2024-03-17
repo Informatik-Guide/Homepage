@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ki-im-einsatz.component.css']
 })
 export class KiImEinsatzComponent {
-
+  steps: boolean[] = [];
 }

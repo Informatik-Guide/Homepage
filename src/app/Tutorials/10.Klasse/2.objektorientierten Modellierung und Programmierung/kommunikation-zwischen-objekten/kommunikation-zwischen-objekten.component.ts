@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./kommunikation-zwischen-objekten.component.css']
 })
 export class KommunikationZwischenObjektenComponent {
-
+  steps: boolean[] = [];
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./if-bedingungtest.component.css']
 })
 export class IfBedingungtestComponent {
-
+  steps: boolean[] = [];
 }

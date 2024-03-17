@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./signaturen.component.css']
 })
 export class SignaturenComponent {
-
+  steps: boolean[] = [];
 }

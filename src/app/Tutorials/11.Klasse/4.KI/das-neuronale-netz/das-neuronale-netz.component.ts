@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./das-neuronale-netz.component.css']
 })
 export class DasNeuronaleNetzComponent {
-
+  steps: boolean[] = [];
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./objektorientierte-konzepte.component.css']
 })
 export class ObjektorientierteKonzepteComponent {
-
+  steps: boolean[] = [];
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./symmetrische-verschluesselung.component.css']
 })
 export class SymmetrischeVerschluesselungComponent {
-
+  steps: boolean[] = [];
 }

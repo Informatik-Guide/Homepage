@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./objektorientiertes-datenmodell.component.css']
 })
 export class ObjektorientiertesDatenmodellComponent {
-
+  steps: boolean[] = [];
 }

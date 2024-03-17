@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./relationales-datenbanksystem.component.css']
 })
 export class RelationalesDatenbanksystemComponent {
-
+  steps: boolean[] = [];
 }

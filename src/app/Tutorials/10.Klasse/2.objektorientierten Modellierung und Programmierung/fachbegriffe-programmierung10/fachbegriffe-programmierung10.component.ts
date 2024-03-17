@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./fachbegriffe-programmierung10.component.css']
 })
 export class FachbegriffeProgrammierung10Component {
-
+  steps: boolean[] = [];
 }

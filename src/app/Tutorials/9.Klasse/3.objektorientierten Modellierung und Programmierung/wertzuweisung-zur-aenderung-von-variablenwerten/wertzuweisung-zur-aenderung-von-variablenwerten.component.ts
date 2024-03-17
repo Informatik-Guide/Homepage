@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./wertzuweisung-zur-aenderung-von-variablenwerten.component.css']
 })
 export class WertzuweisungZurAenderungVonVariablenwertenComponent {
-
+  steps: boolean[] = [];
 }

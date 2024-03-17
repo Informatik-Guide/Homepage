@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./abfragesprache-am-beispiel-von-sql10.component.css']
 })
 export class AbfragespracheAmBeispielVonSql10Component {
-
+  steps: boolean[] = [];
 }

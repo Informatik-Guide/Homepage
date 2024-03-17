@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./polymorphismus-und-ueberschreiben-von-methoden.component.css']
 })
 export class PolymorphismusUndUeberschreibenVonMethodenComponent {
-
+  steps: boolean[] = [];
 }

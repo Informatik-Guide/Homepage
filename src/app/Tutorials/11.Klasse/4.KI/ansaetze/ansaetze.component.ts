@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ansaetze.component.css']
 })
 export class AnsaetzeComponent {
-
+  steps: boolean[] = [];
 }

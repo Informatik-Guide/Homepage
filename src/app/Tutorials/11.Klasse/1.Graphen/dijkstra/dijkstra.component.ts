@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dijkstra.component.css']
 })
 export class DijkstraComponent {
-
+  steps: boolean[] = [];
 }

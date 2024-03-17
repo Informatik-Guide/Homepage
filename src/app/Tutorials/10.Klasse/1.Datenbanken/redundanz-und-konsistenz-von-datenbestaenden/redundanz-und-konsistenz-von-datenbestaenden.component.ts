@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./redundanz-und-konsistenz-von-datenbestaenden.component.css']
 })
 export class RedundanzUndKonsistenzVonDatenbestaendenComponent {
-
+  steps: boolean[] = [];
 }
