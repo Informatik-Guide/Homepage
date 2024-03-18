@@ -8,6 +8,7 @@
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(206, 214, 220);
   --hovertextcolor: rgb(92, 104, 116);
+  --saturation: 60%;
 }
 
 [data-theme="dark"] {
@@ -20,4 +21,5 @@
   --shadowcolor: rgb(135, 135, 135);
   --hovercolor: rgb(106, 106, 106);
   --hovertextcolor: rgb(255,255,255);
+  --saturation: 100%;
 }
