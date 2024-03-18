@@ -1,27 +1,17 @@
 # PSeminar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+Dieses Projekt wurde mit [Angular](https://github.com/angular/angular-cli) erstellt.
+Zum localen Hosten der Website oder anderen funktionalitäten wollen wir auf die Angular Documentation verweisen.
 
-## Development server
+## Github Pages 
+Aktuell hosten wir das Projekt auf Github pages unter diesem [Link](https://pseminar-informatik.github.io/git/).
+Zum updaten der Seite wollen wir auf die Dokumentation von Github verweisen.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Credits
+Dieses Projekt wurde im Rahmen des P-Seminars Informatik des Intall Gymnasiums Raubling im Jahr 2023/2024 erstellt.
+Teilnehmer dieses P-Seminars waren:\
+    [Felix Seeland](https://github.com/Alzfahrer) - Projektleitung, Angular Entwicklung\
+    [Manuel Kotschenreuter](https://github.com/MonkeyManuel) - Projektleitung, Angular Entwicklung\
+    [Samuel Leber](https://github.com/Servant-of-Scietia) - Projektleitung\
+    [Jonas Degenhardt](https://github.com/Grymann) - Angular Entwicklung\
+    [Christoph John](https://github.com/christophjohn) - Tutorial Design

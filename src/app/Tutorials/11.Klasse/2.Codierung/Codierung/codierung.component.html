@@ -1,0 +1,21 @@
+<div pagecontainer style="color: aliceblue;">
+    <div container>
+          <div class="circle cs" (click)="steps[1]=true">
+            Small Text
+          </div>
+    </div>
+    <div container *ngIf="steps[1]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+            Here is some text in circle hserfh rhsaerh erghaerhaehrb  eragerg
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[2]==true">
+        <div class="line"></div>
+        <div class="circle cl">
+            Here is some text in circle that is very large which is a big problem at this time
+        </div>
+        <div blackbox></div>
+    </div>
+</div>

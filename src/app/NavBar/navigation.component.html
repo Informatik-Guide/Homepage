@@ -8,58 +8,269 @@
       <div class="content">
       <div class="logo"><a href="#">PSeminar</a></div>
         <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="\kurzgesagt">KurzGesagt</a></li>
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="/kurzgesagt">KurzGesagt</a></li>
           <li>
-            <a href="#" class="desktop-link">Tutorials</a>
-            <input type="checkbox" id="show-Tutorials">
-            <label for="show-Tutorials">Tutorials</label>
+            <a routerLink="" class="desktop-link">Tutorials</a>
+            <input type="checkbox" id="show-tutorials">
+            <label for="show-tutorials">Tutorials</label>
             <ul>
-              <li><a href="\codierung">Codierung</a></li>
-              <li><a href="\if-bedingung">If-Bedingung</a></li>
-              <li><a href="#">Drop Menu 3</a></li>
-              <li><a href="#">Drop Menu 4</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="desktop-link">Tests</a>
-            <input type="checkbox" id="show-Tests">
-            <label for="show-Tests">Tests</label>
-            <ul>
-              <li><a href="\codierungtest">Codierung</a></li>
-              <li><a href="\ifbedingungtest">If-Bedingung</a></li>
-              <li><a href="#">Drop Menu 3</a></li>
-              <li>
-                <a href="#" class="desktop-link">More Items</a>
-                <input type="checkbox" id="show-items">
-                <label for="show-items">More Items</label>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
+            
+
+              <!-- 9 Klasse -->
+              <li><a routerLink="" class="desktop-link">9.Klasse</a>
+                <input type="checkbox" id="show-9klasse">
+                <label for="show-9klasse">9.Klasse</label>
+              <ul>
+                <li>
+                  <a routerLink="" class="desktop-link">Tabellenkal- kulationsprogramm</a>
+                  <input type="checkbox" id="show-tabellenkalkulationsprogramm">
+                  <label for="show-tabellenkalkulationsprogramm">1.Tabellenkalkulationsprogramm</label>
+                  <ul>
+                    <li><a routerLink="/Tabellenkalkulationsprogramm">1.1 Tabellenkalkulationsprogramm</a></li>
+                    <li><a routerLink="/Datenflussdiagramm">1.2 Datenflussdiagramm</a></li>
+                    <li><a routerLink="/Funktionen">1.3 Funktionen</a></li>
+                    <li><a routerLink="/Fachbegriffe-Tabellenkalkulationsprogramm">1.4 Fachbegriffe</a></li>
+                    <!-- Formel, Zellbezug (relativ, absolut), Funktion, Datenflussdiagramm, Verteiler  -->
+                  </ul>
+                </li>
+                <li>
+                  <a routerLink="" class="desktop-link">2.Datenbanksysteme</a>
+                  <input type="checkbox" id="show-datenbanksysteme">
+                  <label for="show-datenbanksysteme">2.Datenbanksysteme</label>
+                  <ul>
+                    <li><a routerLink="/objektorientiertes Datenmodell">2.1 objektorientiertes Datenmodell</a></li>
+                    <li><a routerLink="/relationales Modell">2.2 relationales Modell</a></li>
+                    <li><a routerLink="/Abfrage">2.3 Abfrage</a></li>
+                    <li><a routerLink="/Abfragesprache am Beispiel von SQL">2.4 Abfragesprache am Beispiel von SQL</a></li>
+                    <li><a routerLink="/Fachbegriffe-Datenbanksysteme">2.5 Fachbegriffe</a></li>
+                    <!--(relationales) Datenbanksystem, (relationale) Datenbank, Datenbankmanagementsystem, Tabellenschema, Datentyp, Datensatz, Abfrage, Primärschlüssel, Ergebnistabelle  -->
+                  </ul>
+                </li>
+                <li>
+                  <a routerLink="" class="desktop-link">3.objektorientierten Modellierung und Programmierung</a>
+                  <input type="checkbox" id="show-objektorientiertenmodellierungundprogrammierung">
+                  <label for="show-objektorientiertenmodellierungundprogrammierung">3.objektorientierten Modellierung und Programmierung</label>
+                  <ul>
+                    <li><a routerLink="/objektorientierte Konzepte">3.1 objektorientierte Konzepte</a></li>
+                    <li><a routerLink="/Wertzuweisung zur Änderung von Variablenwerten">3.2 Wertzuweisung zur Änderung von Variablenwerten</a></li>
+                    <li><a routerLink="/Methoden">3.3 Methoden</a></li>
+                    <li><a routerLink="/Algorithmen">3.4 Algorithmen</a></li>
+                    <li><a routerLink="/Datentypen">3.5 Datentypen</a></li>
+                    <li><a routerLink="/Generalisierung und Spezialisierung">3.6 Generalisierung und Spezialisierung</a></li>
+                    <li><a routerLink="/Fachbegriffe-Programmierung">3.7 Fachbegriffe</a></li>
+                    <!-- Parameter, Übergabewert, Rückgabewert, lokale Variable, Wertzuweisung, Konstruktor, Methodenkopf, Methodenrumpf, Vererbung, Generalisierung, Spezialisierung, Oberklasse, Unterklasse -->
+                  </ul>
+                </li>
+
+
+              </ul>
               </li>
+
+
+
+
+              <!-- 10 Klasse -->
+              <li><a routerLink="" class="desktop-link">10.Klasse</a>
+                <input type="checkbox" id="show-10klasse">
+                <label for="show-10klasse">10.Klasse</label>
+              <ul>
+                <li>
+                  <a class="desktop-link">1.Datenbanksysteme</a>
+                  <input type="checkbox" id="show-datenbanksysteme2">
+                  <label for="show-datenbanksysteme2">1.Datenbanksysteme</label>
+                  <ul>
+                    <li><a routerLink="/objektorientiertes Datenmodell">1.1 objektorientiertes Datenmodell</a></li>
+                    <li><a routerLink="/relationales Modell">1.2 relationales Modell</a></li>
+                    <li><a routerLink="/relationales Datenbanksystem">1.3 relationales Datenbanksystem</a></li>
+                    <li><a routerLink="/Redundanz und Konsistenz von Datenbeständen">1.4 Redundanz und Konsistenz von Datenbeständen </a></li>
+                    <li><a routerLink="/Abfragesprache am Beispiel von SQL 10">1.5 Abfragesprache am Beispiel von SQL </a></li>
+                    <li><a routerLink="/Fachbegriffe-Datenbanksysteme10">1.6 Fachbegriffe </a></li>
+                    <!-- Datenbankschema, Primär- und Fremdschlüssel, Kardinalität, Redundanz, Konsistenz, Anomalie -->
+                  </ul>
+                </li>
+                <li>
+                  <a routerLink="" class="desktop-link">2.Objektorientierte Modellierung und Programmierung</a>
+                  <input type="checkbox" id="show-objektorientiertenmodellierungundprogrammierung2">
+                  <label for="show-objektorientiertenmodellierungundprogrammierung2">2.Objektorientierte Modellierung und Programmierung</label>
+                  <ul>
+                    <li><a routerLink="/eindimensional Datenstruktur">2.1 eindimensional Datenstruktur (Array)</a></li>
+                    <li><a routerLink="/Interpretation von Klassen als Datentypen">2.2 Interpretation von Klassen als Datentypen</a></li>
+                    <li><a routerLink="/Klassenbeziehungen/Referenzen">2.3 Klassenbeziehungen/Referenzen</a></li>
+                    <li><a routerLink="/Kommunikation zwischen Objekten">2.4 Kommunikation zwischen Objekten</a></li>
+                    <li><a routerLink="/Polymorphismus und Überschreiben von Methoden">2.5 Polymorphismus und Überschreiben von Methoden</a></li>
+                    <li><a routerLink="/Fachbegriffe-Programmierung10">2.6 Fachbegriffe</a></li>
+                    <!-- Referenz, Kardinalität, Array/Feld, Index, Datenkapselung, Polymorphismus -->
+                  </ul>
+                </li>
+                
+
+              </ul>
+              </li>
+                
+            
+               
+              
+              
+              <!-- 11 Klasse -->
+               <li> 
+                <a routerLink="" class="desktop-link">11.Klasse</a>
+                <input type="checkbox" id="show-11klasse">
+                <label for="show-11klasse">11.Klasse</label>
+                <ul>
+                  <li>
+                    <a routerLink="" class="desktop-link">1.Graphen</a>
+                    <input type="checkbox" id="show-graphen">
+                    <label for="show-graphen">1.Graphen</label>
+                    <ul>
+                      <li><a routerLink="/graphen">1.1 Graphen</a></li>
+                      <li><a routerLink="/adjazenzmatrix">1.2 Die Adjazenzmatrix</a></li>
+                      <li><a routerLink="/breitensuche">1.3 Breitensuche</a></li>
+                      <!-- <li><a routerLink="">1.4 Anwendungen der Breitensuche</a></li> -->
+                      <li><a routerLink="/dijkstra">1.5 Der Dijkstra- Algorithmus</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a routerLink="" class="desktop-link">2.Codierung</a>
+                    <input type="checkbox" id="show-codierung">
+                    <label for="show-codierung">2.Codierung</label> 
+                    <ul>
+                      <li><a routerLink="/codierung">2.1 Codierung</a></li>
+                      <li><a routerLink="/zahlensysteme">2.2 Zahlensysteme</a></li>
+                      <li><a routerLink="/symmetrischeVerschluesselung">2.3 Symmetrische Verschlüsselung</a></li>
+                      <li><a routerLink="/asymmetrischeverschluesselung">2.4 Asymmetrische Verschlüsselung</a></li>
+                      <li><a routerLink="/signaturen">2.5 Signaturen/ Zertifikate</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a routerLink="" class="desktop-link">3.Kommunikation</a>
+                    <input type="checkbox" id="show-kummunikation">
+                     <label for="show-kummunikation">3.Kommunikation</label> 
+                    <ul>
+                      <li><a routerLink="/internet">3.1 Das Internet</a></li>
+                      <li><a routerLink="/sichtenmodell">3.2 Das Schichtenmodell</a></li>
+                      <li><a routerLink="/adressriung">3.3 Adressierung</a></li>
+                      <li><a routerLink="/http">3.4 HTTP</a></li>
+                      <li><a routerLink="/chancenundrisiken">3.5 Chancen und Risiken</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a routerLink="" class="desktop-link">4.KI</a>
+                    <input type="checkbox" id="show-ki">
+                    <label for="show-ki">4.KI</label>
+                    <ul style="top: -250px;">
+                      <li><a routerLink="/kuenstlicheinteligenz">4.1 Künstliche Inteligenz</a></li>
+                      <li><a routerLink="/ansaetze">4.2 Ansätze</a></li>
+                      <li><a routerLink="/alternative1">4.3 Alternative 1</a></li>
+                      <li><a routerLink="/alternative2">4.4 Alternative 2</a></li>
+                      <li><a routerLink="/daskuenstlicheneuron">4.5 Das künstliche Neuron</a></li>
+                      <li><a routerLink="/dasneuronaleNetz">4.6 Das neuronale Netz</a></li>
+                      <li><a routerLink="/kiimeinsatz">4.7 KI im Einsatz</a></li> 
+                    </ul>
+                  </li> 
+                </ul>
+              </li> 
             </ul>
           </li>
-          <li><a href="\feedback">Feedback</a></li>
+          <li>
+            <a routerLink="" class="desktop-link">Test</a>
+            <input type="checkbox" id="show-test">
+            <label for="show-test">Test</label>
+            <ul>
+              <li><a routerLink="/codierungtest">Codierung</a></li>
+              <li><a routerLink="/ifbedingungtest">If-Bedingung</a></li>
+              <li><a routerLink="/graphen">Graphen</a></li>
+              
+            </ul>
+          </li>
+          <li><a routerLink="/feedback">Feedback</a></li>
+          <!-- Damit im small Modus das Feedback nicht ganz unten ist -->
+          <li><a style="background-color: transparent;height: 30px;"></a></li>
         </ul>
       </div>
       
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="#" class="search-box">
-        <input type="text" placeholder="Type Something to Search..." required>
-        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      <form class="search-box" style=" max-height: 900px;">
+        <input type="text" id="myInput" (input)="filterItems($event)" placeholder="Type Something to Search..." required>
+        <ul id="myUL">
+          <!-- Your list items here -->
+          <li><a href="\graphen">Graphen test</a></li>
+          <li><a href="\manuelszone">Manuelszone test</a></li>
+          <!-- 9.Klasse -->
+          <!-- 1.Tabellenkalkulationsprogramm -->
+          <li><a href="\Tabellenkalkulationsprogramm">Tabellenkalkulationsprogramm</a></li>
+          <li><a href="\Datenflussdiagramm">Datenflussdiagramm</a></li>
+          <li><a href="\Funktionen">Funktionen-Tabellenkalkulationsprogramm</a></li>
+          <li><a href="\Fachbegriffe-Tabellenkalkulationsprogramm">Fachbegriffe Tabellenkalkulationsprogramm (9.Klasse)</a></li>
+          <!-- 2.Datenbanksysteme -->
+          <li><a href="\objektorientiertes Datenmodell">Objektorientiertes Datenmodell (9.Klasse)</a></li>
+          <li><a href="\relationales Modell">Relationales Modell(9.Klasse)</a></li>
+          <li><a href="\Abfrage">Abfrage Datenbanksysteme</a></li>
+          <li><a href="\Abfragesprache am Beispiel von SQL">Abfragesprache am Beispiel von SQL (9.Klasse)</a></li>
+          <li><a href="\Fachbegriffe-Datenbanksysteme">Fachbegriffe Datenbanksysteme (9.Klasse)</a></li>
+          <!-- 3.objektorientierten Modellierung und Programmierung -->
+          <li><a href="\objektorientierte Konzepte">Objektorientierte Konzepte</a></li>
+          <li><a href="\Wertzuweisung zur Änderung von Variablenwerten">Wertzuweisung zur Änderung von Variablenwerten</a></li>
+          <li><a href="\Methoden">Methoden in der Programmierung</a></li>
+          <li><a href="\Algorithmen">Algorithmen</a></li>
+          <li><a href="\Datentypen">Datentypen</a></li>
+          <li><a href="\Generalisierung und Spezialisierung">Generalisierung und Spezialisierung</a></li>
+          <li><a href="\Fachbegriffe-Programmierung">Fachbegriffe-Programmierung (9.Klasse)</a></li>
+
+          <!-- 10.Klasse -->
+          <!-- 1.Datenbanken -->
+          <li><a href="\objektorientiertes Datenmodell">Objektorientiertes Datenmodell</a></li>
+          <li><a href="\relationales Modell">Relationales Modell</a></li>
+          <li><a href="\relationales Datenbanksystem">Relationales Datenbanksystem</a></li>
+          <li><a href="\Redundanz und Konsistenz von Datenbeständen">Redundanz und Konsistenz von Datenbeständen</a></li>
+          <li><a href="\Abfragesprache am Beispiel von SQL 10">Abfragesprache am Beispiel von SQL (10.Klasse)</a></li>
+          <li><a href="Fachbegriffe-Datenbanksysteme10">Fachbegriffe Datenbanksysteme (10.Klasse)</a></li>
+          <!-- 2.Objektorientierte Modellierung und Programmierung -->
+          <li><a href="\eindimensional Datenstruktur">eindimensional Datenstruktur (Array)</a></li>
+          <li><a href="\Interpretation von Klassen als Datentypen">Interpretation von Klassen als Datentypen</a></li>
+          <li><a href="\Klassenbeziehungen/Referenzen">Klassenbeziehungen/Referenzen</a></li>
+          <li><a href="\Kommunikation zwischen Objekten">Kommunikation zwischen Objekten</a></li>
+          <li><a href="\Polymorphismus und Überschreiben von Methoden">Polymorphismus und Überschreiben von Methoden</a></li>
+          <li><a href="\Fachbegriffe-Programmierung10">Fachbegriffe Programmierung (10.Klasse)</a></li>
+          <!-- 11.Klasse -->
+          <!-- 1.Graphen -->
+          <li><a href="\graphen">Graphen</a></li>
+          <li><a href="\adjazenzmatrix">Adjazenzmatrix</a></li>
+          <li><a href="\breitensuche">Breitensuche</a></li>
+          <li><a href="\dijkstra">Dijkstra</a></li>
+          <!-- 2.Codierung -->
+          <li><a href="\codierung">Codierung</a></li>
+          <li><a href="\Zahlensysteme">Zahlensysteme</a></li>
+          <li><a href="\symmetrischeVerschluesselung">Symmetrische Verschlüsselung</a></li>
+          <li><a href="\asymmetrischeverschluesselung">Asymmetrische Verschlüsselung</a></li>
+          <li><a href="\signaturen">Signaturen</a></li>
+          <!-- 3.Kommunikation -->
+          <li><a href="\internet">Internet</a></li>
+          <li><a href="\sichtenmodell">Sichtenmodell</a></li>
+          <li><a href="\adressriung">Adressriung</a></li>
+          <li><a href="\http">HTTP</a></li>
+          <li><a href="\chancenundrisiken">Chancenundrisiken</a></li>
+          <!-- 4.KI -->
+          <li><a href="\kuenstlicheinteligenz">Künstliche Inteligenz</a></li>
+          <li><a href="\ansaetze">Ansaetze</a></li>
+          <li><a href="\alternative1">Alternative1</a></li>
+          <li><a href="\alternative2">Alternative2</a></li>
+          <li><a href="\daskuenstlicheneuron">Das künstliche Neuron</a></li>
+          <li><a href="\dasneuronaleNetz">Das neuronale Netz</a></li>
+          <li><a href="\kiimeinsatz">KI im Einsatz</a></li>
+          
+        </ul>
+        <button class="go-icon"><i class="fa fa-times-circle"></i></button>
       </form>
+
       <div class="theme-switcher">
         <label class="switch">
             <input type="checkbox" id="theme-switcher-checkbox" 
             [checked]="isLightTheme"
-            (change)="onThemeSwitchChange()"
->
+            (change)="onThemeSwitchChange()">
             <span class="slider"></span>
         </label>
     </div>
     </nav>
-    
   </div>
 </body>

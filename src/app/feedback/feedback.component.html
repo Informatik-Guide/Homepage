@@ -1,16 +1,16 @@
 <div style="height: 30px;"></div>
 <form [formGroup]="form" action="https://formbold.com/s/FORM_ID" action="javascript:void(0);" (submit)="send()" method="post" class="custom-form">
     <label for="from_name">Full Name:</label>
-    <input id="from_name" formControlName="from_name" type="text" placeholder="Enter your full name">
+    <input id="from_name" formControlName="from_name" type="text" placeholder="Enter your full name" required>
 
     <label for="from_email">Email:</label>
-    <input id="from_email" formControlName="from_email" type="email" placeholder="Enter your email">
+    <input id="from_email" formControlName="from_email" type="email" placeholder="Enter your email" required="email">
 
     <label for="subject">Subject:</label>
-    <input id="subject" formControlName="subject" type="text" placeholder="Enter your subject">
+    <input id="subject" formControlName="subject" type="text" placeholder="Enter your subject" required>
 
     <label for="message">Message:</label>
     <textarea id="message"  style="height: 100px;" formControlName="message" placeholder="Enter your message"></textarea>
 
     <button type="submit" class="submit-button">Submit</button>
-</form>
+</form> 
