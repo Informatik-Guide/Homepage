@@ -98,8 +98,8 @@
                     <li><a routerLink="/Interpretation von Klassen als Datentypen">2.2 Interpretation von Klassen als Datentypen</a></li>
                     <li><a routerLink="/Klassenbeziehungen/Referenzen">2.3 Klassenbeziehungen/Referenzen</a></li>
                     <li><a routerLink="/Kommunikation zwischen Objekten">2.4 Kommunikation zwischen Objekten</a></li>
-                    <li><a routerLink="Polymorphismus und Überschreiben von Methoden">2.5 Polymorphismus und Überschreiben von Methoden</a></li>
-                    <li><a routerLink="Fachbegriffe-Programmierung10">2.6 Fachbegriffe</a></li>
+                    <li><a routerLink="/Polymorphismus und Überschreiben von Methoden">2.5 Polymorphismus und Überschreiben von Methoden</a></li>
+                    <li><a routerLink="/Fachbegriffe-Programmierung10">2.6 Fachbegriffe</a></li>
                     <!-- Referenz, Kardinalität, Array/Feld, Index, Datenkapselung, Polymorphismus -->
                   </ul>
                 </li>
@@ -170,8 +170,6 @@
                   </li> 
                 </ul>
               </li> 
-
-
             </ul>
           </li>
           <li>
@@ -182,16 +180,7 @@
               <li><a routerLink="/codierungtest">Codierung</a></li>
               <li><a routerLink="/ifbedingungtest">If-Bedingung</a></li>
               <li><a routerLink="/graphen">Graphen</a></li>
-              <li>
-                <a routerLink="" class="desktop-link">More Items</a>
-                <input type="checkbox" id="show-items">
-                <label for="show-items">More Items</label>
-                <ul>
-                  <li><a routerLink="">Sub Menu 1</a></li>
-                  <li><a routerLink="">Sub Menu 2</a></li>
-                  <li><a routerLink="">Sub Menu 3</a></li>
-                </ul>
-              </li>
+              
             </ul>
           </li>
           <li><a routerLink="/feedback">Feedback</a></li>
@@ -201,12 +190,12 @@
       </div>
       
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form class="search-box">
+      <form class="search-box" style=" max-height: 900px;">
         <input type="text" id="myInput" (input)="filterItems($event)" placeholder="Type Something to Search..." required>
         <ul id="myUL">
           <!-- Your list items here -->
-          <li><a href="\graphen">Graphen</a></li>
-          <li><a href="\manuelszone">Manuelszone</a></li>
+          <li><a href="\graphen">Graphen test</a></li>
+          <li><a href="\manuelszone">Manuelszone test</a></li>
           <!-- 9.Klasse -->
           <!-- 1.Tabellenkalkulationsprogramm -->
           <li><a href="\Tabellenkalkulationsprogramm">Tabellenkalkulationsprogramm</a></li>
@@ -214,13 +203,13 @@
           <li><a href="\Funktionen">Funktionen-Tabellenkalkulationsprogramm</a></li>
           <li><a href="\Fachbegriffe-Tabellenkalkulationsprogramm">Fachbegriffe Tabellenkalkulationsprogramm (9.Klasse)</a></li>
           <!-- 2.Datenbanksysteme -->
-          <li><a href="\objektorientiertes Datenmodell">objektorientiertes Datenmodell (9.Klasse)</a></li>
-          <li><a href="\relationales Modell">relationales Modell(9.Klasse)</a></li>
+          <li><a href="\objektorientiertes Datenmodell">Objektorientiertes Datenmodell (9.Klasse)</a></li>
+          <li><a href="\relationales Modell">Relationales Modell(9.Klasse)</a></li>
           <li><a href="\Abfrage">Abfrage Datenbanksysteme</a></li>
           <li><a href="\Abfragesprache am Beispiel von SQL">Abfragesprache am Beispiel von SQL (9.Klasse)</a></li>
           <li><a href="\Fachbegriffe-Datenbanksysteme">Fachbegriffe Datenbanksysteme (9.Klasse)</a></li>
-          <!-- objektorientierten Modellierung und Programmierung -->
-          <li><a href="\objektorientierte Konzepte">objektorientierte Konzepte</a></li>
+          <!-- 3.objektorientierten Modellierung und Programmierung -->
+          <li><a href="\objektorientierte Konzepte">Objektorientierte Konzepte</a></li>
           <li><a href="\Wertzuweisung zur Änderung von Variablenwerten">Wertzuweisung zur Änderung von Variablenwerten</a></li>
           <li><a href="\Methoden">Methoden in der Programmierung</a></li>
           <li><a href="\Algorithmen">Algorithmen</a></li>
@@ -230,9 +219,9 @@
 
           <!-- 10.Klasse -->
           <!-- 1.Datenbanken -->
-          <li><a href="\objektorientiertes Datenmodell">objektorientiertes Datenmodell</a></li>
-          <li><a href="\relationales Modell">relationales Modell</a></li>
-          <li><a href="\relationales Datenbanksystem">relationales Datenbanksystem</a></li>
+          <li><a href="\objektorientiertes Datenmodell">Objektorientiertes Datenmodell</a></li>
+          <li><a href="\relationales Modell">Relationales Modell</a></li>
+          <li><a href="\relationales Datenbanksystem">Relationales Datenbanksystem</a></li>
           <li><a href="\Redundanz und Konsistenz von Datenbeständen">Redundanz und Konsistenz von Datenbeständen</a></li>
           <li><a href="\Abfragesprache am Beispiel von SQL 10">Abfragesprache am Beispiel von SQL (10.Klasse)</a></li>
           <li><a href="Fachbegriffe-Datenbanksysteme10">Fachbegriffe Datenbanksysteme (10.Klasse)</a></li>
@@ -244,14 +233,14 @@
           <li><a href="\Polymorphismus und Überschreiben von Methoden">Polymorphismus und Überschreiben von Methoden</a></li>
           <li><a href="\Fachbegriffe-Programmierung10">Fachbegriffe Programmierung (10.Klasse)</a></li>
           <!-- 11.Klasse -->
-          <!-- Graphen -->
-          <li><a href="\graphen">graphen</a></li>
+          <!-- 1.Graphen -->
+          <li><a href="\graphen">Graphen</a></li>
           <li><a href="\adjazenzmatrix">Adjazenzmatrix</a></li>
           <li><a href="\breitensuche">Breitensuche</a></li>
           <li><a href="\dijkstra">Dijkstra</a></li>
           <!-- 2.Codierung -->
           <li><a href="\codierung">Codierung</a></li>
-          <li><a href="\Zahlensysteme">zahlensysteme</a></li>
+          <li><a href="\Zahlensysteme">Zahlensysteme</a></li>
           <li><a href="\symmetrischeVerschluesselung">Symmetrische Verschlüsselung</a></li>
           <li><a href="\asymmetrischeverschluesselung">Asymmetrische Verschlüsselung</a></li>
           <li><a href="\signaturen">Signaturen</a></li>
