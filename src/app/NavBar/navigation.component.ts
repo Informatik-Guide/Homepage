@@ -24,13 +24,12 @@ export class NavigationComponent {
   filterItems(event: Event) {
     const searchTerm = (event.target as HTMLInputElement)?.value.trim().toUpperCase();
     const listItems = document.querySelectorAll("#myUL li");
-    var i = 0;
     listItems.forEach((item: Element) => {
       const text = item.textContent?.toUpperCase() || '';
       if (text.includes(searchTerm) || searchTerm === '') {
         (item as HTMLElement).style.display = 'block';
         const link = item.querySelector('a'); // Find the anchor element
-        if (link && i<5) {
+        if (link) {
           link.addEventListener('click', () => {
             this.router.navigateByUrl(link.getAttribute('routerLink') || ''); // Navigate to the link's routerLink
             // Hide the search list
@@ -41,7 +40,6 @@ export class NavigationComponent {
       } else {
         (item as HTMLElement).style.display = 'none';
       }
-      i++;
     });
   }
 

@@ -1,8 +1,83 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+
+
+
+
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+      <div class="circle cs" (click)="steps[1]=true">Start</div>
+      <div blackbox></div>
+  </div>
+      
+  <div container *ngIf="steps[1]==true">
+      <div class="line"></div>
+      <div class="circle" (click)="steps[2]=true">Question</div>
+      <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[2] == true">
+      <div class="line"></div>
+      <table>
+          <tr>
+              <th>Wählen sie eine Antwortmöglichkeit:</th>
+          </tr>
+          <tr>
+              <td>1.falsch</td>
+          </tr>
+          <tr>
+              <td>2.falsch</td>
+          </tr>
+          <tr>
+              <td (click)="steps[3]=true">3.richtig>
+          </tr>
+      </table>
+      <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[3]==true">
+  <div class="line"></div>
+  <div class="circle" (click)="steps[4]=true"> Richtige Antwort</div>
+  <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[4]==true">
+  <div class="line"></div>
+  <table (click)="steps[5]=true">
+      <tr><th>Thema</th></tr>	
+      <tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+      <tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
+
+  </table>
+  <div blackbox></div>
 </div>
+
+<div container *ngIf="steps[5]==true">
+  <div class="line" ></div>
+  <table (click)="steps[6]=true">
+      <tr><th>Thema2 </th></tr>	
+      <tr><td>Die Lucke (alemannisch für Lücke) ist ein 366 m ü. NHN kkttk hoher Passübergang zwischen Lörrach und Rümmingen in Baden-Württem­berg, der sowohl von einer Kreis- und diversen Nebenstraßen als auch der Autobahn verwendet wird. Der verkehrs­technisch wichtige Pass überwindet eine Erhebung, die sich zwischen den Ausläufern des Tüllinger Berges und dem zum Schwarzwald gehörenden Teil des Röttler Waldes bildet. Als einer von zwei Pässen verbindet die Lucke neben der Wittlinger Höhe das hügelige Markgräfler­land und das untere Kandertal mit dem Wiesental, welche von diesen beiden Höhenzügen getrennt sind und an ihren ineinander greifenden Ausläufern niedriger ausfallen. </td></tr>
+  </table>
+  <div blackbox></div>
+</div>
+
+<div container *ngIf="steps[6]==true">
+  <div class="line"></div>
+  <table (click)="steps[7]=true">
+      <img src="\assets\graph2.png" style="height: 18vw; ">
+  </table>
+  <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[7]==true">
+  <div class="line" ></div>
+  <div class="box bl"(click)="steps[8]=true">
+      Du willst noch mehr lernen? <br>
+      <a herf="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> youtube</a>
+      <br>	
+      <a href="https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/graphentheorie/#:~:text=Ein%20Graph%20in%20der%20Informatik,Beziehungen%20zwischen%20ihnen%20als%20Kanten "> StudySmarter</a>
+  </div>
+  <div blackbox></div>
+</div>
+
+<!--  -->

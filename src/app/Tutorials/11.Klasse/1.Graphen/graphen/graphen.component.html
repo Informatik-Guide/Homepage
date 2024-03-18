@@ -1,83 +1,155 @@
-
-
-
-
-<div pagecontainer style="color: aliceblue;">
+<div pagecontainer style="color: aliceblue;"> 
     <div container>
-        <div class="circle cs" (click)="steps[1]=true">Start</div>
-        <div blackbox></div>
-    </div>
-        
-    <div container *ngIf="steps[1]==true">
-        <div class="line"></div>
-        <div class="circle" (click)="steps[2]=true">Question</div>
-        <div blackbox></div>
-    </div>
+              <div class="circle cs" (click)="steps[1]=true">
+                Start
+              </div>
+        </div>
+<!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[2]=true">
+            Ein Graph ist eine abstrakte Datenstruktur, die in vielen Bereichen der Informatik verwendet wird.
+          </div>
+    <div blackbox></div>
+        </div>
 
-    <div container *ngIf="steps[2] == true">
+    <div container *ngIf="steps[2]==true">
+        <div class="line"></div> 
+              <div class="circle" (click)="steps[3]=true">
+                Aber woraus besteht ein solcher Graph? 
+              </div>
+    <div blackbox></div>
+        </div>
+    
+    <div container *ngIf="steps[3]==true">
+        <div class="line"></div> 
+            <div class="box cs" (click)="steps[4]=true">
+                Ein Graph besteht aus Knoten und Kanten
+            </div>
+        <div blackbox></div>
+    </div>
+    
+    <div container *ngIf="steps[4]==true">
+        <div class="line"></div> 
+              <div class="box" (click)="steps[5]=true">
+                Knoten sind einfache Verknüpfungspunkte, die man sich wie Stecknadeln auf einem Steckbrett vorstellen kann 
+              </div>
+    <div blackbox></div>
+        </div>
+    
+        <div container *ngIf="steps[5]==true">
+            <div class="line"></div> 
+                  <div class="box bl" (click)="steps[6]=true">
+                    Bild Stecknadeln 
+                  </div>
+        <div blackbox></div>
+            </div>
+            
+            <div container *ngIf="steps[6]==true">
+                <div class="line"></div> 
+                      <div class="box bl" (click)="steps[7]=true">
+                        Kanten sind die Verbindungen zwischen diesen Knoten, zum Beispiel die Schnur, mit der die Stecknadeln verbunden sind
+                      </div>
+            <div blackbox></div>
+                </div>
+
+                <div container *ngIf="steps[7]==true">
+                    <div class="line"></div> 
+                          <div class="circle cl" (click)="steps[8]=true">
+                            Aber wofür braucht man einen solchen Graphen und wo kommt er in unserem Alltag vor?
+                          </div>
+                <div blackbox></div>
+                    </div>
+
+                    <div container *ngIf="steps[8]==true">
+                        <div class="line"></div> 
+                              <div class="box bl" (click)="steps[9]=true">
+                                In sozialen Medien wie Instagram oder TikTok ist er genauso aufgebaut. Alle Accounts sind die Knoten. Wenn du jemandem folgst, dann hat dein Account eine Verbindung zu diesem Account. Das ist auch eine Kante. 
+                              </div>
+                    <div blackbox></div>
+                        </div>
+                    
+                        
+                    <div container *ngIf="steps[9]==true">
+                        <div class="line"></div> 
+                              <div class="box bl" (click)="steps[10]=true">
+                                Ein weiteres Beispiel ist dein Navigationssystem im Auto. Alle eingezeichneten Orte wie Häuser, Restaurants und Parks sind die Knoten. Diese werden durch Wege wie Straßen verbunden, und das sind die Kanten
+                              </div>
+                    <div blackbox></div>
+                        </div>
+
+    <div container *ngIf="steps[10]==true">
         <div class="line"></div>
-        <table>
-            <tr>
-                <th>Wählen sie eine Antwortmöglichkeit:</th>
-            </tr>
-            <tr>
-                <td>1.falsch</td>
-            </tr>
-            <tr>
-                <td>2.falsch</td>
-            </tr>
-            <tr>
-                <td (click)="steps[3]=true">3.richtig>
-            </tr>
+            <div class="circle bs" (click)="steps[11]=true">
+                Aber wie sieht ein solcher Graph in der Informatik aus?
+            </div>
+    <div blackbox></div>
+        </div>
+
+    <div container *ngIf="steps[11]==true">
+        <div class="line"></div>
+            <div class="box bl" (click)="steps[12]=true">
+                (siehe Bild)  Die Punkte sind die Knoten und die Linien sind die Kanten
+            </div>
+    <div blackbox></div>
+        </div>
+
+    <div container *ngIf="steps[12]==true">
+        <div class="line"></div>
+            <div class="box" (click)="steps[13]=true">
+                Man kann in mehrere Kategorien eintellen
+            </div>
+    <div blackbox></div>
+        </div>
+
+        <div container *ngIf="steps[13]==true">
+            <div class="line"></div>
+            <table (click)="steps[14]=true">
+                <tr><th>Gerichteten und ungerichteten Graphen</th></tr> 
+                <tr><td>Bei einem gerichteten Graphen ist mindestens eine Kante ein Pfeil, das heißt zum Beispiel, dass eine Straße eine Einbahnstraße ist</td></tr>
+        <tr><td>Ein ungerichteter Graph hat keine Pfeile. Alle Kanten sind zum Beispiel Straßen, die beidseitig befahren werden können</td></tr>
+            </table>
+            <div blackbox></div>
+        </div>
+        
+    <div container *ngIf="steps[14]==true">
+        <div class="line"></div>
+        <table (click)="steps[15]=true">
+            <tr><th>Stark und schwach zusammenhängende Graphen</th></tr> 
+            <tr><td>Ein ungerichteter Graph wird als zusammenhängend betrachtet, wenn man von jedem Knoten zu jedem anderen Knoten gelangen kann</td></tr>
+            <tr><td>Nicht zusammenhängende Graphen erkennt man an isolierten Knoten oder ganzen Gruppen von isolierten Knoten</td></tr>
+            <tr><td>Ein Graph ist stark zusammenhängend, wenn es eine zusätzliche gerichtete Kante zu jedem unerreichbaren Knoten gibt</td></tr>
         </table>
         <div blackbox></div>
     </div>
 
-    <div container *ngIf="steps[3]==true">
-    <div class="line"></div>
-    <div class="circle" (click)="steps[4]=true"> Richtige Antwort</div>
-    <div blackbox></div>
-    </div>
-    <div container *ngIf="steps[4]==true">
-    <div class="line"></div>
-    <table (click)="steps[5]=true">
-        <tr><th>Thema</th></tr>	
-        <tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
-        <tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
-<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
-<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
-<tr><td>Hier können wir Texte schreiben, Inhalte erklären und Beispiele verwenden</td></tr>
-
-    </table>
-    <div blackbox></div>
-</div>
-
-<div container *ngIf="steps[5]==true">
-    <div class="line" ></div>
-    <table (click)="steps[6]=true">
-        <tr><th>Thema2 </th></tr>	
-        <tr><td>Die Lucke (alemannisch für Lücke) ist ein 366 m ü. NHN kkttk hoher Passübergang zwischen Lörrach und Rümmingen in Baden-Württem­berg, der sowohl von einer Kreis- und diversen Nebenstraßen als auch der Autobahn verwendet wird. Der verkehrs­technisch wichtige Pass überwindet eine Erhebung, die sich zwischen den Ausläufern des Tüllinger Berges und dem zum Schwarzwald gehörenden Teil des Röttler Waldes bildet. Als einer von zwei Pässen verbindet die Lucke neben der Wittlinger Höhe das hügelige Markgräfler­land und das untere Kandertal mit dem Wiesental, welche von diesen beiden Höhenzügen getrennt sind und an ihren ineinander greifenden Ausläufern niedriger ausfallen. </td></tr>
-    </table>
-    <div blackbox></div>
-</div>
-
-<div container *ngIf="steps[6]==true">
-    <div class="line"></div>
-    <table (click)="steps[7]=true">
-        <img src="\assets\graph2.png" style="height: 18vw; ">
-    </table>
-    <div blackbox></div>
+    <div container *ngIf="steps[15]==true">
+        <div class="line"></div>
+        <table (click)="steps[16]=true">
+            <tr><th>Gewichteter und ungewichteter Graph</th></tr> 
+            <tr><td>Gewichtet bedeutet, dass die Kanten ein Gewicht haben. Das kann im Beispiel des Navigationssystems die Länge einer Strecke sein. Zum Beispiel hat die Kante zwischen Berlin und München das Gewicht 588 km</td></tr>
+            <tr><td>Ein ungewichteter Graph hat dies nicht</td></tr>
+        </table>
+        <div blackbox></div>
     </div>
 
-    <div container *ngIf="steps[7]==true">
-    <div class="line" ></div>
-    <div class="box bl"(click)="steps[8]=true">
-        Du willst noch mehr lernen? <br>
-        <a herf="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> youtube</a>
-        <br>	
-        <a href="https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/graphentheorie/#:~:text=Ein%20Graph%20in%20der%20Informatik,Beziehungen%20zwischen%20ihnen%20als%20Kanten "> StudySmarter</a>
+    <div container *ngIf="steps[13]==true">
+        <div class="line"></div>
+        <table (click)="steps[14]=true">
+            <tr><th>Gerichteten und ungerichteten Graphen</th></tr> 
+            <tr><td>Bei einem gerichteten Graphen ist mindestens eine Kante ein Pfeil, das heißt zum Beispiel, dass eine Straße eine Einbahnstraße ist</td></tr>
+    <tr><td>Ein ungerichteter Graph hat keine Pfeile. Alle Kanten sind zum Beispiel Straßen, die beidseitig befahren werden können</td></tr>
+        </table>
+        <div blackbox></div>
     </div>
-    <div blackbox></div>
-</div>
 
-<!--  -->
+    <div container *ngIf="steps[14]==true">
+        <div class="line"></div> 
+              <div class="box bl" (click)="steps[15]=true">
+                Wenn du noch mehr wissen möchtest, besuche: <br>
+                <a href="https://studyflix.de/informatik/bipartiter-graph-1286 ">https://studyflix.de/informatik/bipartiter-graph-1286 </a>
+                <a href="https://www.youtube.com/watch?v=frG2kBMZQDc ">https://www.youtube.com/watch?v=frG2kBMZQDc </a>
+              </div>
+    <div blackbox></div>
+        </div>
+</div>
