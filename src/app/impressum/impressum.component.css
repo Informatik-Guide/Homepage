@@ -11,9 +11,9 @@
 }
 [flex-row-container]{
   background-color: var(--seccolor);
-  height: 30px;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 50px;
+  padding: 30px;
   }
