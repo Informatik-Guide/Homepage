@@ -1,0 +1,122 @@
+<div pagecontainer style="color: aliceblue;"> 
+    <div container>
+        <div class="circle cs" (click)="steps[1]=true">
+            Start
+        </div>
+    </div>
+<div container *ngIf="steps[1]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[2]=true">
+            Der Dijkstra-Algorithmus ist ein Algorithmus zur Bestimmung des kürzesten Weges in einem gewichteten Graphen von einem Startknoten zu allen anderen Knoten
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[3]=true">
+            Um diesen Algorithmus zu verstehen solltest du das Tutorial 1.1.Graphen schon durchgemacht und verstanden haben
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div> 
+          <div class="circle" (click)="steps[4]=true">
+            Für was kann man braucht man Dijkstra?
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[5]=true">
+            - Routenplanung <br>
+            - Netzwerk-Routing <br>
+            - Verkehrsflussanalyse <br>
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[6]=true">
+            Voraussetzung ist das es ein gewichteter Graph ist und es einen Startknoten gibt
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[6]==true">
+    <div class="line"></div> 
+          <div class="circle" (click)="steps[7]=true">
+            Wie geht ein solcher Algorithmus vor?
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[7]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[8]=true">
+            1. Schritt: Gib jedem Knoten den Wert unendlich (oder eine sehr hohe, nicht erreichbare Zahl), außer der Startknoten, der hat den Wert 0
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[8]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[9]=true">
+            2. Schritt: Markiere alle Knoten als "unbesucht"
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[9]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[10]=true">
+            3. Schritt: Wähle den Knoten mit dem kleinsten Abstandswert als aktuellen Knoten und markiere ihn als "besucht"
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[10]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[11]=true">
+            4. Schritt: Aktualisiere die Abstandswerte aller benachbarten Knoten des aktuellen Knotens, wenn ein kürzerer Weg gefunden wird
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[11]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[12]=true">
+            5. Schritt: Wiederhole die vorherigen beiden Schritte, bis alle Knoten besucht wurden
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[12]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[13]=true">
+            Hier ist eine Beispielvorgabe:
+          </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[13]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[14]=true">
+<!-- Bild -->
+          Gegeben ist dieser Graph und der Startknoten ist A
+          </div>
+    <div blackbox></div>
+        </div>
+        <div container *ngIf="steps[14]==true">
+            <div class="line"></div>
+            <table (click)="steps[15]=true">
+                <tr><th>Das Vorgehen: </th></tr> 
+                <tr><td>Starte beim Knoten A</td></tr>
+                <tr><td>Initialisiere die Abstandswerte: A: 0, B: ∞, C: ∞, D: ∞, E: ∞, F: ∞, G: ∞</td></tr>
+                <tr><td>Wähle A als aktuellen Knoten</td></tr>
+                <tr><td>Aktualisiere die Abstandswerte von B und C: B: 6, C: 1.</td></tr>
+                <tr><td>Wähle C als nächsten aktuellen Knoten.</td></tr>
+                <tr><td>Aktualisiere die Abstandswerte von B, D und F: B: 4, D: 6, F: 6</td></tr>
+                <tr><td>Wähle B als nächsten aktuellen Knoten.</td></tr>
+                <tr><td>Aktualisiere die Abstandswerte von D und E: D: 6, E: 10</td></tr>
+                <tr><td>Wähle D als nächsten aktuellen Knoten.</td></tr>
+                <tr><td>Aktualisiere die Abstandswerte von E, F und G: E: 6, F: 6, G: 8</td></tr>
+                <tr><td>Wähle E als nächsten aktuellen Knoten</td></tr>
+                <tr><td>Keine weiteren Knoten zum Aktualisieren</td></tr>
+                <tr><td>Der kürzeste Weg von A zu jedem Knoten ist gefunden</td></tr>
+            </table>
+            <div blackbox></div>
+        </div>
+        
+</div>

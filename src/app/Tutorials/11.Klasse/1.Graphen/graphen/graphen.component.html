@@ -1,9 +1,9 @@
 <div pagecontainer style="color: aliceblue;"> 
     <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
+        <div class="circle cs" (click)="steps[1]=true">
+            Start
         </div>
+    </div>
 <!-- Euren Inhalt/Tutorial -->
 <div container *ngIf="steps[1]==true">
     <div class="line"></div> 
@@ -12,7 +12,6 @@
           </div>
     <div blackbox></div>
         </div>
-
     <div container *ngIf="steps[2]==true">
         <div class="line"></div> 
               <div class="circle" (click)="steps[3]=true">
@@ -80,7 +79,7 @@
 
     <div container *ngIf="steps[10]==true">
         <div class="line"></div>
-            <div class="circle bs" (click)="steps[11]=true">
+            <div class="circle cs" (click)="steps[11]=true">
                 Aber wie sieht ein solcher Graph in der Informatik aus?
             </div>
     <div blackbox></div>
@@ -133,15 +132,7 @@
         <div blackbox></div>
     </div>
 
-    <div container *ngIf="steps[13]==true">
-        <div class="line"></div>
-        <table (click)="steps[14]=true">
-            <tr><th>Gerichteten und ungerichteten Graphen</th></tr> 
-            <tr><td>Bei einem gerichteten Graphen ist mindestens eine Kante ein Pfeil, das heißt zum Beispiel, dass eine Straße eine Einbahnstraße ist</td></tr>
-    <tr><td>Ein ungerichteter Graph hat keine Pfeile. Alle Kanten sind zum Beispiel Straßen, die beidseitig befahren werden können</td></tr>
-        </table>
-        <div blackbox></div>
-    </div>
+    
 
     <div container *ngIf="steps[14]==true">
         <div class="line"></div> 
