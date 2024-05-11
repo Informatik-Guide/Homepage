@@ -4,5 +4,90 @@
                 Start
               </div>
         </div>
-<!-- Euren Inhalt/Tutorial -->
+      <div container *ngIf="steps[1]==true">
+          <div class="line"></div>
+              <div class="circle " (click)="steps[3]=true">
+              Wozu ist so ein Datenflussdiagramm?
+              </div>
+            <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[3]==true">
+        <div class="line"></div>
+          <div class="box " (click)="steps[4]=true">
+            Durch ein Datenflussdiagramm wird der Informationsfluss eines Prozesses oder Systems dargestellt. 
+          </div>
+         <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[4]==true">
+        <div class="line"></div>
+            <div class="circle " (click)="steps[5]=true">
+            Wie sieht ein Datenflussdiagramm aus?
+            </div>
+          <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[5]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true"> 
+            In dem Datenflussdiagramm gibt es festgelegte Symbole, wie Rechtecke, Kreise und Pfeile 
+            sowie kurze Beschriftungen um die Ein- und Ausgabe zu zeigen. Dabei zeigen die Pfeile den Fluss des Diagramms an. 
+          </div>
+         <div blackbox></div>
+      </div>
+     <div container *ngIf="steps[6]==true">
+        <div class="line"></div>
+            <div class="circle " (click)="steps[7]=true">
+            Ein- und Ausgabewerte
+            </div>
+          <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[7]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[8]=true">
+            Eingabewerte sind die Werte, die zum Anfang dem Programm zuverfügung Gestellt werden.
+            Ausgabewerte sind die Werte, die zum Ende von dem Programm zurückgegeben werden. Also sozusagen das Ergebnis.
+            Die Ein- und Ausgabewerte werden immer in Rechtecke geschrieben. 
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[8]==true">
+        <div class="line"></div>
+            <div class="circle " (click)="steps[9]=true">
+            Funktionen
+            </div>
+          <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[9]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[10]=true">
+            Funktionen sind ein datenverarbeitende Prozesse. 
+            Hier werden die Eingabewerte, je nachdem um was für eine Funktion es sich handelt, 
+            verarbeitet und dann werden die Ausgabewerte zurückgegeben. 
+            Diese werden in Kreise geschrieben.
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[10]==true">
+        <div class="line"></div>
+            <div class="circle " (click)="steps[11]=true">
+            Verteiler
+            </div>
+          <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[11]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[12]=true">
+            Ein Verteiler, der als kleiner Kreis dargestellt wird, ist wichtig, 
+            wenn der Eingabewert für mehrere Funktionen benötigt wird. 
+            Dieser nimmt den zugeordneten Wert und schickt Kopien dieses Wertes weiter. 
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[12]==true">
+        <div class="line"></div>
+            <div class="circle " (click)="steps[13]=true">
+            Beispiel
+            </div>
+          <div blackbox></div>
+      </div>
+
 </div>
