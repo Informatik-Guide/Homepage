@@ -5,4 +5,121 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
-</div>
+    <div container *ngIf="steps[1]==true">
+      <div class="line"></div>
+        <div class="circle cl" (click)="steps[2]=true">
+        Was sind Tabellenkalkulations-
+        programme?
+        </div>
+      <div blackbox></div>
+   </div>
+   <div container *ngIf="steps[2]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[3]=true">
+        Ein Tabellenkalkulationsprogramm ist eine Software 
+        zur Verarbeitung von (haupsächlich numerischen) Daten in einer Tabelle.
+        Typische Bespiele sind Excel oder LibreOffice Calc.
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[3]==true">
+      <div class="line"></div>
+        <div class="circle cl" (click)="steps[4]=true">
+        Wie ist so ein Tabellenkalkulations-
+        programm aufgebaut?
+        </div>
+      <div blackbox></div>
+   </div>
+   <div container *ngIf="steps[4]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[5]=true">
+          Jede Arbeitsmappe besteht aus mind. einem Tabellenblatt, 
+          welches aus Spalten und Zeilen besteht. Die Kästchen, die dabei entstehen, sind Zellen.  
+          Die Zellen werden nach Spalte dann nach der Zeile benannt.
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[5]==true">
+      <div class="line"></div>
+        <div class="circle" (click)="steps[6]=true">
+        Formeln
+        </div>
+      <div blackbox></div>
+   </div>
+   <div container *ngIf="steps[6]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[7]=true">
+          Formeln in Tabellenkalkulationsprogrammen kann man sich so ähnlich wie Formeln in Mathe vorstellen. 
+          Vor einer Formel muss immer ein Gleichheitszeichen stehen. 
+          Dann kann einfach mit den verschiedenen Rechenzeichen gearbeitet werden.
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[7]==true">
+      <div class="line"></div>
+        <div class="circle" (click)="steps[8]=true">
+        Funktionen
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[8]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[9]=true">
+        Tabellenkalkulationsprogramme bieten eine Reihe von vorgegebenen Funktionen an. 
+        Nicht nur Summe (in Excel: sum) oder Produkt (in Excel: product) sondern auch Bedingungsfunktionen (in Excel: if).
+        Die Funktionen haben alle einen Namen, eine aus zufüllende Klammer und setzt Wissen über die Syntax aus 
+        (also wie die Werte ein gegeben werden sollen). 
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[9]==true">
+      <div class="line"></div>
+        <div class="circle" (click)="steps[10]=true">
+        Zellbezüge
+        </div>
+      <div blackbox></div>
+   </div>
+   <div container *ngIf="steps[10]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[11]=true">
+          Anstatt einer festen Zahl verweist wird mit einem Zellbezug auf eine andere Zelle verwiesen, 
+          um den Wert in dieser Zelle für die Funktion/Formel zu verwenden.
+          Bei Zellbezügen unterscheidet man zwischen relativem und absolutem Zellbezug. 
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[11]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[12]=true">
+          Dabei bezieht sich der absolute Zellbezug immer auf eine bestimmte Zelle. Dieser wird durch $-Zeichen vor den Buchstaben und die Zahl erzielt. 
+          Bsp: =SUM($A$1;$B$1)
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[12]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[13]=true">
+          Dabei bezieht sich der absolute Zellbezug immer auf eine bestimmte Zelle. Dieser wird durch $-Zeichen vor den Buchstaben und die Zahl erzielt. 
+          Bsp: =SUM($A$1;$B$1)
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[13]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[14]=true">
+          Ein relativer Zellbezug, im Gegensatz berechnet Zellen immer relativ zu ihrer Position.
+          <img src="Zellbezüge1"><img src="Zellbezüge2">
+          An dem Beispiel sieht man wie die Zellbezüge sich von A1 und B1 auf A2 und B2 verschieben.
+          Dies funktioniert sowohl horizontal als auch vertikal.
+        </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[14]==true">
+      <div class="line"></div>
+        <div class="box bl" (click)="steps[15]=true">
+          Diese zwei Arten von Zellbezügen können auch gemischt werden, 
+          sodass vertikal ein absoluter Zellbezug besteht und horizontal ein relativer oder umgekehrt. 
+          Dabei wird das $-Zeichen nur vor den Buchstaben oder die Zahl geschrieben.
+        </div>
+      <div blackbox></div>
+    </div>
