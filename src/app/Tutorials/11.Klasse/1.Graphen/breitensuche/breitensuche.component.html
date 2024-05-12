@@ -5,4 +5,153 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div> 
+        <div class="box bl" (click)="steps[2]=true">
+          Die Breitensuche ist ein grundlegender Algorithmus in der Informatik, der verwendet wird, um alle Knoten eines Graphen oder Baums in einer bestimmten Reihenfolge zu durchlaufen
+        </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[3]=true">
+            Um diesen Algorithmus zu verstehen solltest du das Tutorial 1.1.Graphen schon durchgemacht und verstanden haben
+          </div>
+    <div blackbox></div>
+        </div>
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[4]=true">
+            Voraussetzung sind: <br>
+            - Graph <br>
+            - Startknoten <br>          
+          </div>
+    <div blackbox></div>
+        </div>
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[5]=true">
+            Grundkonzepte: <br>
+            Die Breitensuche beginnt mit einem Startknoten und durchläuft alle erreichbaren Knoten schichtweise, beginnend mit dem Startknoten und dann schrittweise in Richtung der Knoten, die sich in einer Kante Entfernung befinden. Dies wird durch eine Warteschlange realisiert, die die nächsten zu besuchenden Knoten speichert
+          </div>
+    <div blackbox></div>
+        </div>
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[6]=true">
+            Beispiele: <br>
+            - Analyse von Netzwerken und sozialen Netzwerken <br>
+            - Puzzlelösungen (z. B. Schach, Rubik's Cube)
+          </div>
+    <div blackbox></div>
+        </div>
+    
+    <div container *ngIf="steps[6]==true">
+    <div class="line"></div> 
+          <div class="circle" (click)="steps[8]=true">
+            Wie leuft dieser Algorithmus, also ab?
+          </div>
+    <div blackbox></div>
+        </div>
+
+    <div container *ngIf="steps[8]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[9]=true">
+            1. Starte mit dem Startknoten und füge ihn zur Warteschlange hinzu
+          </div>
+    <div blackbox></div>
+        </div>
+
+    <div container *ngIf="steps[9]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[10]=true">
+            2. Markiere den Startknoten als "besucht"
+          </div>
+    <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[10]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[11]=true">
+            3. Solange die Warteschlange nicht leer ist, wiederholt er die folgenden Schritte
+          </div>
+    <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[11]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[12]=true">
+            4. Nehme den ersten Knoten aus der Warteschlange
+          </div>
+    <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[12]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[13]=true">
+            5. Durchlaufe alle unbesuchten benachbarten Knoten dieses Knotens
+          </div>
+    <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[13]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[14]=true">
+            6. Füge sie zur Warteschlange hinzu
+          </div>
+    <div blackbox></div>
+        </div>
+     <div container *ngIf="steps[14]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[15]=true">
+            7. Markiere sie als "besucht"
+          </div>
+    <div blackbox></div>
+        </div>
+    <div container *ngIf="steps[15]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[16]=true">
+            8. Wiederhole diese Schritte, bis alle Knoten erreicht wurden oder ein bestimmtes Ziel erreicht ist
+          </div>
+    <div blackbox></div>
+        </div>
+        
+
+     <div container *ngIf="steps[16]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[17]=true">
+            Bild Pseudocode 
+            <img src="\assets\Screenshot Breitensuche Pseudocode.png"  style="width: 600px;">
+          </div>
+    <div blackbox></div>
+        </div>
+    <div container *ngIf="steps[17]==true">
+    <div class="line"></div> 
+          <div class="box" (click)="steps[18]=true">
+            Wie funktioiert das bei einem Beispiel?
+          </div>
+    <div blackbox></div>
+        </div>
+    <div container *ngIf="steps[18]==true">
+    <div class="line"></div> 
+          <div class="box bl" (click)="steps[19]=true">
+            Gegeben sei folgender Graph:
+            <img src="\assets\Graph Breitensuche.png"  style="width: 600px;">
+          </div>
+    <div blackbox></div>
+        </div>
+        <div container *ngIf="steps[19]==true">
+          <div class="line"></div>
+          <table (click)="steps[20]=true">
+              <tr><th>Beispiel</th></tr> 
+              <tr><td>1. Starte beim Knoten A </td></tr>
+              <tr><td>2. Füge A zur Warteschlange hinzu und markiere es als "besucht"</td></tr>
+              <tr><td>3. Nehme A aus der Warteschlange und füge seine unbesuchten Nachbarn B, C und D zur Warteschlange hinzu</td></tr>
+              <tr><td>4. Nehme B aus der Warteschlange und füge seine unbesuchten Nachbarn E und F zur Warteschlange hinzu</td></tr>
+              <tr><td>5. Nehme C aus der Warteschlange und füge seinen unbesuchten Nachbarn G zur Warteschlange hinzu</td></tr>
+              <tr><td>6. Nehme D aus der Warteschlange</td></tr>
+              <tr><td>7. Nehme E aus der Warteschlange</td></tr>
+              <tr><td>8. Nehme F aus der Warteschlange</td></tr>
+              <tr><td>9. Nehme G aus der Warteschlange</td></tr>
+              <tr><td>10. Alle Knoten wurden besucht</td></tr>
+
+          </table>
+          <div blackbox></div>
+      </div>
 </div>

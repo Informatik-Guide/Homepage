@@ -5,4 +5,456 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[2]=true">
+            Arrays sind eine grundlegende Datenstruktur in vielen Programmiersprachen, die es ermöglichen, eine Sammlung von Elementen desselben Datentyps zu speichern
+          </div>
+  <div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[3]=true">
+            2.	Die Container an Werten haben einen Bestimmte Länge die im Vorhinein angegeben wird, diese Länge beschreibt wie viele Daten in diesem Array gespeichert werden können
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box " (click)="steps[4]=true">
+            3.	Jedes Element das man in einem solchen Array speichert, hat einen Position, die auch Index genannt wird
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+          <div class="box " (click)="steps[5]=true">
+            4.	Bei dem Index fängt man nicht wie normal mit 1 an zu zählen, sondern bei 0
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[6]=true">
+            5.	Zum Beispiel bei einer Länge von 5: 0, 1, 2, 3, 4
+          </div>
+<div blackbox></div>
+    </div>
+
+
+
+<div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <table (click)="steps[8]=true">
+        <tr><th>6.	Beispiel eines Arrays: In einer Klasse sind 6 Schüler die alle ein unterschiedlichen Namen haben</th></tr> 
+        <tr><td>Index	Wert (string)</td></tr>
+        <tr><td>0	„Tim“</td></tr>
+        <tr><td>1	„Karl“</td></tr>
+        <tr><td>2	„Johanna“</td></tr>
+        <tr><td>3	„Anna“</td></tr>
+        <tr><td>4	„Tom“</td></tr>
+        <tr><td>5	„Sepp“</td></tr>
+    </table>
+    <div blackbox></div>
+</div>
+
+<div container *ngIf="steps[8]==true">
+    <div class="line"></div>
+          <div class="circle" (click)="steps[9]=true">
+            7.	Wie erstelle ich einen Solchen Array?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[9]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[11]=true">
+            Java: Datentyp Name = [Inhalt]; <br>
+            Python: Name = []
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[11]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[12]=true">
+            8.	Wie fülle ich einen Solchen Array jetzt mit Inhalt?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[12]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[13]=true">
+            Ihr müsst eure Inhalte in die eckigen Klammern schreiben: <br>
+            Java: String Klasse9c = [“Tim“, “ Karl“, “ Johanna“, “ Anna“, “Tom “, “Sepp “]; <br>
+            Python: Klasse9c = [“Tim“, “ Karl“, “ Johanna“, “ Anna“, “Tom “, “Sepp “]
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[13]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[14]=true">
+            9.	Wie kann ich im Nachhinein noch Werte ändern?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[14]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[15]=true">
+            Java: Name[Index] = neuerWert;  <br>
+            Python: Name[Index] = neuerWert;            
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[15]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[16]=true">
+            10.	Wie kann ich mir einen Wert ausgeben lassen?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[16]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[17]=true">
+            Java: System.out.print(Name[Index]); <br>
+            Python: print(Name[0])
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[17]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[18]=true">
+            11.	Wie kann ich mit allen Elementen interagieren?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[18]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[19]=true">
+            Verwende hirfür eine „For Schleife“: <br>
+	Java: meinArray.forEach(function(element) <br>
+<br>
+console.log(element);<br>
+);<br>
+Python: for element in mein_array:<br>
+print(element)
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[19]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[20]=true">
+            12.	Wie ermittle ich die Länge eines Arrays?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[20]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[21]=true">
+            Java: name.lenght <br>
+            Python: len(name)
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[21]==true">
+    <div class="line"></div>
+          <div class="circle" style="font-weight: 900;" (click)="steps[22]=true">
+            Arraylisten
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[22]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[23]=true">
+            Arraylists sind Arrays, deren Länge sich verändert, wenn man neue Werte hinzufügt. Um diese zu verwenden benötigt man allerdings das java.util Packet, also muss man es am Anfang des Codes mit  import java.util.ArrayList;  importieren
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[23]==true">
+    <div class="line"></div>
+          <div class="circle cl" (click)="steps[24]=true">
+            Um eine Arraylist nun erstmal zu deklarieren geht man wie folgt vor?
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[24]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[25]=true">
+            import java.util.ArrayList; <br>
+            ArrayList(Datentyp) name = new Arraylist(Datentyp);
+          </div>
+<div blackbox></div>
+    </div>
+
+
+<div container *ngIf="steps[25]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[26]=true">
+            Die Arraylist bringt neben der Möglichkeit, die Länge nachträglich zu ändern nützliche Methoden wie add(), get(), set(), remove(), clear() und size()
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[26]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[27]=true">
+            add() Methode <br>
+            Mit der add() Methode fügt man einen neuen Wert in die ArrayList ein, wodurch sich diese verlängert: <br> <br>
+            ArrayListName.add(Wert);
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[27]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[28]=true">
+            get() Methode<br> 
+            Mit der get() Methode kann man sich den Wert an einem bestimmten Index wiedergeben lassen:<br> <br>
+            ArrayListName.get(Index);
+
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[28]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[29]=true">
+           
+            set() Methode <br> 
+            Mit der set() Methode kann man an einem bestimmten Index einen Wert ändern:<br> <br>
+            ArrayListName.set(Index, Wert);
+
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[29]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[30]=true">
+            remove() Methode <br>
+            Mit der remove() Methode kann man an einem bestimmten Index ein Element entfernen: <br> <br>
+            ArrayListName.remove(Index);
+
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[30]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[31]=true">
+            clear() Methode<br>
+            Mit der clear() Methode entfernt man alle Elemente aus einer ArrayList: <br> <br>
+            ArrayListName.clear();
+
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[31]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[32]=true">
+            size() Methode <br>
+            Mit der size Methode kann man die Länge einer ArrayList ausgeben lassen: <br> <br>
+            ArrayListName.size();
+          </div>
+<div blackbox></div>
+    </div>
+
+    <div container *ngIf="steps[32] == true">
+      <div class="line"></div>
+      <table>
+          <tr>
+              <th>Wie lautet die eine ArrayList zahlen, die ursprünglich durch [5, 3, 1] definiert ist, wenn folgender code ausgeführt wird? <br> 
+                zahlen.add(6); <br>
+                zahlen.add(0, 4); <br>
+                zahlen.remove(1); <br>
+                </th>
+          </tr>
+          <tr>
+              <td (click)="steps[33]=true"  (click)="steps[2000]=false">1. [4, 3, 1, 6]</td>
+          </tr>
+          <tr>
+              <td (click)="steps[2000]=true">2. [5, 3, 1, 6]</td>
+          </tr>
+          <tr>
+              <td (click)="steps[2000]=true">3. [4, 3, 6]</td>
+          </tr>
+          <tr>
+            <td (click)="steps[2000]=true">4. [4, 5, 3, 6]</td>
+          </tr>
+      </table>
+      <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[33] == true">
+
+    <div class="line"></div>
+    <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[34]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+    <div blackbox></div>
+
+  </div>
+  <div container *ngIf="steps[34] == true">
+    <div class="line"></div>
+    <table>
+        <tr>
+            <th>Welchen Wert muss man bei der Suche nach dem letzten Element in einer ArrayList als Index angeben?</th>
+        </tr>
+        <tr>
+            <td (click)="steps[2000]=true">1. zahlen.size()</td>
+        </tr>
+        <tr>
+            <td (click)="steps[35]=true" (click)="steps[2000]=false">2. zahlen.size()-1</td>
+        </tr>
+        <tr>
+            <td (click)="steps[2000]=true">3. zahlen.length</td>
+        </tr>
+        <tr>
+          <td (click)="steps[2000]=true">4. zahlen.length()-1</td>
+      </tr>
+    </table>
+    <div blackbox></div>
+</div>
+<div container *ngIf="steps[35] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[36]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+  <div blackbox></div>
+
+</div>
+<div container *ngIf="steps[36] == true">
+  <div class="line"></div>
+  <table>
+      <tr>
+          <th>Mit welchem code lässt man sich das erste Element aus einer ArrayList ausgeben?</th>
+      </tr>
+      <tr>
+          <td (click)="steps[37]=true" (click)="steps[2000]=false">1.	zahlen.get(0);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">2.	zahlen(0);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">3.	zahlen[1];</td>
+      </tr>
+      <tr>
+        <td (click)="steps[2000]=true">4.	zahlen[0];</td>
+    </tr>
+  </table>
+  <div blackbox></div>
+</div>
+<div container *ngIf="steps[37] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[38]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+  <div blackbox></div>
+
+</div>
+<div container *ngIf="steps[38] == true">
+  <div class="line"></div>
+  <table>
+      <tr>
+          <th>Wie ändert man in der ArrayList zahlen, die durch [3, 7, 6, 0] definiert ist, die 7 zu einer 5?</th>
+      </tr>
+      <tr>
+          <td (click)="steps[39]=true" (click)="steps[2000]=false">1. zahlen.set(1, 5);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">2. zahlen.set(7, 5);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">3.	zahlen.set(5, 2); </td>
+      </tr>
+      <tr>
+        <td (click)="steps[2000]=true">2. nums[2] = 5;</td>
+    </tr>
+  </table>
+  <div blackbox></div>
+</div>
+<div container *ngIf="steps[39] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[40]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+  <div blackbox></div>
+
+</div>
+<div container *ngIf="steps[40] == true">
+  <div class="line"></div>
+  <table>
+      <tr>
+          <th>Mit welchem code entfernt man die 3 aus der ArrayList zahlen, die durch [5, 4, 3, 2] definiert ist?</th>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">1. zahlen.remove(2);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">2. zahlen.get(2) = null;</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">3.	zahlen.remove(3); </td>
+      </tr>
+      <tr>
+        <td (click)="steps[41]=true" (click)="steps[2000]=false">4. zahlen.remove(1);</td>
+    </tr>
+  </table>
+  <div blackbox></div>
+</div>
+<div container *ngIf="steps[41] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[42]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+  <div blackbox></div>
+
+</div>
+<div container *ngIf="steps[42] == true">
+  <div class="line"></div>
+  <table>
+      <tr>
+          <th>Mit welchem code kann man in der Arraylist zahlen, die durch [1, 2, 3, 4, 6] definiert ist, zwischen 4 und 6 eine 5 hinzufügen?</th>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">1. zahlen.add(5, 5);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[43]=true" (click)="steps[2000]=false">2. zahlen.add(4, 5);</td>
+      </tr>
+      <tr>
+          <td (click)="steps[2000]=true">3. zahlen.add(5, 4); </td>
+      </tr>
+      <tr>
+        <td (click)="steps[2000]=true">4. zahlen.add(5, 5);</td>
+    </tr>
+  </table>
+  <div blackbox></div>
+</div>
+<div container *ngIf="steps[43] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: green;color: aliceblue;"  (click)="steps[44]=true" (click)="steps[2000]=false">Richtige Antwort!</div>
+  <div blackbox></div>
+
+</div>
+
+<div container *ngIf="steps[2000] == true">
+
+  <div class="line"></div>
+  <div class="circle" style="background-color: red;color: aliceblue;">Falsche Antwort!</div>
+  <div blackbox></div>
+
+</div>
 </div>
