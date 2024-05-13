@@ -5,4 +5,70 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+    <div container *ngIf="steps[1]==true">
+       <div class="line"></div>
+          <div class="circle" (click)="steps[2]=true">
+          Was ist eine Funktion?
+          </div>
+        <div blackbox></div>
+     </div>
+     <div container *ngIf="steps[2]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[3]=true">
+            Eine Funktion auch in Programmiersprachen ein datenverarbeitender Prozess. 
+            Also nimmt er Daten auf, die durch diese Funktion verarbeitet werden und am 
+            Ende bekommt man ein Resultat zurück. 
+          </div>
+        <div blackbox></div>
+      </div>
+     <div container *ngIf="steps[3]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[4]=true">
+            Oft sind diese Funktionen in vielen Programmen auch vordefiniert. In Excel zum Beispiel: sum, max.
+            Die Funktionen haben alle einen Namen, 
+            eine aus zufüllende Klammer und setzen Wissen über die Syntax aus 
+            (also wie die Werte ein gegeben werden sollen). 
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[4]==true">
+       <div class="line"></div>
+          <div class="circle" (click)="steps[5]=true">
+          Verkettung von Funktion
+          </div>
+        <div blackbox></div>
+     </div>
+     <div container *ngIf="steps[5]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true">
+            Funktionen können auch verkettet werden, also mehrere aneinandergereiht werden. 
+            Sodass beispielsweise mehrere Bedingungen hintereinander gereiht werden können. 
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[6]==true">
+        <div class="line"></div>
+          <div class="box" (click)="steps[7]=true">
+            <img src="VerkettungFunktion">
+            Bei diesem Beispiel wird überprüft ob die Summe der Zahlen in Spalte A und B, 9 ist. 
+            Die Eingaben für Wahr oder Falsch können auch selber bestimmt werden. 
+          </div>
+        <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[7]==true">
+       <div class="line"></div>
+          <div class="circle" (click)="steps[8]=true">
+           Parameter
+          </div>
+        <div blackbox></div>
+     </div>
+     <div container *ngIf="steps[8]==true">
+        <div class="line"></div>
+          <div class="box bl" (click)="steps[9]=true">
+            Die meisten Funktionen haben Parameter, 
+            dies sind Variablen in der Funktion. Diese können bestimmt werden und 
+            dienen dazu Werte an die Funktion zu übergeben. So ähnlich wie in Mathe.
+          </div>
+        <div blackbox></div>
+      </div>
 </div>
