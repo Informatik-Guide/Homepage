@@ -4,5 +4,61 @@
                 Start
               </div>
         </div>
-<!-- Euren Inhalt/Tutorial -->
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[2]=true">
+            Objekte sind Bausteine in der Informatik, die einen eindeutigen Namen besitzen, bestimmte Eigenschaften haben und in eine bestimmte Klasse gehören. Eine Klasse ist eine Gruppe von Objekten, in der die Eigenschaften (Attribute) festgelegt sind. 
+          </div>
+  <div blackbox></div>
+    </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[3]=true">
+            Die Werte, mit denen die Attribute belegt werden, heißen Attributwerte. Das Objekt kann auch Aktionen ausführen, die werden Methoden genannt und sind in der Klasse vordefiniert. 
+          </div>
+<div blackbox></div>
+    </div>
+
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <table (click)="steps[4]=true">
+        <tr><th>Beispiel: <br> Klasse: MENSCH	</th><th>Objekt: Anna Jung</th>
+        </tr> 
+        <tr><td>Attribute</td><td>Attributwerte</td></tr>
+        <tr><td>Geschlecht</td><td>weiblich</td></tr>
+        <tr><td>Alter</td><td>23 Jahre</td></tr>
+        <tr><td>Größe</td><td>167 cm</td></tr>
+        <tr><td>Methoden: </td><td>NameÄndern()</td></tr>
+    </table>
+    <div blackbox></div>
+</div>
+
+
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[5]=true">
+            Objekte und Klassen werden in Form von Objekt- und Klassenkarten grafisch dargestellt. Bei der Objektkarte beinhaltet die erste Zeile den Objektnamen und in den folgenden Zeilen die Attribute und den zugehörigen Attributwert. Bei der Klassenkarte wird zuerst der Name genannt, dann die Attribute und die Methoden aufgelistet. 
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true">
+            Objektkarte
+            <img src="\assets\Objektkarte.png"  style="width: 600px;">
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[7]=true">
+            Klassenkarte
+            <img src="\assets\Klassenkarte.png"  style="width: 600px;">
+          </div>
+<div blackbox></div>
+    </div>
+
 </div>
