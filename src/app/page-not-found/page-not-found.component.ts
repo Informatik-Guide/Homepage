@@ -8,3 +8,4 @@ import { Component } from '@angular/core';
 export class PageNotFoundComponent {
 
 }
+alert("404 This Site doesn't exist!!!");
