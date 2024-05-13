@@ -96,19 +96,22 @@
         </div>
       <div blackbox></div>
     </div>
-    <div container *ngIf="steps[13]==true">
+    <div container *ngIf="steps[12]==true">
       <div class="line"></div>
-        <div class="box bl" (click)="steps[14]=true">
+        <div class="box bl" (click)="steps[13]=true">
           Ein relativer Zellbezug, im Gegensatz berechnet Zellen immer relativ zu ihrer Position.
-          <img src="Zellbezüge1"><img src="Zellbezüge2">
+          <img src="\assets\Zellbezüge2.png"
+          style="width: 300px">
+          <img src="\assets\Zellbezüge1.png"
+          style="width:300px">
           An dem Beispiel sieht man wie die Zellbezüge sich von A1 und B1 auf A2 und B2 verschieben.
           Dies funktioniert sowohl horizontal als auch vertikal.
         </div>
       <div blackbox></div>
     </div>
-    <div container *ngIf="steps[14]==true">
+    <div container *ngIf="steps[13]==true">
       <div class="line"></div>
-        <div class="box bl" (click)="steps[15]=true">
+        <div class="box bl" (click)="steps[14]=true">
           Diese zwei Arten von Zellbezügen können auch gemischt werden, 
           sodass vertikal ein absoluter Zellbezug besteht und horizontal ein relativer oder umgekehrt. 
           Dabei wird das $-Zeichen nur vor den Buchstaben oder die Zahl geschrieben.
