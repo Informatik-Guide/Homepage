@@ -5,4 +5,211 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="box bl" (click)="steps[2]=true">
+          Der Methodenkopf definiert den Namen, die Parameterliste und den Rückgabetyp einer Methode. Dieser steht am Anfang der Methode.
+        </div>
+<div blackbox></div>
+  </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[3]=true">
+            Der Methodenrumpf enthält die eigentlichen Anweisungen und den Code, der in einer Methode ausgeführt wird
+          </div>
+<div blackbox></div>
+    </div>
+    <div container *ngIf="steps[3]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[4]=true">
+              Die Kombination von beidem wird Methodendefinition genannt, die das Verhalten der Methode definiert.
+            </div>
+  <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[4]==true">
+        <div class="line"></div>
+              <div class="box bl" (click)="steps[5]=true">
+                Der Methodenaufruf ist der Prozess, bei dem eine Methode aufgerufen wird, um bestimmte Aktionen auszuführen. Dabei gibt die Methode oft einen Wert zurück, der Rückgabewert genannt wird. Allerdings gibt es auch Methoden, die keinen Wert oder Meldung zurückgeben. 
+              </div>
+    <div blackbox></div>
+        </div>
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true">
+            Ein Konstruktor ist eine spezielle Methode einer Klasse, die automatisch beim Erstellen eines Objekts aufgerufen wird. Diese bestimmt die Attributwerte der Klasse und erstellt das Objekt. Bsp in Java : 
+          </div>
+<div blackbox></div>
+    </div>
+    <div container *ngIf="steps[6]==true">
+      <div class="line"></div>
+            <div class="circle" (click)="steps[7]=true">
+              Methode in Java erklärt
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[7]==true">
+      <div class="line"></div>
+            <div class="circle cs" (click)="steps[8]=true">
+              Geben 
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[8]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[9]=true">
+              Diese Methode gibt den Wert eines Attributes. Dazu braucht sie immer einen Rückgabewert (hier: int).
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[9]==true">
+      <div class="line"></div>
+            <div class="circle cs" (click)="steps[10]=true">
+              Setzen 
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[10]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[11]=true">
+              Beim Aufrufen dieser Methoden wird der Wert eines Attributes neu gesetzt. Dabei gibt es keinen Rückgabewert, deswegen wird hier „void“ benutzt.
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[11]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[12]=true">
+              Setzen und Geben 
+            </div>
+  <div blackbox></div>
+      </div>
+   <div container *ngIf="steps[12]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[13]=true">
+              Bei dieser Methode werden bei Funktionen kombiniert.  
+              <img src="\assets\Methoden.png"  style="width: 600px;">
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[13]==true">
+      <div class="line"></div>
+            <div class="circle" (click)="steps[14]=true">
+              For-Schleife 
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[14]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[15]=true">
+              Bei der Methode wird eine bestimmte Anweisung, so oft ausgeführt wie die angegebene Bedingung erfüllt ist.  
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[15]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[16]=true">
+              Als erstes eine Zählvariable festgelegt, die verwendet wird um den Fortschritt der Schleife zu verfolgen
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[16]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[17]=true">
+              Zweitens wird die Bedingung angegeben, die erfüllt sein soll, dass die Schleife ausgeführt wird.  
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[17]==true">
+      <div class="line"></div>
+            <div class="box" (click)="steps[18]=true">
+              Als letztes muss die Zählvariable aktualisiert werden, also einen neuen Wert annehmen. (Dies ist Alles in den Klammern bestimmt) 
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[18]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[19]=true">  
+              <img src="\assets\For-Schleifen.png"  style="width: 600px;">
+            </div>
+  <div blackbox></div>
+      </div>
+  
+  <!-- IF Else -->
+
+  <div container *ngIf="steps[19]==true">
+    <div class="line"></div>
+          <div class="circle" (click)="steps[20]=true">
+            If-Else 
+
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[20]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[21]=true">
+            Hier wird eine Bedingung bestimmt und wenn diese erfühlt wird, dann wird der Quellcode ausgeführt der in den geschweiften Klammern steht.
+
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[21]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[22]=true">
+            Wird die Bedingung nicht erfüllt wird automatisch in den Else-Zweig gesprungen.
+
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[22]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[23]=true">
+            Diese Anweisung kann auch verschachtelt werden. 
+          </div>
+<div blackbox></div>
+    </div>
+
+<div container *ngIf="steps[23]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[24]=true">  
+            <img src="\assets\If-Else.png"  style="width: 600px;">
+          </div>
+<div blackbox></div>
+    </div>
+<!-- WHile-schleife -->
+    <div container *ngIf="steps[24]==true">
+      <div class="line"></div>
+            <div class="circle" (click)="steps[25]=true">
+              While-Schleife
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[25]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[26]=true">
+              Diese Schleife führt den Code aus, solange eine angegebene Bedingung erfüllt ist (in runden Klammern)  
+
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[26]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[27]=true">
+              Davor muss jedoch die Zählvariable festgelegt werden (hier int i=1) und danach muss diese auch aktualisiert werden (hier i++). 
+
+            </div>
+  <div blackbox></div>
+      </div>
+  
+  <div container *ngIf="steps[27]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[28]=true">  
+              <img src="\assets\While.png"  style="width: 600px;">
+            </div>
+  <div blackbox></div>
+      </div>
 </div>

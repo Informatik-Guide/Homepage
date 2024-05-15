@@ -5,4 +5,48 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[2]=true">
+            Variablen sind Platzhalter, denen bestimmte Werte zugeordnet werden können. Es gibt verschiedene Arten von Variablen: Parameter, lokale Variable und Attribute.
+          </div>
+<div blackbox></div>
+    </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[3]=true">
+            Ein Parameter ist eine Variable, die an eine Methode übergeben werden, wenn sie aufgerufen wird. Parameter werden benutzt, wenn zur Ausführung der Methode noch zusätzliche Informationen benötigt sind. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[4]=true">
+            Eine lokale Variable existiert nur in einer Methode und werden innerhalb dieser Methode deklariert. Diese Art von Variable kann dann auch nur in dieser einen Methode verwendet werden.
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[5]=true">
+            Attribute werden benutzt um Eigenschaften der Objekte festzulegen. Attribute sind globale Variablen, die in jeder Methode der Klasse verwendet und gelesen werden können. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true">
+            Ein Übergabewert wird an eine Methode weitergegen, dass diese ihn als Parameter weiterverwenden kann. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[7]=true">
+            Durch Wertzuweisung, wird der Wert einer Variable definiert oder der bisherige Wert geändert. 
+          </div>
+<div blackbox></div>
+    </div>
+
+
 </div>

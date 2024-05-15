@@ -5,4 +5,25 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[2]=true">
+            Für die Variablen gibt es verschiedene Datentypen, die die Art des Wertes der Variable bestimmen, z.B.: ganze Zahlen, Kommazahlen, Zeichenketten (Wörter), usw.. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <table (click)="steps[3]=true">
+        <tr><th>Für JAVA: </th></tr> 
+        <tr><td>Ganze Zahlen </td><td>int</td></tr>
+        <tr><td>Gleitkommazahlen </td><td>double</td></tr>
+        <tr><td>Wahrheitswerte</td><td>boolean</td></tr>
+        <tr><td>Zeichen</td><td>char</td></tr>
+        <tr><td>Zeichenketten</td><td>String  </td></tr>
+    </table>
+    <div blackbox></div>
+</div>
+
+ 
 </div>

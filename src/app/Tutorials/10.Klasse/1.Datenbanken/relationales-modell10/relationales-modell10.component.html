@@ -5,4 +5,27 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+            Relationales Modell
+        </div>
+<div blackbox></div>
+  </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[3]=true">
+            Ein relationales Modell organisiert Daten in Tabellen. Jede Tabelle, auch als Tabellenschema bezeichnet, hat einen eindeutigen Primärschlüssel. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[4]=true">
+            Fremdschlüssel in einer Tabelle verweisen auf Primärschlüssel in anderen Tabellen, um Beziehungen herzustellen.
+          </div>
+<div blackbox></div>
+    </div>
+
 </div>

@@ -5,4 +5,27 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+          Redundanz und Konsistenz von Datenbeständen, Anomalien
+        </div>
+<div blackbox></div>
+  </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[3]=true">
+            Redundanz bezieht sich auf die mehrfache Speicherung derselben Daten
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[4]=true">
+            Dies kann zu Anomalien führen, wenn Daten geändert werden müssen, was die Konsistenz des Datenbestands beeinträchtigen kann.
+          </div>
+<div blackbox></div>
+    </div>
+
 </div>

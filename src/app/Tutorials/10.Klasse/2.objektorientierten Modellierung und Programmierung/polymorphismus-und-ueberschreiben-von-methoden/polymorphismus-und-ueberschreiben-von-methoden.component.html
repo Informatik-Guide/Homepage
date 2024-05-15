@@ -5,4 +5,84 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="box bl" (click)="steps[2]=true">
+          In diesem Tutorial werden wir zwei wichtige Konzepte der Programmierung erklären: Polymorphismus und das Überschreiben von Methoden. Wir werden diese Konzepte leicht verständlich erklären, damit auch Schüler ohne Vorkenntnisse sie verstehen können.
+        </div>
+<div blackbox></div>
+  </div>
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="circle" (click)="steps[3]=true">
+            1. Polymorphismus
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[4]=true">
+            Polymorphismus ist ein Konzept in der Programmierung, das bedeutet, dass Objekte sich je nach Kontext unterschiedlich verhalten können. Das ist wie ein Chamäleon, das seine Farbe ändern kann, je nachdem, wo es sich befindet.
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[5]=true">
+            Beispiel: Tiere
+            <img src="\assets\Polymorphismus.png"  style="width: 600px;">
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[6]=true">
+            In diesem Beispiel haben wir eine Superklasse TIER und zwei Unterklassen HUND und KATZE, die von TIER erben. Jedes Tier kann einen Laut machen, aber je nachdem, ob es ein Hund oder eine Katze ist, macht es einen unterschiedlichen Laut. Das ist Polymorphismus!
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+          <div class="circle" (click)="steps[7]=true">
+            Was ist das Überschreiben von Methoden?
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[7]==true">
+    <div class="line"></div>
+          <div class="box bl" (click)="steps[8]=true">
+            Das Überschreiben von Methoden ist ein weiteres Konzept, das mit Vererbung zusammenhängt. Wenn eine Methode in der Unterklasse eine identische Signatur (Name und Parameterliste) wie eine Methode in der Superklasse hat, ersetzt die Methode in der Unterklasse die Methode in der Superklasse. Dadurch kann die Unterklasse das Verhalten der Methode anpassen.
+          </div>
+<div blackbox></div>
+    </div>
+    <div container *ngIf="steps[8]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[9]=true">
+              Beispiel: Fahrzeuge
+              Wir verwenden das Beispiel von Fahrzeugen, um das Überschreiben von Methoden zu erklären.
+              <img src="\assets\Fahrzeuge.png"  style="width: 600px;">
+            </div>
+  <div blackbox></div>
+      </div>
+    <div container *ngIf="steps[9]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[10]=true">
+              In diesem Beispiel überschreiben die Klassen AUTO und FAHRRAD die Methode beschleunigen() der Superklasse FAHRZEUG. Obwohl beide Objekte als FAHRZEUG deklariert sind, führt der Aufruf der Methode je nach Instanztyp zu unterschiedlichen Ausgaben.
+            </div>
+  <div blackbox></div>
+      </div>
+    <div container *ngIf="steps[10]==true">
+      <div class="line"></div>
+            <div class="circle" (click)="steps[11]=true">
+              Zusammenfassung
+            </div>
+  <div blackbox></div>
+      </div>
+    <div container *ngIf="steps[11]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[12]=true">
+              Polymorphismus und das Überschreiben von Methoden sind wichtige Konzepte in der Programmierung. Polymorphismus ermöglicht es Objekten, sich je nach Kontext unterschiedlich zu verhalten. Das Überschreiben von Methoden erlaubt es Unterklassen, das Verhalten ihrer Superklasse anzupassen.
+            </div>
+  <div blackbox></div>
+      </div>
 </div>

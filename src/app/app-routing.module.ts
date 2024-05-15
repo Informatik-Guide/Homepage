@@ -37,10 +37,10 @@ import { IfBedingungtestComponent } from './Tests/if-bedingungtest/if-bedingungt
   //1.Datenbanksysteme
   import { AbfragespracheAmBeispielVonSql10Component } from './Tutorials/10.Klasse/1.Datenbanken/abfragesprache-am-beispiel-von-sql10/abfragesprache-am-beispiel-von-sql10.component';
   import { FachbegriffeDatenbanksysteme10Component } from './Tutorials/10.Klasse/1.Datenbanken/fachbegriffe-datenbanksysteme10/fachbegriffe-datenbanksysteme10.component';
-  import { ObjektorientiertesDatenmodellComponent } from './Tutorials/10.Klasse/1.Datenbanken/objektorientiertes-datenmodell/objektorientiertes-datenmodell.component';
+  import { ObjektorientiertesDatenmodell10Component } from './Tutorials/10.Klasse/1.Datenbanken/objektorientiertes-datenmodell/objektorientiertes-datenmodell.component';
   import { RedundanzUndKonsistenzVonDatenbestaendenComponent } from './Tutorials/10.Klasse/1.Datenbanken/redundanz-und-konsistenz-von-datenbestaenden/redundanz-und-konsistenz-von-datenbestaenden.component';
   import { RelationalesDatenbanksystemComponent } from './Tutorials/10.Klasse/1.Datenbanken/relationales-datenbanksystem/relationales-datenbanksystem.component';
-  import { RelationalesModell10Component } from './Tutorials/10.Klasse/1.Datenbanken/relationales-modell10/relationales-modell10.component';
+  import { RelationalesModell10Component } from './Tutorials/10.Klasse/1.Datenbanken/relationales-modell10/relationales-modell10.component';;
   //2.Objektorientierte Modellierung und Programmierung
   import { EindimensionalDatenstrukturComponent } from './Tutorials/10.Klasse/2.objektorientierten Modellierung und Programmierung/eindimensional-datenstruktur/eindimensional-datenstruktur.component';
   import { FachbegriffeProgrammierung10Component } from './Tutorials/10.Klasse/2.objektorientierten Modellierung und Programmierung/fachbegriffe-programmierung10/fachbegriffe-programmierung10.component';
@@ -107,7 +107,7 @@ const routes: Routes = [
 {path: 'Fachbegriffe-Tabellenkalkulationsprogramm', component: FachbegriffeTabellenkalkulationsprogrammComponent},
 
 //2.Datenbanksysteme
-{path: 'objektorientiertes Datenmodell', component: ObjektorientiertesDatenmodellComponent},
+{path: 'objektorientiertes Datenmodell', component: DatenmodellComponent},
 {path: 'relationales Modell', component: RelationalesModellComponent},
 {path: 'Abfrage', component: AbfrageComponent},
 {path: 'Abfragesprache am Beispiel von SQL', component: AbfragespracheAmBeispielVonSQLComponent},
@@ -126,8 +126,8 @@ const routes: Routes = [
 
 
 //1.Datenbanksysteme
-{path: 'objektorientiertes Datenmodell', component: ObjektorientiertesDatenmodellComponent},
-{path: 'relationales Modell', component: RelationalesModell10Component},
+{path: 'objektorientiertes Datenmodell 10', component: ObjektorientiertesDatenmodell10Component},
+{path: 'relationales Modell 10', component: RelationalesModell10Component},
 {path: 'relationales Datenbanksystem', component: RelationalesDatenbanksystemComponent},
 {path: 'Redundanz und Konsistenz von Datenbeständen', component: RedundanzUndKonsistenzVonDatenbestaendenComponent},
 {path: 'Abfragesprache am Beispiel von SQL 10', component: AbfragespracheAmBeispielVonSql10Component},

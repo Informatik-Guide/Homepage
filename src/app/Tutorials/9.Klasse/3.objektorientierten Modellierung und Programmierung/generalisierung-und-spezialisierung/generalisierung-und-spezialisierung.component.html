@@ -4,5 +4,54 @@
                 Start
               </div>
         </div>
-<!-- Euren Inhalt/Tutorial -->
+    <div container *ngIf="steps[1]==true">
+      <div class="line"></div>
+            <div class="circle" (click)="steps[2]=true">
+              Vererbung 
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[2]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[3]=true">
+              Eine Oberklasse ist eine abstrakte Klasse, von der andere Klassen erben können, während eine Unterklasse von einer Oberklasse erbt.
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[3]==true">
+      <div class="line"></div>
+            <div class="box " (click)="steps[4]=true">
+              Dabei erben die Unterklassen die Attribute und Methoden der Oberklassen.
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[4]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[5]=true">
+              Auch das Überschreiben von Methoden ist möglich. Also in Unterklassen Methoden zu definieren, die denselben Namen und dieselben Parameterlisten wie Methoden in der Oberklasse haben, um ihr Verhalten anzupassen. Dies macht man in Java indem man „@Override“ über die Methode schreibt.
+            </div>
+  <div blackbox></div>
+      </div>
+  <div container *ngIf="steps[5]==true">
+      <div class="line"></div>
+            <div class="box" (click)="steps[6]=true">
+              Bsp in Java:
+            </div>
+  <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[6]==true">
+        <div class="line"></div>
+              <div class="box bl" (click)="steps[7]=true">
+                Durch „extends“ wird Java die Oberklasse festgelegt. Die Attribute werden durch „super“ vererbt, sodass sie dann auch bestimmt und in den Methoden benutz werden können. Es können aber auch zusätzlich Attribute definiert werden. 
+              </div>
+    <div blackbox></div>
+        </div>
+  <div container *ngIf="steps[7]==true">
+      <div class="line"></div>
+            <div class="box bl" (click)="steps[8]=true">  
+              <img src="\assets\Vererbung.png"  style="width: 600px;">
+            </div>
+  <div blackbox></div>
+      </div>
+
 </div>

@@ -5,4 +5,20 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+          Relationales Datenbanksystem: 
+        </div>
+<div blackbox></div>
+  </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[3]=true">
+            Ein relationales Datenbanksystem ist ein System, das relationale Datenmodelle verwendet, um Daten zu speichern und abzufragen.
+          </div>
+<div blackbox></div>
+    </div>
+
 </div>

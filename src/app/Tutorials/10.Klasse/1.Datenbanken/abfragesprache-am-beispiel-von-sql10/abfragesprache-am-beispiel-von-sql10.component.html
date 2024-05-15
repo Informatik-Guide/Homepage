@@ -5,4 +5,27 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+          Abfragesprache am Beispiel von SQL: 
+        </div>
+<div blackbox></div>
+  </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[3]=true">
+            SQL ist eine Abfragesprache, die zum Abrufen von Informationen aus einer relationalen Datenbank verwendet wird
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[4]=true">
+            Sie ermöglicht das Stellen komplexer Fragen an die Datenbank durch Verknüpfung von Bedingungen und Abfragen über verknüpfte Tabellen.
+          </div>
+<div blackbox></div>
+    </div>
+
 </div>
