@@ -71,6 +71,7 @@ import { BreitensucheComponent } from './Tutorials/11.Klasse/1.Graphen/breitensu
 import { DijkstraComponent } from './Tutorials/11.Klasse/1.Graphen/dijkstra/dijkstra.component';
 
 //2.Codierung
+import { CodierungComponent } from './Tutorials/11.Klasse/2.Codierung/codierung/codierung.component';
 import { ZahlensystemeComponent } from './Tutorials/11.Klasse/2.Codierung/zahlensysteme/zahlensysteme.component';
 import { SymmetrischeVerschluesselungComponent } from './Tutorials/11.Klasse/2.Codierung/symmetrische-verschluesselung/symmetrische-verschluesselung.component';
 import { AsymmetrischeVerschluesselungComponent } from './Tutorials/11.Klasse/2.Codierung/asymmetrische-verschluesselung/asymmetrische-verschluesselung.component';
@@ -94,6 +95,7 @@ import { DasNeuronaleNetzComponent } from './Tutorials/11.Klasse/4.KI/das-neuron
 
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 
 @NgModule({
@@ -161,6 +163,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     FachbegriffeProgrammierung10Component,
     AbfragespracheAmBeispielVonSql10Component,
     RelationalesModell10Component,
+    CodierungComponent,
 
   ],
   imports: [

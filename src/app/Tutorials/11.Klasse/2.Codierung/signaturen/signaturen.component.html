@@ -1,8 +1,181 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cs" (click)="steps[1]=true">
+      Start
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="circle cl" (click)="steps[2]=true">
+      Zweck und Funktionsweise einer digitalen Signatur und die Bedeutung von Zertifikaten
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[3]=true">
+      Eine digitale Signatur ist ein wesentliches Werkzeug in der Informationssicherheit, das es ermöglicht, die
+      Authentizität, Integrität und Nichtabstreitbarkeit digitaler Daten zu gewährleisten. In diesem Tutorial werde ich
+      den Zweck und die Funktionsweise einer digitalen Signatur erklären und die Bedeutung von Zertifikaten in diesem
+      Zusammenhang erläutern.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[4]=true">
+      1. Zweck einer digitalen Signatur:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[5]=true">
+      <h3>
+        Authentifizierung:
+      </h3> <br>
+      Eine digitale Signatur ermöglicht es, die Identität des Absenders einer Nachricht oder eines Dokuments zu
+      überprüfen.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[6]=true">
+      <h3>
+        Integrität:
+      </h3> <br>
+      Die digitale Signatur gewährleistet, dass die übermittelten Daten während der Übertragung nicht manipuliert
+      wurden.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[7]=true">
+      <h3>
+        Nichtabstreitbarkeit
+      </h3> <br>
+      Durch die Verwendung einer digitalen Signatur kann der Absender nicht leugnen, die Nachricht oder das Dokument
+      unterzeichnet zu haben.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[7]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[8]=true">
+      2. Funktionsweise einer digitalen Signatur:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[8]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[9]=true">
+      Die Funktionsweise einer digitalen Signatur beruht auf <a style="color: rgb(39, 241, 227);"
+        routerLink="/asymmetrischeverschluesselung">asymmetrischer Verschlüsselung </a> und Hashfunktionen:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[9]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[10]=true">
+      <h3>
+        Erzeugung des Signaturpaares:
+      </h3> <br>
+      Der Absender erzeugt ein Signaturpaar, bestehend aus einem öffentlichen und einem privaten Schlüssel. Der private
+      Schlüssel wird zum Signieren von Daten verwendet, während der öffentliche Schlüssel zur Überprüfung der Signatur
+      verwendet wird.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[10]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[11]=true">
+      <h3>
+        Signierung der Daten:
+      </h3> <br>
+      Der Absender verwendet seinen privaten Schlüssel, um eine kryptografische Hashfunktion auf den zu signierenden
+      Daten anzuwenden. Das Ergebnis wird mit dem privaten Schlüssel verschlüsselt, um die digitale Signatur zu
+      erzeugen.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[11]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[12]=true">
+      <h3>
+        Überprüfung der Signatur:
+      </h3> <br>
+      Der Empfänger verwendet den öffentlichen Schlüssel des Absenders, um die digitale Signatur zu entschlüsseln und
+      den ursprünglichen Hashwert zu extrahieren. Dann wendet der Empfänger dieselbe Hashfunktion auf die empfangenen
+      Daten an und vergleicht den extrahierten Hashwert mit dem berechneten Hashwert. Wenn beide übereinstimmen, ist die
+      Signatur gültig.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[12]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[13]=true">
+      3. Bedeutung von Zertifikaten:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[13]==true">
+    <div class="line"></div>
+    <div class="box" (click)="steps[14]=true">
+      Zertifikate spielen eine entscheidende Rolle bei der Vertrauensbildung in digitale Signaturen. Sie dienen als
+      digitale Ausweise, die die Identität eines Signaturerstellers bestätigen:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[14]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[15]=true">
+      <h3>
+        Authentifizierung des Signaturerstellers:
+      </h3> <br>
+      Ein Zertifikat enthält Informationen über den Inhaber der digitalen Signatur, z. B. seinen Namen, seine
+      E-Mail-Adresse und den öffentlichen Schlüssel. Diese Informationen werden von einer vertrauenswürdigen
+      Zertifizierungsstelle (CA) überprüft und bestätigt.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[15]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[16]=true">
+      <h3>
+        Vertrauenswürdigkeit der Signatur:
+      </h3> <br>
+      Wenn ein Empfänger eine digitale Signatur überprüft, kann er das zugehörige Zertifikat verwenden, um
+      sicherzustellen, dass die Signatur von einer vertrauenswürdigen Quelle stammt.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[16]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[17]=true">
+      <h3>
+        Schlüsselverwaltung:
+      </h3> <br>
+      Zertifikate helfen auch bei der Verwaltung von öffentlichen Schlüsseln, indem sie eine vertrauenswürdige Zuordnung
+      zwischen einem Signaturersteller und seinem öffentlichen Schlüssel bereitstellen.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[17]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[18]=true">
+      <h3>
+        Zusammenfassung:
+      </h3> <br>
+      Eine digitale Signatur ist ein wesentliches Werkzeug zur Gewährleistung von Authentizität, Integrität und
+      Nichtabstreitbarkeit digitaler Daten. Die Funktionsweise basiert auf asymmetrischer Verschlüsselung und
+      Hashfunktionen. Zertifikate spielen eine wichtige Rolle bei der Vertrauensbildung in digitale Signaturen, indem
+      sie die Identität des Signaturerstellers bestätigen und die Vertrauenswürdigkeit der Signatur gewährleisten.
+    </div>
+    <div blackbox></div>
+  </div>
+
+
 </div>

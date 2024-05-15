@@ -1,20 +1,261 @@
 <div pagecontainer style="color: aliceblue;">
     <div container>
-          <div class="circle cs" (click)="steps[1]=true">
-            Small Text
-          </div>
+        <div class="circle cs" (click)="steps[1]=true">
+            Start
+        </div>
     </div>
+    <!-- Euren Inhalt/Tutorial -->
     <div container *ngIf="steps[1]==true">
         <div class="line"></div>
-        <div class="circle" (click)="steps[2]=true">
-            Here is some text in circle hserfh rhsaerh erghaerhaehrb  eragerg
+        <div class="box bl" (click)="steps[2]=true">
+            Die Codierung von Information ist ein grundlegendes Konzept in der Informationstechnologie, das es
+            ermöglicht, Daten effizient zu speichern, zu übertragen und zu verarbeiten. In diesem Tutorial werde ich das
+            Prinzip der Codierung von Information anhand einiger bekannter Beispiele wie dem Strichcode, RGB-Farbcode
+            und QR-Code erläutern.
         </div>
         <div blackbox></div>
     </div>
     <div container *ngIf="steps[2]==true">
         <div class="line"></div>
-        <div class="circle cl">
-            Here is some text in circle that is very large which is a big problem at this time
+        <div class="box bl" (click)="steps[3]=true">
+            Außerdem werden wir die Bedeutung der Codierung verstehen und wie codierte Information durch die Verwendung
+            von Prüfsummen wie GTIN (Global Trade Item Number) und IBAN (International Bank Account Number) validiert
+            werden kann.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[3]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[4]=true">
+            1. Prinzip der Codierung von Information:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[4]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[5]=true">
+            Die Codierung von Information bezieht sich auf den Prozess, bei dem Daten in einem bestimmten Format oder
+            einer bestimmten Struktur dargestellt werden, um sie für den Austausch und die Verarbeitung durch Computer
+            oder andere Geräte geeignet zu machen.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[5]==true">
+        <div class="line"></div>
+        <div class="box" (click)="steps[6]=true">
+            Dies geschieht durch Zuweisung von Symbolen, Zahlen oder anderen Zeichen zu den Daten, die repräsentiert
+            werden sollen.
+        </div>
+        <div blackbox></div>
+    </div>
+
+    <div container *ngIf="steps[6]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[8]=true">
+            Beispiele:
+        </div>
+        <div blackbox></div>
+    </div>
+
+    <div container *ngIf="steps[8]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[9]=true">
+            Strichcode
+        </div>
+        <div blackbox></div>
+    </div>
+
+    <div container *ngIf="steps[9]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[10]=true">
+            Ein Strichcode ist eine lineare Darstellung von Daten in Form von parallelen Linien und Lücken
+            unterschiedlicher Breite. Diese Codes werden häufig in der Einzelhandelsbranche verwendet, um Produkte zu
+            identifizieren. Jedes Produkt hat einen eindeutigen Strichcode, der bei der Kasse gescannt wird, um Preis
+            und andere Informationen abzurufen.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[10]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[11]=true">
+            RGB-Farbcode
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[11]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[12]=true">
+            In der Grafik- und Bildverarbeitung wird die Farbe eines Pixels oft durch einen RGB-Farbcode repräsentiert.
+            RGB steht für Rot, Grün und Blau, die drei Grundfarben von Licht. Jeder Farbkanal kann einen Wert zwischen 0
+            und 255 haben, wodurch eine große Anzahl von Farben dargestellt werden kann.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[12]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[13]=true">
+            QR-Code
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[13]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[14]=true">
+            Ein QR-Code (Quick Response Code) ist eine Art zweidimensionaler Barcode, der Informationen in Form von
+            schwarzen Quadraten und weißen Hintergrundfeldern darstellt. Diese Codes können Text, URLs, Kontaktdaten und
+            andere Arten von Daten codieren. Sie werden häufig für mobile Zahlungen, Produktverfolgung und
+            Marketingzwecke verwendet.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[14]==true">
+        <div class="line"></div>
+        <div class="circle cl" (click)="steps[15]=true">
+            2. Bedeutung der Codierung von Information:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[15]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[16]=true">
+            Die Codierung von Information ist von entscheidender Bedeutung für die effiziente Speicherung, Übertragung
+            und Verarbeitung von Daten in der Informationstechnologie. Durch die Verwendung standardisierter
+            Codierungsformate können verschiedene Systeme miteinander kommunizieren und Informationen austauschen.
+            Darüber hinaus ermöglicht die Codierung die Fehlererkennung und -korrektur sowie die Sicherstellung der
+            Datenintegrität.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[16]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[17]=true">
+            Beispiele für Codierungsbeteutung:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[17]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[18]=true">
+            Effizienz
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[18]==true">
+        <div class="line"></div>
+        <div class="box" (click)="steps[19]=true">
+            Durch die Codierung können große Mengen an Informationen kompakt dargestellt werden, was Speicherplatz spart
+            und die Übertragungsgeschwindigkeit erhöht.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[19]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[20]=true">
+            Interoperabilität
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[20]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[21]=true">
+            Standardisierte Codierungsformate ermöglichen es verschiedenen Systemen und Plattformen, miteinander zu
+            kommunizieren, ohne dass eine Umwandlung der Daten erforderlich ist.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[21]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[22]=true">
+            Fehlererkennung und -korrektur:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[22]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[23]=true">
+            Durch die Verwendung von Prüfsummen und anderen Fehlererkennungsmechanismen können Fehler in codierten Daten
+            erkannt und in einigen Fällen sogar korrigiert werden.
+        </div>
+        <div blackbox></div>
+    </div>
+
+    <div container *ngIf="steps[23]==true">
+        <div class="line"></div>
+        <div class="circle cl" (click)="steps[24]=true">
+            3. Validierung codierter Information durch Prüfsummen:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[24]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[25]=true">
+            Prüfsummen sind zusätzliche Daten, die aus den codierten Informationen berechnet werden und dazu dienen, die
+            Integrität der Daten zu überprüfen.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[25]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[26]=true">
+            Wenn die codierten Daten übertragen oder gespeichert werden, wird auch die Prüfsumme übermittelt oder
+            gespeichert.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[26]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[27]=true">
+            Beim Empfang oder Abruf der Daten wird die Prüfsumme erneut berechnet und mit der übermittelten Prüfsumme
+            verglichen, um sicherzustellen, dass die Daten unversehrt sind.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[27]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[28]=true">
+            Beispiele für Prüfsummen:
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[28]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[29]=true">
+            GTIN (Global Trade Item Number):
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[29]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[30]=true">
+            GTIN ist eine Prüfsumme, die in Strichcodes verwendet wird, um sicherzustellen, dass der Strichcode korrekt
+            gelesen wurde und die Daten nicht beschädigt oder manipuliert wurden.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[30]==true">
+        <div class="line"></div>
+        <div class="circle" (click)="steps[31]=true">
+            BAN (International Bank Account Number):
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[31]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[32]=true">
+            IBAN ist eine internationale Standardisierung von Bankkontonummern, die eine Prüfsumme enthält, um Fehler
+            bei der Eingabe von Kontonummern zu erkennen und die Gültigkeit der Kontonummer zu überprüfen.
+        </div>
+        <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[32]==true">
+        <div class="line"></div>
+        <div class="box bl" (click)="steps[33]=true">
+            <h3>Zusammenfassung:</h3>
+            Die Codierung von Information ist ein grundlegendes Konzept in der Informationstechnologie, das es
+            ermöglicht, Daten effizient zu speichern, zu übertragen und zu verarbeiten. Durch die Verwendung von
+            standardisierten Codierungsformaten und Prüfsummen können Daten sicher und zuverlässig übertragen und
+            verarbeitet werden. Die Beispiele Strichcode, RGB-Farbcode und QR-Code veranschaulichen die Vielseitigkeit
+            und Bedeutung der Codierung in verschiedenen Anwendungsgebieten.
         </div>
         <div blackbox></div>
     </div>

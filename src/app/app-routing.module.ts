@@ -59,7 +59,7 @@ import { AdjazenzmatrixComponent } from './Tutorials/11.Klasse/1.Graphen/adjazen
 import { DijkstraComponent } from './Tutorials/11.Klasse/1.Graphen/dijkstra/dijkstra.component';
 import { BreitensucheComponent } from './Tutorials/11.Klasse/1.Graphen/breitensuche/breitensuche.component';
   //2.Codierung
-import { CodierungComponent } from './Tutorials/11.Klasse/2.Codierung/Codierung/codierung.component';
+import { CodierungComponent } from './Tutorials/11.Klasse/2.Codierung/codierung/codierung.component';
 import { AsymmetrischeVerschluesselungComponent } from './Tutorials/11.Klasse/2.Codierung/asymmetrische-verschluesselung/asymmetrische-verschluesselung.component'; 
 import { SignaturenComponent } from './Tutorials/11.Klasse/2.Codierung/signaturen/signaturen.component';
 import { SymmetrischeVerschluesselungComponent } from './Tutorials/11.Klasse/2.Codierung/symmetrische-verschluesselung/symmetrische-verschluesselung.component';
