@@ -357,7 +357,7 @@ nav .content .links{
 
 
 .theme-switcher {
-  position: relative;
+position: absolute;
 }
 
 .theme-switcher .switch {

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ObjektorientiertesDatenmodellComponent } from './objektorientiertes-datenmodell.component';
+import { ObjektorientiertesDatenmodell10Component } from './objektorientiertes-datenmodell.component';
 
 describe('ObjektorientiertesDatenmodellComponent', () => {
-  let component: ObjektorientiertesDatenmodellComponent;
-  let fixture: ComponentFixture<ObjektorientiertesDatenmodellComponent>;
+  let component: ObjektorientiertesDatenmodell10Component;
+  let fixture: ComponentFixture<ObjektorientiertesDatenmodell10Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ObjektorientiertesDatenmodellComponent]
+      declarations: [ObjektorientiertesDatenmodell10Component]
     });
-    fixture = TestBed.createComponent(ObjektorientiertesDatenmodellComponent);
+    fixture = TestBed.createComponent(ObjektorientiertesDatenmodell10Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

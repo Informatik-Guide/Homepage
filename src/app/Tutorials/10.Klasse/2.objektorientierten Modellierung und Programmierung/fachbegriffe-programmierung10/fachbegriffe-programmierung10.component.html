@@ -1,8 +1,155 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cs" (click)="steps[1]=true">
+      Start
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="box" (click)="steps[2]=true">
+      In diesem Tutorial werden wir wichtige Fachbegriffe der Programmierung erklären, damit du sie verstehen kannst,
+      selbst wenn du noch keine Vorkenntnisse hast.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[3]=true">
+      1. Referenz
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[4]=true">
+      Eine Referenz ist wie ein Zeiger oder eine Adresse, die auf ein Objekt zeigt. Stell dir vor, du hast ein Haus (das
+      Objekt) und eine Karte mit der Adresse (die Referenz). Die Karte zeigt dir den Weg zum Haus, damit du darauf
+      zugreifen kannst.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[5]=true">
+      Beispiel in Java:
+      <img src="\assets\Java.png" style="width: 600px;">
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[6]=true">
+      2. Kardinalität
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <div class="box" (click)="steps[7]=true">
+      Kardinalität beschreibt die Anzahl oder Beziehung zwischen Dingen. Zum Beispiel kann die Kardinalität zwischen
+      einem Lehrer und den Schülern "eins zu viele" sein, was bedeutet, dass ein Lehrer viele Schüler hat, aber jeder
+      Schüler nur einen Lehrer.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[7]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[8]=true">
+      3. Array/Feld
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[8]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[9]=true">
+      Ein Array oder Feld ist wie ein Regal mit vielen Fächern, in denen Daten gespeichert werden können. Alle Fächer im
+      Regal enthalten ähnliche Dinge, z. B. Zahlen oder Texte. Jedes Fach hat eine Nummer (Index), mit der man darauf
+      zugreifen kann.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[9]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[10]=true">
+      Beispiel in Java:
+      <img src="\assets\Java2.png" style="width: 600px;">
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[10]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[11]=true">
+      Ein Index ist wie eine Nummer, die angibt, wo sich etwas in einer Liste oder einem Array befindet. Die
+      Nummerierung beginnt in den meisten Programmiersprachen bei 0. Wenn du zum Beispiel das dritte Element in einer
+      Liste suchst, ist der Index 2.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[11]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[12]=true">
+      5. Datenkapselung
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[12]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[13]=true">
+      Datenkapselung bedeutet, dass Daten vor direktem Zugriff geschützt sind. Man kann nur auf Daten zugreifen oder sie
+      ändern, indem man spezielle Methoden verwendet. Dadurch wird die Integrität der Daten gewährleistet und unerlaubte
+      Änderungen werden vermieden.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[13]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[14]=true">
+      Beispiel in Java:
+      <img src="\assets\Java3.png" style="width: 600px;">
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[14]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[15]=true">
+      In diesem Beispiel sind name und alter private Variablen der Klasse Person. Direkter Zugriff von außen ist nicht
+      möglich; stattdessen werden spezielle Getter- und Setter-Methoden verwendet, um auf die Daten zuzugreifen oder sie
+      zu ändern.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[15]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[16]=true">
+      Zusammenfassung
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[16]==true">
+    <div class="line"></div>
+    <table (click)="steps[17]=true">
+      <tr>
+        <th>In diesem Tutorial haben wir grundlegende Fachbegriffe der Programmierung erklärt:</th>
+      </tr>
+      <tr>
+        <td>• Referenz: Ein Verweis auf ein Objekt im Speicher.</td>
+      </tr>
+      <tr>
+        <td>• Kardinalität: Die Anzahl der Elemente oder die Beziehung zwischen Objekten.</td>
+      </tr>
+      <tr>
+        <td>• Array/Feld: Eine geordnete Sammlung von Elementen desselben Datentyps.</td>
+      </tr>
+      <tr>
+        <td>• Index: Eine Position, die verwendet wird, um auf ein Element zuzugreifen.</td>
+      </tr>
+      <tr>
+        <td>• Datenkapselung: Das Konzept, interne Details eines Objekts vor direktem Zugriff zu schützen.</td>
+      </tr>
+    </table>
+    <div blackbox></div>
+  </div>
+
 </div>

@@ -5,4 +5,33 @@
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
+<div container *ngIf="steps[1]==true">
+  <div class="line"></div>
+        <div class="circle" (click)="steps[2]=true">
+          Objektorientiertes Datenmodell
+        </div>
+<div blackbox></div>
+  </div>
+
+<div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[3]=true">
+            Ein objektorientiertes Datenmodell ist eine Struktur, die Daten in Form von Objekten und Klassen organisiert. 
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[4]=true">
+            Ein Objekt ist eine Instanz einer Klasse und hat Attribute, die seine Eigenschaften darstellen
+          </div>
+<div blackbox></div>
+    </div>
+<div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+          <div class="box" (click)="steps[5]=true">
+            Beziehungen und Kardinalitäten definieren die Verbindungen zwischen den Klassen.
+          </div>
+<div blackbox></div>
+    </div>
 </div>
