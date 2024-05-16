@@ -104,5 +104,41 @@
            style="width: 600px">
         <div blackbox></div>
       </div>
+      <div container *ngIf="steps[15] == true">
+        <div class="line"></div>
+        <table>
+        <tr>
+        <th>Was ist ein Datenflussdiagramm?:</th>
+        </tr>
+        <tr>
+        <td>Eine Darstellung von Datenbanken</td>
+        </tr>
+        <tr>
+        <td>Eine Grafik zur Visualiesierung von Rechenoperationen</td>
+        </tr>
+        <tr>
+        <td (click)="steps[16]=true">Ein Diagramm, das den Fluss von Daten durch ein System zeigt>
+        </tr>
+        </table>
+        <div blackbox></div>
+        </div>
+        <div container *ngIf="steps[16] == true">
+        <div class="line"></div>
+        <table>
+        <tr>
+        <th>Was ist der Zweck eines Datenflussdiagramms?:</th>
+        </tr>
+        <tr>
+        <td>Um den Verbrauch von elektrischer Energie zu visualisieren</td>
+        </tr>
+        <tr>
+        <td (click)="steps[17]=true" >Um den Fluss von Daten in einem Informationssystem zu visualisieren und zu analysieren>
+        </tr>
+        <tr>
+        <td>Um den physischen Fluss von Produkten in einer Fabrik zu zeigen>
+        </tr>
+        </table>
+        <div blackbox></div>
+        </div>
 
 </div>

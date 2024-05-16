@@ -117,4 +117,58 @@
           Dabei wird das $-Zeichen nur vor den Buchstaben oder die Zahl geschrieben.
         </div>
       <div blackbox></div>
+      <div container *ngIf="steps[14] == true">
+        <div class="line"></div>
+        <table>
+        <tr>
+        <th>Was ist eine Zelle in einer Tabellenkalkulation?:</th>
+        </tr>
+        <tr>
+        <td>Ein Bild</td>
+        </tr>
+        <tr>
+        <td>Eine Datenstruktur</td>
+        </tr>
+        <tr>
+        <td (click)="steps[15]=true">Ein Datensatz>
+        </tr>
+        </table>
+        <div blackbox></div>
+        </div>
+        <div container *ngIf="steps[15] == true">
+          <div class="line"></div>
+          <table>
+          <tr>
+          <th>Was ist ein Zellbezug in einer Tabellenkalkulation?:</th>
+          </tr>
+          <tr>
+          <td (click)="steps[16]=true">Ein Verweis auf eine andere Zelle in der Tabelle>
+          </tr>
+          <tr>
+          <td>Ein Text, der in einer Zelle angezeigt wird</td>
+          </tr>
+          <tr>
+          <td>Eine Funktion zum Hinzufügen von Zellen<td>
+          </tr>
+          </table>
+          <div blackbox></div>
+          </div>
+          <div container *ngIf="steps[16] == true">
+            <div class="line"></div>
+            <table>
+            <tr>
+            <th>Welche Art von Zellbezug bleibt deim Kopieren einer Formel in eine neue Zelle konstant?:</th>
+            </tr>
+            <tr>
+            <td (click)="steps[17]=true">absoluter Zellbezug>
+            </tr>
+            <tr>
+            <td>relativer Zellbezug</td>
+            </tr>
+            <tr>
+            <td>gemischter Zellbezug<td>
+            </tr>
+            </table>
+            <div blackbox></div>
+            </div>
     </div>

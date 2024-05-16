@@ -72,4 +72,40 @@
           </div>
         <div blackbox></div>
       </div>
+      <div container *ngIf="steps[9] == true">
+      <div class="line"></div>
+      <table>
+      <tr>
+      <th>Was ist eine Funktion in einer Tabellenkalkulation?:</th>
+      </tr>
+      <tr>
+      <td>Ein Befehl zum Löschen von Daten</td>
+      </tr>
+      <tr>zu
+      <td (click)="steps[10]=true">Eine vordefinierte Formel für bestimmte Berechnungen>
+      </tr>
+      <tr>
+      <td>Ein Programm zur Datenverschlüsselung<td>
+      </tr>
+      </table>
+      <div blackbox></div>
+      </div>
+      <div container *ngIf="steps[10] == true">
+        <div class="line"></div>
+        <table>
+        <tr>
+        <th>Was ist der Zweck der Verkettung einer Funktion?:</th>
+        </tr>
+        <tr>
+        <td>um die Funktion zu isolieren und Fehler zu vermeiden</td>
+        </tr>
+        <tr>zu
+        <td (click)="steps[10]=true">Um mehrere Berechnungen in einer einzigen Formel durchzuführen>
+        </tr>
+        <tr>
+        <td>um die Lesbarkeit der Formel zu verbessern<td>
+        </tr>
+        </table>
+        <div blackbox></div>
+        </div>
 </div>
