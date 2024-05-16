@@ -1,8 +1,217 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cs" (click)="steps[1]=true">
+      Start
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[2]=true">
+      Das Codieren von natürlichen Zahlen in binäre und hexadezimale Formate ist ein grundlegendes Konzept in der
+      Informatik und bietet eine effiziente Möglichkeit, Zahlen darzustellen und zu verarbeiten. In diesem Tutorial
+      werde ich erklären, wie man natürliche Zahlen in binärer und hexadezimaler Form codiert und wieder decodiert.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[3]=true">
+      1. Codierung in binärer Form:
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[4]=true">
+      Die binäre Codierung verwendet das Basis-2-System, bei dem Zahlen nur mit den Ziffern 0 und 1 dargestellt werden.
+      Die Position einer Ziffer in der binären Darstellung bestimmt ihren Wert entsprechend der Potenz von 2.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[5]=true">
+      <h3>
+        Schritt 1:
+      </h3> <br>
+      Teilen Sie die natürliche Zahl durch 2 und notieren Sie den Rest.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[6]=true">
+      <h3>
+        Schritt 2:
+      </h3> <br>
+      Teilen Sie das Ergebnis erneut durch 2 und notieren Sie den Rest. Wiederholen Sie diesen Schritt, bis das Ergebnis
+      0 ist.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[7]=true">
+      <h3>
+        Schritt 3:
+      </h3> <br>
+      Lesen Sie die Reste von unten nach oben, um die binäre Darstellung zu erhalten.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[7]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[8]=true">
+      <h3>
+        Beispiel: Codieren der Zahl 25 in binärer Form
+      </h3> <br>
+      25 / 2 = 12 Rest 1 <br>
+      12 / 2 = 6 Rest 0 <br>
+      6 / 2 = 3 Rest 0 <br>
+      3 / 2 = 1 Rest 1 <br>
+      1 / 2 = 0 Rest 1 <br> <br>
+      Die Reste von unten nach oben gelesen ergeben die binäre Darstellung: 11001.
+
+
+    </div>
+    <div blackbox></div>
+  </div>
+
+
+  <div container *ngIf="steps[8]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[9]=true">
+      2. Codierung in hexadezimaler Form:
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[9]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[10]=true">
+      Die hexadezimale Codierung verwendet das Basis-16-System, bei dem Zahlen mit den Ziffern 0-9 und den Buchstaben
+      A-F dargestellt werden. Jede Ziffer in der hexadezimalen Darstellung entspricht einer Gruppe von vier Bits in der
+      binären Darstellung.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[10]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[12]=true">
+      <h3>
+        Schritt 1:
+      </h3> <br>
+      Teilen Sie die natürliche Zahl durch 16 und notieren Sie den Rest.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[12]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[13]=true">
+      <h3>
+        Schritt 2:
+      </h3> <br>
+      Teilen Sie das Ergebnis erneut durch 16 und notieren Sie den Rest. Wiederholen Sie diesen Schritt, bis das
+      Ergebnis 0 ist.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[13]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[15]=true">
+      <h3>
+        Schritt 3:
+      </h3> <br>
+      Lesen Sie die Reste von unten nach oben, um die hexadezimale Darstellung zu erhalten. Verwenden Sie für Zahlen
+      über 9 die entsprechenden Buchstaben A-F.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[15]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[16]=true">
+      <h3>
+        Beispiel: Codieren der Zahl 180 in hexadezimaler Form
+      </h3> <br>
+      180 / 16 = 11 Rest 4 (Buchstabe B) <br>
+      11 / 16 = 0 Rest 11 (Buchstabe B) <br> <br>
+      Die Reste von unten nach oben gelesen ergeben die hexadezimale Darstellung: B4.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[16]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[17]=true">
+      3. Decodierung von binären und hexadezimalen Zahlen:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[17]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[18]=true">
+      Die Decodierung von binären und hexadezimalen Zahlen erfolgt durch Umkehrung des Codierungsprozesses.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[18]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[19]=true">
+      Beispiel: Decodieren der binären Zahl 11001 in dezimaler Form
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[19]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[20]=true">
+      <h3>
+        Die binäre Zahl 11001 entspricht:
+      </h3> <br>
+      1*2^4 + 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0 = 16 + 8 + 0 + 0 + 1 = 25 <br><br>
+      Daher entspricht die binäre Zahl 11001 der dezimalen Zahl 25.
+    </div>
+    <div blackbox></div>
+  </div>
+
+  <div container *ngIf="steps[20]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[21]=true">
+      Beispiel: Decodieren der hexadezimalen Zahl B4 in dezimaler Form
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[21]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[22]=true">
+      <h3>
+        Die hexadezimale Zahl B4 entspricht:
+      </h3> <br>
+      11*16^1 + 4*16^0 = 176 + 4 = 180 <br><br>
+      Daher entspricht die hexadezimale Zahl B4 der dezimalen Zahl 180.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[22]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[23]=true">
+      <h3>
+        Zusammenfassung:
+      </h3> <br>
+      Das Codieren von natürlichen Zahlen in binäre und hexadezimale Formate bietet effiziente Darstellungsmethoden, die
+      in der Informatik weit verbreitet sind. Durch den Prozess der Codierung und Decodierung können Zahlen in
+      verschiedenen Basissystemen dargestellt und manipuliert werden, je nach den Anforderungen einer bestimmten
+      Anwendung.
+    </div>
+    <div blackbox></div>
+  </div>
 </div>

@@ -1,8 +1,60 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cs" (click)="steps[1]=true">
+      Start
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[2]=true">
+      Die Verschlüsselung ist ein wesentliches Konzept in der Informationssicherheit, das es ermöglicht, sensible Daten
+      vor unbefugtem Zugriff zu schützen. In diesem Tutorial werde ich die Grundprinzipien symmetrischer Verschlüsselung
+      erklären.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[3]=true">
+      Bei der symmetrischen Verschlüsselung wird derselbe Schlüssel sowohl zum Verschlüsseln als auch zum
+      Entschlüsseln von Daten verwendet. Das bedeutet, dass sowohl der Sender als auch der Empfänger denselben
+      geheimen Schlüssel haben müssen, um auf die verschlüsselten Daten zuzugreifen.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[4]=true">Grundprinzipien:
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[5]=true">
+      <h3>Ein Schlüssel für Verschlüsselung und Entschlüsselung:</h3> <br>
+      Bei
+      symmetrischer Verschlüsselung wird derselbe Schlüssel sowohl zum Verschlüsseln als auch zum Entschlüsseln von
+      Daten verwendet.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[6]=true">
+      <h3>Schnelle Verarbeitung:</h3> <br>
+      Symmetrische Verschlüsselungsalgorithmen sind
+      in der Regel schnell und effizient, was sie für die Verschlüsselung großer Datenmengen geeignet macht.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[7]=true">
+      <h3>Beispiel:</h3><br>
+      Der Advanced Encryption Standard (AES) ist ein häufig
+      verwendetes symmetrisches Verschlüsselungsverfahren, das für die sichere Übertragung von Daten verwendet wird.
+    </div>
+    <div blackbox></div>
+  </div>
 </div>

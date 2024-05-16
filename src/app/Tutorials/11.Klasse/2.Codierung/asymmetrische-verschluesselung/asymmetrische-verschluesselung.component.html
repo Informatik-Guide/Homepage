@@ -1,8 +1,91 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
-</div>
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cs" (click)="steps[1]=true">
+      Start
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[2]=true">
+      Die Verschlüsselung ist ein wesentliches Konzept in der Informationssicherheit, das es ermöglicht, sensible Daten
+      vor unbefugtem Zugriff zu schützen. In diesem Tutorial werde ich die Grundprinzipien asymmetrischer
+      Verschlüsselung
+      erklären, sowie die Unterschied zu der symmetrischer Verschlüsselung
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[2]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[3]=true">
+        Bei der asymmetrischen Verschlüsselung werden zwei unterschiedliche, aber mathematisch verbundene Schlüssel
+        verwendet: ein öffentlicher Schlüssel zum Verschlüsseln von Daten und ein privater Schlüssel zum Entschlüsseln.
+        Der öffentliche Schlüssel kann frei verteilt werden, während der private Schlüssel geheim gehalten werden muss.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[3]==true">
+      <div class="line"></div>
+      <div class="circle" (click)="steps[4]=true">Grundprinzipien:
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[4]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[5]=true">
+        <h3>Öffentlicher und privater Schlüssel:</h3> <br>
+        Bei asymmetrischer Verschlüsselung werden zwei Schlüssel verwendet: ein öffentlicher Schlüssel zum Verschlüsseln
+        von Daten und ein privater Schlüssel zum Entschlüsseln.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[5]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[6]=true">
+        <h3>Sicherheit durch Separierung der Schlüssel:</h3> <br>
+        Da der private Schlüssel geheim bleibt, ist die Sicherheit des Verschlüsselungsverfahrens nicht von der
+        Offenlegung des öffentlichen Schlüssels betroffen.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[6]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[7]=true">
+        <h3>Beispiel:</h3><br>
+        Das RSA (Rivest-Shamir-Adleman) Verschlüsselungsverfahren ist ein häufig verwendetes asymmetrisches
+        Verschlüsselungsverfahren, das für die Sicherung von Datenübertragungen und digitale Signaturen verwendet wird.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[7]==true">
+      <div class="line"></div>
+      <div class="circle cl" (click)="steps[8]=true">
+        Unterschiede zwischen symmetrischer und asymmetrischer Verschlüsselung:
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[8]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[9]=true">
+        <h3>Schlüsselverteilung:</h3> <br>
+        Bei symmetrischer Verschlüsselung müssen Sender und Empfänger denselben Schlüssel haben, während bei asymmetrischer Verschlüsselung verschiedene Schlüssel für Verschlüsselung und Entschlüsselung verwendet werden.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[9]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[10]=true">
+        <h3>Sicherheit:</h3> <br>
+        Asymmetrische Verschlüsselung bietet in der Regel eine höhere Sicherheit, da der private Schlüssel geheim bleibt und nicht über das Netzwerk übertragen werden muss.
+      </div>
+      <div blackbox></div>
+    </div>
+    <div container *ngIf="steps[11]==true">
+      <div class="line"></div>
+      <div class="box bl" (click)="steps[12]=true">
+        <h3>Leistung:</h3> <br>
+        Symmetrische Verschlüsselungsalgorithmen sind in der Regel schneller und effizienter als asymmetrische Algorithmen.
+      </div>
+      <div blackbox></div>
+    </div>
+  </div>
