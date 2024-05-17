@@ -78,6 +78,7 @@ import { DasKuenstlicheNeuronComponent } from './Tutorials/11.Klasse/4.KI/das-ku
 import { KiImEinsatzComponent } from './Tutorials/11.Klasse/4.KI/ki-im-einsatz/ki-im-einsatz.component';
 import { KuenstlicheInteligenzComponent } from './Tutorials/11.Klasse/4.KI/kuenstliche-inteligenz/kuenstliche-inteligenz.component';
 import { DasNeuronaleNetzComponent } from './Tutorials/11.Klasse/4.KI/das-neuronale-netz/das-neuronale-netz.component';
+import { PartenerComponent } from './partener/partener.component';
 
 const routes: Routes = [
   {path: 'start', component: LandingComponent},
@@ -86,17 +87,11 @@ const routes: Routes = [
   {path: 'kontakt', component: KontaktComponent},
   {path: 'feedback', component: FeedbackComponent},
   {path: 'kurzgesagt', component: KurzgesagtComponent},
+  {path: 'partner', component: PartenerComponent},
   // tmp
   {path: 'manuelszone', component: ManuelszoneComponent},
   // Tutorials
 
-//9.Klasse
-//1.Tabellenkalkulationsprogramm
-//2.Datenbanksysteme
-//3.objektorientierten Modellierung und Programmierung
-//10.Klasse
-//1.Datenbanksysteme
-//2.Objektorientierte Modellierung und Programmierung
 
 //9.Klasse
 

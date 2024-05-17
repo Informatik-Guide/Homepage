@@ -2,15 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
 import { NavigationComponent } from './NavBar/navigation.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UeberUnsComponent } from './pages/ueber-uns/ueber-uns.component';
-
-import { ImpressumComponent } from './impressum/impressum.component';
 import { ManuelszoneComponent } from './pages/manuelszone/manuelszone.component';
 import { KontaktComponent } from './Kontakt/kontakt.component';
-import { FeedbackComponent } from './feedback/feedback.component';
 import { KurzgesagtComponent } from './kurzgesagt/kurzgesagt.component';
 import { CodierungtestComponent } from './Tests/codierungtest/codierungtest.component';
 import { IfBedingungtestComponent } from './Tests/if-bedingungtest/if-bedingungtest.component';
@@ -18,6 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
+import { LandingComponent } from './landing/landing.component';
+import { PartenerComponent } from './partener/partener.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 //9.Klasse
 
 //1.Tabellenkalkulationsprogramm
@@ -98,6 +98,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 
+
 @NgModule({
 
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
@@ -164,6 +165,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     AbfragespracheAmBeispielVonSql10Component,
     RelationalesModell10Component,
     CodierungComponent,
+    PartenerComponent,
 
   ],
   imports: [

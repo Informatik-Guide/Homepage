@@ -1,18 +1,10 @@
 <div pagecontainer style="color: aliceblue;"> 
     <div container>
-              <div class="circle cs" (click)="steps[1]=true">
-                Start
+              <div class="circle cl" (click)="steps[2]=true">
+                Relationales Modell
               </div>
         </div>
 <!-- Euren Inhalt/Tutorial -->
-<div container *ngIf="steps[1]==true">
-  <div class="line"></div>
-        <div class="circle" (click)="steps[2]=true">
-            Relationales Modell
-        </div>
-<div blackbox></div>
-  </div>
-
 <div container *ngIf="steps[2]==true">
     <div class="line"></div>
           <div class="box" (click)="steps[3]=true">

@@ -1,11 +1,8 @@
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DO NOT EDIT !!!!!!!!!!!!!!!!!!!!!!!!-->
-<div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; height: auto; position: absolute; width: 100%;">
-    <div>
-        <app-navigation ></app-navigation>
-        <router-outlet style="color: var(--pricolor);"></router-outlet>
-    </div>
-
-<app-impressum></app-impressum>
+<div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; height: auto; position: absolute; width: 100vw;">
+    <app-navigation ></app-navigation>
+    <router-outlet style="color: var(--pricolor);"></router-outlet>
+    <app-impressum></app-impressum>
 </div>
 
 
@@ -15,3 +12,7 @@
 <!-- git add --all -->
 <!-- git commit -m "final test" -->
 <!-- git push -u origin gh-pages -->
+
+
+
+<!-- ng build --configuration --base-href "http://informatik.guide" -->
