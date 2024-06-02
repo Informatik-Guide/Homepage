@@ -62,6 +62,7 @@ body
   height: 100%;
   width: 100%;
   animation: blackbox 2s;
+  padding-bottom: 5px;
 }
 [pagecontainer]{
   position: relative;
