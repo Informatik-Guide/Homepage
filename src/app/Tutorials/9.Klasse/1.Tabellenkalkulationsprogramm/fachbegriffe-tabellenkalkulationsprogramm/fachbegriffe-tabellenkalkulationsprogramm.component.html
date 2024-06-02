@@ -1,8 +1,131 @@
-<div pagecontainer style="color: aliceblue;"> 
-    <div container>
-              <div class="circle cl" (click)="steps[1]=true">
-                Fachbegriffe Tabellenkalkulationsprogramm
-              </div>
-        </div>
-<!-- Euren Inhalt/Tutorial -->
+<div pagecontainer style="color: aliceblue;">
+  <div container>
+    <div class="circle cl" (click)="steps[1]=true">
+      Fachbegriffe Tabellenkalkulationsprogramm
+    </div>
+  </div>
+  <!-- Euren Inhalt/Tutorial -->
+  <div container *ngIf="steps[1]==true">
+    <div class="line"></div>
+    <div class="circle cs" (click)="steps[2]=true">
+      Formel
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[2]==true">
+    <div class="line"></div>
+    <div class="box" (click)="steps[3]=true">
+      Eine Formel ist eine Gleichung, die Berechnungen für die Daten in Ihrer Tabelle durchführt.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[3]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[4]=true">
+      Formeln in Tabellenkalkulationsprogrammen kann man sich so ähnlich wie Formeln in Mathe vorstellen.
+      Vor einer Formel muss immer ein Gleichheitszeichen stehen.
+      Dann kann einfach mit den verschiedenen Rechenzeichen gearbeitet werden.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[4]==true">
+    <div class="line"></div>
+    <div class="circle cs" (click)="steps[5]=true">
+      Funktion
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[5]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[6]=true">
+      Eine Funktion auch in Programmiersprachen ein datenverarbeitender Prozess.
+      Also nimmt er Daten auf, die durch diese Funktion verarbeitet werden und am Ende bekommt man ein Resultat zurück.
+      Sozusagen ist eine Funktion eine vordefinierte Formel, die spezifische Berechnungen durchführt.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[6]==true">
+    <div class="line"></div>
+    <div class="circle " (click)="steps[7]=true">
+      Zellbezüge
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[7]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[8]=true">
+      Ein Zellbezug beschreibt die Zuordnung von Formelvariablen zu konkreten
+      Werten in den entsprechenden Eingabefeldern (Zellen) in Tabellenkalkulationen.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[8]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[9]=true">
+      Anstatt einer festen Zahl verweist wird mit einem Zellbezug auf eine andere Zelle verwiesen,
+      um den Wert in dieser Zelle für die Funktion/Formel zu verwenden.
+      Bei Zellbezügen unterscheidet man zwischen relativem und absolutem Zellbezug.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[9]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[10]=true">
+      Dabei bezieht sich der absolute Zellbezug immer auf eine bestimmte Zelle. Dieser wird durch $-Zeichen vor den
+      Buchstaben und die Zahl erzielt.
+      Bsp: =SUM($A$1;$B$1)
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[10]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[11]=true">
+      Ein relativer Zellbezug, im Gegensatz berechnet Zellen immer relativ zu ihrer Position und bewegt sich so immer
+      mit.
+      Bsp: =SUM(A1;B1) dann wird eine Zelle darunter =SUM(A2;B2) stehen.
+      Dies funktioniert sowohl horizontal als auch vertikal.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[11]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[12]=true">
+      Diese zwei Arten von Zellbezügen können auch gemischt werden,
+      sodass vertikal ein absoluter Zellbezug besteht und horizontal ein relativer oder umgekehrt.
+      Dabei wird das $-Zeichen nur vor den Buchstaben oder die Zahl geschrieben.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[12]==true">
+    <div class="line"></div>
+    <div class="circle" (click)="steps[13]=true">
+      Datenflussdiagramm
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[13]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[14]=true">
+      Ein Datenflussdiagramm stellt die Art der Verwendung, die Bereitstellung und Veränderung von Daten innerhalb eines
+      Programms dar.
+      Es kann auch dazu verwendet werden, den Datenfluss eines Prozesses oder einer Tätigkeit wiederzugeben.
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[14]==true">
+    <div class="line"></div>
+    <div class="circle cs" (click)="steps[15]=true">
+      Parameter
+    </div>
+    <div blackbox></div>
+  </div>
+  <div container *ngIf="steps[15]==true">
+    <div class="line"></div>
+    <div class="box bl" (click)="steps[16]=true">
+      In der Informatik wird ein Parameter definiert als eine Variable in einer Funktion. Er dient dazu, bestimmte (oft
+      veränderbare) Werte an diese Funktionen zu übergeben, um das Verhalten genau steuern zu können.
+      Innerhalb einer Funktion wird dann mit den übergebenen Parametern gearbeitet.
+    </div>
+    <div blackbox></div>
+  </div>
 </div>
